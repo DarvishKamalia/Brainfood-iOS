@@ -16,6 +16,9 @@
 		7C82AA971DC881FC00085C0F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA961DC881FC00085C0F /* Networking.swift */; };
 		7C82AA991DC8828300085C0F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA981DC8828300085C0F /* Product.swift */; };
 		7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */; };
+		7CDBA1941DCA73D000AE0560 /* HorizontalFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBA1931DCA73D000AE0560 /* HorizontalFeedVC.swift */; };
+		7CDBA1971DCA746300AE0560 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBA1961DCA746300AE0560 /* FeedItem.swift */; };
+		7CDBA1981DCA746300AE0560 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBA1961DCA746300AE0560 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 		7C82AA961DC881FC00085C0F /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		7C82AA981DC8828300085C0F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Classes/Product.swift; sourceTree = "<group>"; };
 		7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecommendationTypes.swift; path = Enums/RecommendationTypes.swift; sourceTree = "<group>"; };
+		7CDBA1931DCA73D000AE0560 /* HorizontalFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalFeedVC.swift; path = ViewControllers/HorizontalFeedVC.swift; sourceTree = "<group>"; };
+		7CDBA1961DCA746300AE0560 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = Protocols/FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,8 @@
 		7C82AA751DC881D900085C0F /* Brainfood */ = {
 			isa = PBXGroup;
 			children = (
+				7CDBA1951DCA742000AE0560 /* Protocols  */,
+				7CDBA18D1DCA731300AE0560 /* ViewControllers */,
 				7C82AA9B1DC8835000085C0F /* Enums */,
 				7C82AA761DC881D900085C0F /* AppDelegate.swift */,
 				7C82AA781DC881D900085C0F /* ViewController.swift */,
@@ -119,6 +126,22 @@
 				7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */,
 			);
 			name = Enums;
+			sourceTree = "<group>";
+		};
+		7CDBA18D1DCA731300AE0560 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBA1931DCA73D000AE0560 /* HorizontalFeedVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7CDBA1951DCA742000AE0560 /* Protocols  */ = {
+			isa = PBXGroup;
+			children = (
+				7CDBA1961DCA746300AE0560 /* FeedItem.swift */,
+			);
+			name = "Protocols ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +189,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Darvish Kamalia";
 				TargetAttributes = {
 					7C82AA721DC881D900085C0F = {
@@ -230,6 +253,8 @@
 				7C82AA791DC881D900085C0F /* ViewController.swift in Sources */,
 				7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */,
 				7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */,
+				7CDBA1941DCA73D000AE0560 /* HorizontalFeedVC.swift in Sources */,
+				7CDBA1971DCA746300AE0560 /* FeedItem.swift in Sources */,
 				7C82AA991DC8828300085C0F /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDBA1981DCA746300AE0560 /* FeedItem.swift in Sources */,
 				7C82AA8C1DC881D900085C0F /* BrainfoodTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +316,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -339,6 +366,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -438,6 +466,7 @@
 				7C82AA921DC881D900085C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C82AA931DC881D900085C0F /* Build configuration list for PBXNativeTarget "BrainfoodTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +475,7 @@
 				7C82AA951DC881D900085C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

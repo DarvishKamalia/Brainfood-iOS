@@ -13,8 +13,8 @@ fileprivate struct Constants {
 }
 
 
-func fetchRecommendations (type: RecommendationTypes) -> [Product] {
-    let fetchURL: URL?
+func fetchRecommendations (type: RecommendationTypes, completionHandler: @escaping (([Product]) -> Void)) {
+    var fetchURL: URL?
     
     switch type {
         case .PurchaseHistory: fetchURL = URL(string: Constants.productFetchURL)
@@ -23,11 +23,29 @@ func fetchRecommendations (type: RecommendationTypes) -> [Product] {
     
     guard let url = fetchURL else {
         assertionFailure("Could not create valid URL to fetch recommendations")
-        return []
+        return
     }
     
     let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-        print (response)
+        if let jsonData = data {
+            do {
+                let objects = try JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
+                
+                if let productsJSON = (objects as? [[String : AnyObject]]) {
+                    let products = productsJSON.map(){ (productJSON) in
+                        return Product(fromJSON: productJSON)
+                    }.flatMap {$0}
+                    
+                    completionHandler(products)
+                }
+            }
+            
+            catch {
+                assertionFailure("Error Parsing JSON")
+            }
+            
+        }
+        
     }
     
 }
