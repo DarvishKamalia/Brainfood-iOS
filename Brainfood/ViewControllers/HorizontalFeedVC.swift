@@ -19,7 +19,7 @@ class HorizontalFeedVC : UICollectionViewController {
         self.items = items
         super.init(collectionViewLayout: layout)
     }
- 
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -27,6 +27,8 @@ class HorizontalFeedVC : UICollectionViewController {
     // MARK: - UICollectionViewController Methods
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
         
     }
     

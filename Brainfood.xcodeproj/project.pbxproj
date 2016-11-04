@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C2743501DCD152A0093B994 /* HorizontalFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C27434E1DCD152A0093B994 /* HorizontalFeedCell.swift */; };
+		7C2743511DCD152A0093B994 /* HorizontalFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C27434F1DCD152A0093B994 /* HorizontalFeedCell.xib */; };
 		7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA761DC881D900085C0F /* AppDelegate.swift */; };
 		7C82AA791DC881D900085C0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA781DC881D900085C0F /* ViewController.swift */; };
 		7C82AA7C1DC881D900085C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C82AA7A1DC881D900085C0F /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C27434E1DCD152A0093B994 /* HorizontalFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalFeedCell.swift; path = Cells/HorizontalFeedCell.swift; sourceTree = "<group>"; };
+		7C27434F1DCD152A0093B994 /* HorizontalFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HorizontalFeedCell.xib; path = Cells/HorizontalFeedCell.xib; sourceTree = "<group>"; };
 		7C82AA731DC881D900085C0F /* Brainfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C82AA761DC881D900085C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C82AA781DC881D900085C0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C2743521DCD152E0093B994 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7C27434E1DCD152A0093B994 /* HorizontalFeedCell.swift */,
+				7C27434F1DCD152A0093B994 /* HorizontalFeedCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		7C82AA6A1DC881D900085C0F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 				7C82AA821DC881D900085C0F /* Info.plist */,
 				7C82AA961DC881FC00085C0F /* Networking.swift */,
 				7C82AA9A1DC8829900085C0F /* Classes */,
+				7C2743521DCD152E0093B994 /* Cells */,
 			);
 			path = Brainfood;
 			sourceTree = "<group>";
@@ -230,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C82AA811DC881D900085C0F /* LaunchScreen.storyboard in Resources */,
+				7C2743511DCD152A0093B994 /* HorizontalFeedCell.xib in Resources */,
 				7C82AA7E1DC881D900085C0F /* Assets.xcassets in Resources */,
 				7C82AA7C1DC881D900085C0F /* Main.storyboard in Resources */,
 			);
@@ -250,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C82AA971DC881FC00085C0F /* Networking.swift in Sources */,
+				7C2743501DCD152A0093B994 /* HorizontalFeedCell.swift in Sources */,
 				7C82AA791DC881D900085C0F /* ViewController.swift in Sources */,
 				7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */,
 				7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */,
