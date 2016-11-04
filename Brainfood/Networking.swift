@@ -12,7 +12,6 @@ fileprivate struct Constants {
     static let productFetchURL = "www.google.com"
 }
 
-
 func fetchRecommendations (type: RecommendationTypes, completionHandler: @escaping (([Product]) -> Void)) {
     var fetchURL: URL?
     
@@ -47,5 +46,7 @@ func fetchRecommendations (type: RecommendationTypes, completionHandler: @escapi
         }
         
     }
+    
+    task.resume()
     
 }

@@ -9,12 +9,12 @@
 import Foundation
 
 protocol FeedItem {
-    var imageURL : NSURL? { get }
+    var imageURL : URL? { get }
     var descriptors : [String] { get }
 }
 
 extension FeedItem where Self : Product {
-    var imageURL : NSURL? {
+    var imageURL : URL? {
         return self.imageURL
     }
     

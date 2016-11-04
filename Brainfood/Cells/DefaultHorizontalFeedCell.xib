@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HorizontalFeedCell" customModule="Brainfood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="181"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="181"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5WG-XE-E6c">
+                        <rect key="frame" x="0.0" y="0.0" width="219" height="124"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tf3-zy-ryf">
+                        <rect key="frame" x="0.0" y="122" width="219" height="59"/>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5WG-XE-E6c" secondAttribute="bottom" constant="57" id="2cb-sO-QUg"/>
+                <constraint firstItem="tf3-zy-ryf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="122" id="4pt-0f-J4g"/>
+                <constraint firstItem="5WG-XE-E6c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7qb-0j-vIH"/>
+                <constraint firstAttribute="trailing" secondItem="5WG-XE-E6c" secondAttribute="trailing" id="IJa-1E-R8b"/>
+                <constraint firstItem="tf3-zy-ryf" firstAttribute="trailing" secondItem="5WG-XE-E6c" secondAttribute="trailing" id="UJu-dq-xmu"/>
+                <constraint firstItem="5WG-XE-E6c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oAi-ZZ-QY2"/>
+                <constraint firstAttribute="bottom" secondItem="tf3-zy-ryf" secondAttribute="bottom" id="q9y-OH-Eyv"/>
+                <constraint firstItem="tf3-zy-ryf" firstAttribute="leading" secondItem="5WG-XE-E6c" secondAttribute="leading" id="vKV-K8-c3I"/>
+            </constraints>
+            <size key="customSize" width="219" height="181"/>
+            <connections>
+                <outlet property="imageView" destination="5WG-XE-E6c" id="wHE-Bw-16Y"/>
+                <outlet property="stackView" destination="tf3-zy-ryf" id="Aj3-EA-j93"/>
+            </connections>
+            <point key="canvasLocation" x="118.5" y="119.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
