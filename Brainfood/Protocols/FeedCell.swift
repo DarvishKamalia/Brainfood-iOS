@@ -6,8 +6,8 @@
 //  Copyright © 2016 Darvish Kamalia. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-protocol FeedCell {
-    func configure (withFeedItem: FeedItem)
+class FeedCell : UICollectionViewCell  {
+    func configure (withFeedItem: FeedItem) { }
 }

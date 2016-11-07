@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DefaultHorizontalFeedCell: UICollectionViewCell, FeedCell {
+class DefaultHorizontalFeedCell: FeedCell {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var stackView: UIStackView!
@@ -17,7 +17,7 @@ class DefaultHorizontalFeedCell: UICollectionViewCell, FeedCell {
         super.awakeFromNib()
     }
     
-    func configure (withFeedItem item: FeedItem) {
+    override func configure (withFeedItem item: FeedItem) {
         if let imageURL = item.imageURL {
             do {
              try imageView.image = UIImage(data: Data(contentsOf: imageURL))
