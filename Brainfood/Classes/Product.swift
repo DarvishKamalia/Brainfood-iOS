@@ -8,15 +8,15 @@
 
 import Foundation
 
-class Product {
+class Product : FeedItem {
     let name: String
-    var imageURL: NSURL?
+    var imageURL: URL?
     
     init (name: String, imageURL: String? = nil) {
         self.name = name
         
         if let urlString = imageURL {
-            self.imageURL = NSURL(string: urlString)
+            self.imageURL = URL(string: urlString)
         }
     }
     
@@ -32,10 +32,16 @@ class Product {
         
         if
             let imageURLString = json["imageURL"] as? String,
-            let imageURL = NSURL(string: imageURLString)
+            let imageURL = URL(string: imageURLString)
         {
             self.imageURL = imageURL
         }
     
+    }
+    
+    // MARK: - FeedItem variables
+    
+    var descriptors : [String] {
+        return [self.name]
     }
 }

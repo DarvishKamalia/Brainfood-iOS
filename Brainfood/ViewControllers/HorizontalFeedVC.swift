@@ -23,17 +23,22 @@ class HorizontalFeedVC : UICollectionViewController {
         self.items = items
         super.init(collectionViewLayout: layout)
         
-        collectionView?.register(UINib(nibName: Constants.DefaultHorizontalFeedCellNibName, bundle: nil), forCellWithReuseIdentifier: Constants.cellReuseIdentifier)
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // UIViewControllerMethods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let cellNib = UINib(nibName: Constants.DefaultHorizontalFeedCellNibName, bundle: nil)
+        collectionView?.register(cellNib, forCellWithReuseIdentifier: Constants.cellReuseIdentifier)
+    }
     // MARK: - UICollectionViewController Methods
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.cellReuseIdentifier, for: indexPath) as? FeedCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.cellReuseIdentifier, for: indexPath) as? DefaultHorizontalFeedCell else {
             fatalError("Could not load cell for collectionView")
         }
         

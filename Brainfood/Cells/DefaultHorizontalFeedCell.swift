@@ -8,30 +8,26 @@
 
 import UIKit
 
-class DefaultHorizontalFeedCell: FeedCell {
-    
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var stackView: UIStackView!
-    
+class DefaultHorizontalFeedCell : UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    override func configure (withFeedItem item: FeedItem) {
-        if let imageURL = item.imageURL {
-            do {
-             try imageView.image = UIImage(data: Data(contentsOf: imageURL))
-            }
-            
-            catch {
-                assertionFailure("Could not load image from URL")
-            }
-        }
-        
-        for labelText in item.descriptors {
-            let label = UILabel()
-            label.text = labelText
-            stackView.addArrangedSubview(label)
-        }
+     func configure (withFeedItem item: FeedItem) {
+//        if let imageURL = item.imageURL {
+//            do {
+//             try imageView.image = UIImage(data: Data(contentsOf: imageURL))
+//            }
+//            
+//            catch {
+//                assertionFailure("Could not load image from URL")
+//            }
+//        }
+//        
+//        for labelText in item.descriptors {
+//            let label = UILabel()
+//            label.text = labelText
+//            stackView.addArrangedSubview(label)
+//        }
     }
 }
