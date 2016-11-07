@@ -1,33 +1,31 @@
 //
-//  HorizontalFeedCell.swift
+//  DefaultHorizontalFeedCell.swift
 //  Brainfood
 //
-//  Created by Darvish Kamalia on 11/4/16.
+//  Created by Darvish Kamalia on 11/6/16.
 //  Copyright © 2016 Darvish Kamalia. All rights reserved.
 //
 
 import UIKit
 
-class DefaultHorizontalFeedCell : UICollectionViewCell {
+class DefaultHorizontalFeedCell: FeedCell {
+    @IBOutlet var imageView: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Initialization code
     }
     
-     func configure (withFeedItem item: FeedItem) {
-//        if let imageURL = item.imageURL {
-//            do {
-//             try imageView.image = UIImage(data: Data(contentsOf: imageURL))
-//            }
-//            
-//            catch {
-//                assertionFailure("Could not load image from URL")
-//            }
-//        }
-//        
-//        for labelText in item.descriptors {
-//            let label = UILabel()
-//            label.text = labelText
-//            stackView.addArrangedSubview(label)
-//        }
+    override func configure(withFeedItem item: FeedItem) {
+        if let imageURL = item.imageURL {
+            do {
+                try imageView.image = UIImage(data: Data(contentsOf: imageURL))
+            }
+                
+            catch {
+                assertionFailure("Could not load image from URL")
+            }
+        }
     }
+    
 }

@@ -6,17 +6,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DefaultHorizontalFeedCell" customModule="Brainfood" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DefaultHorizontalFeedCell" customModule="Brainfood" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="219" height="181"/>
+            <rect key="frame" x="0.0" y="0.0" width="224" height="168"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="219" height="181"/>
+                <rect key="frame" x="0.0" y="0.0" width="224" height="168"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6gD-FB-feM"/>
+                </subviews>
             </view>
-            <size key="customSize" width="219" height="181"/>
-            <point key="canvasLocation" x="118.5" y="119.5"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6gD-FB-feM" secondAttribute="trailing" id="AA4-rb-doT"/>
+                <constraint firstItem="6gD-FB-feM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Tf2-CP-12J"/>
+                <constraint firstItem="6gD-FB-feM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="WNd-oU-eYU"/>
+                <constraint firstAttribute="bottom" secondItem="6gD-FB-feM" secondAttribute="bottom" id="dDL-BG-dBe"/>
+            </constraints>
+            <size key="customSize" width="224" height="168"/>
+            <connections>
+                <outlet property="imageView" destination="6gD-FB-feM" id="3K0-Ap-LA7"/>
+            </connections>
+            <point key="canvasLocation" x="155" y="119"/>
         </collectionViewCell>
     </objects>
 </document>

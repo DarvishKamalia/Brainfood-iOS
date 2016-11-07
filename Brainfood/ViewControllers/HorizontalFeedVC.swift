@@ -10,7 +10,7 @@ import UIKit
 
 fileprivate struct Constants {
     static let DefaultHorizontalFeedCellNibName = "DefaultHorizontalFeedCell"
-    static let cellReuseIdentifier = "FeedCell"
+    static let cellReuseIdentifier = "feedCell"
 }
 
 class HorizontalFeedVC : UICollectionViewController {
