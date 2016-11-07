@@ -13,13 +13,19 @@ class DefaultHorizontalFeedCell: FeedCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
     
     override func configure(withFeedItem item: FeedItem) {
         if let imageURL = item.imageURL {
             imageView.sd_setImage(with: imageURL, placeholderImage: Utilities.defaultPlaceholderImage)
+
         }
+        
+    }
+    
+    override func prepareForReuse() {
+        imageView.image = nil
     }
     
 }

@@ -11,12 +11,10 @@
 		7C2743541DCD1B250093B994 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2743531DCD1B250093B994 /* FeedCell.swift */; };
 		7C2743551DCD1B250093B994 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2743531DCD1B250093B994 /* FeedCell.swift */; };
 		7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA761DC881D900085C0F /* AppDelegate.swift */; };
-		7C82AA791DC881D900085C0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA781DC881D900085C0F /* ViewController.swift */; };
 		7C82AA7C1DC881D900085C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C82AA7A1DC881D900085C0F /* Main.storyboard */; };
 		7C82AA7E1DC881D900085C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C82AA7D1DC881D900085C0F /* Assets.xcassets */; };
 		7C82AA811DC881D900085C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C82AA7F1DC881D900085C0F /* LaunchScreen.storyboard */; };
 		7C82AA8C1DC881D900085C0F /* BrainfoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA8B1DC881D900085C0F /* BrainfoodTests.swift */; };
-		7C82AA971DC881FC00085C0F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA961DC881FC00085C0F /* Networking.swift */; };
 		7C82AA991DC8828300085C0F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA981DC8828300085C0F /* Product.swift */; };
 		7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */; };
 		7C82AAA01DD018B200085C0F /* DefaultHorizontalFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA9E1DD018B200085C0F /* DefaultHorizontalFeedCell.swift */; };
@@ -25,6 +23,12 @@
 		7C82AAA31DD018B200085C0F /* DefaultHorizontalFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C82AA9F1DD018B200085C0F /* DefaultHorizontalFeedCell.xib */; };
 		7CA372F71DD1362C00B94C37 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA372F61DD1362C00B94C37 /* Utilities.swift */; };
 		7CA372F81DD1362C00B94C37 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA372F61DD1362C00B94C37 /* Utilities.swift */; };
+		7CA372FA1DD13C3400B94C37 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA372F91DD13C3400B94C37 /* HomeViewController.swift */; };
+		7CA372FB1DD13C3400B94C37 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA372F91DD13C3400B94C37 /* HomeViewController.swift */; };
+		7CA372FD1DD13C4300B94C37 /* RecommendationsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA372FC1DD13C4300B94C37 /* RecommendationsDataSource.swift */; };
+		7CA372FE1DD13C4300B94C37 /* RecommendationsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA372FC1DD13C4300B94C37 /* RecommendationsDataSource.swift */; };
+		7CA373001DD13C6300B94C37 /* TestRecommendationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA372FF1DD13C6300B94C37 /* TestRecommendationDataSource.swift */; };
+		7CA373011DD13C6300B94C37 /* TestRecommendationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA372FF1DD13C6300B94C37 /* TestRecommendationDataSource.swift */; };
 		7CDBA1941DCA73D000AE0560 /* HorizontalFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBA1931DCA73D000AE0560 /* HorizontalFeedVC.swift */; };
 		7CDBA1971DCA746300AE0560 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBA1961DCA746300AE0560 /* FeedItem.swift */; };
 		7CDBA1981DCA746300AE0560 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBA1961DCA746300AE0560 /* FeedItem.swift */; };
@@ -48,7 +52,6 @@
 		7C2743531DCD1B250093B994 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = Protocols/FeedCell.swift; sourceTree = "<group>"; };
 		7C82AA731DC881D900085C0F /* Brainfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C82AA761DC881D900085C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C82AA781DC881D900085C0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C82AA7B1DC881D900085C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C82AA7D1DC881D900085C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C82AA801DC881D900085C0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,13 +59,15 @@
 		7C82AA871DC881D900085C0F /* BrainfoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrainfoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C82AA8B1DC881D900085C0F /* BrainfoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainfoodTests.swift; sourceTree = "<group>"; };
 		7C82AA8D1DC881D900085C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C82AA961DC881FC00085C0F /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		7C82AA981DC8828300085C0F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Classes/Product.swift; sourceTree = "<group>"; };
 		7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecommendationTypes.swift; path = Enums/RecommendationTypes.swift; sourceTree = "<group>"; };
 		7C82AA9E1DD018B200085C0F /* DefaultHorizontalFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultHorizontalFeedCell.swift; path = Cells/DefaultHorizontalFeedCell.swift; sourceTree = "<group>"; };
 		7C82AA9F1DD018B200085C0F /* DefaultHorizontalFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefaultHorizontalFeedCell.xib; path = Cells/DefaultHorizontalFeedCell.xib; sourceTree = "<group>"; };
 		7CA372F51DD1358C00B94C37 /* Brainfood-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Brainfood-Bridging.h"; sourceTree = "<group>"; };
 		7CA372F61DD1362C00B94C37 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7CA372F91DD13C3400B94C37 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ViewControllers/HomeViewController.swift; sourceTree = "<group>"; };
+		7CA372FC1DD13C4300B94C37 /* RecommendationsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecommendationsDataSource.swift; path = Classes/RecommendationsDataSource.swift; sourceTree = "<group>"; };
+		7CA372FF1DD13C6300B94C37 /* TestRecommendationDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestRecommendationDataSource.swift; path = Classes/TestRecommendationDataSource.swift; sourceTree = "<group>"; };
 		7CDBA1931DCA73D000AE0560 /* HorizontalFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalFeedVC.swift; path = ViewControllers/HorizontalFeedVC.swift; sourceTree = "<group>"; };
 		7CDBA1961DCA746300AE0560 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = Protocols/FeedItem.swift; sourceTree = "<group>"; };
 		A7DAB2F9625CF0C5FCCB9E72 /* Pods_BrainfoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainfoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,12 +144,10 @@
 				7CDBA18D1DCA731300AE0560 /* ViewControllers */,
 				7C82AA9B1DC8835000085C0F /* Enums */,
 				7C82AA761DC881D900085C0F /* AppDelegate.swift */,
-				7C82AA781DC881D900085C0F /* ViewController.swift */,
 				7C82AA7A1DC881D900085C0F /* Main.storyboard */,
 				7C82AA7D1DC881D900085C0F /* Assets.xcassets */,
 				7C82AA7F1DC881D900085C0F /* LaunchScreen.storyboard */,
 				7C82AA821DC881D900085C0F /* Info.plist */,
-				7C82AA961DC881FC00085C0F /* Networking.swift */,
 				7C82AA9A1DC8829900085C0F /* Classes */,
 				7C2743521DCD152E0093B994 /* Cells */,
 			);
@@ -163,7 +166,9 @@
 		7C82AA9A1DC8829900085C0F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7CA372FC1DD13C4300B94C37 /* RecommendationsDataSource.swift */,
 				7C82AA981DC8828300085C0F /* Product.swift */,
+				7CA372FF1DD13C6300B94C37 /* TestRecommendationDataSource.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 		7CDBA18D1DCA731300AE0560 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7CA372F91DD13C3400B94C37 /* HomeViewController.swift */,
 				7CDBA1931DCA73D000AE0560 /* HorizontalFeedVC.swift */,
 			);
 			name = ViewControllers;
@@ -408,16 +414,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C82AA971DC881FC00085C0F /* Networking.swift in Sources */,
-				7C82AA791DC881D900085C0F /* ViewController.swift in Sources */,
 				7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */,
 				7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */,
 				7CDBA1941DCA73D000AE0560 /* HorizontalFeedVC.swift in Sources */,
 				7CDBA1971DCA746300AE0560 /* FeedItem.swift in Sources */,
 				7C82AA991DC8828300085C0F /* Product.swift in Sources */,
+				7CA372FA1DD13C3400B94C37 /* HomeViewController.swift in Sources */,
+				7CA373001DD13C6300B94C37 /* TestRecommendationDataSource.swift in Sources */,
 				7C82AAA01DD018B200085C0F /* DefaultHorizontalFeedCell.swift in Sources */,
 				7CA372F71DD1362C00B94C37 /* Utilities.swift in Sources */,
 				7C2743541DCD1B250093B994 /* FeedCell.swift in Sources */,
+				7CA372FD1DD13C4300B94C37 /* RecommendationsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,10 +433,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CDBA1981DCA746300AE0560 /* FeedItem.swift in Sources */,
+				7CA373011DD13C6300B94C37 /* TestRecommendationDataSource.swift in Sources */,
 				7C82AAA11DD018B200085C0F /* DefaultHorizontalFeedCell.swift in Sources */,
 				7C82AA8C1DC881D900085C0F /* BrainfoodTests.swift in Sources */,
 				7CA372F81DD1362C00B94C37 /* Utilities.swift in Sources */,
 				7C2743551DCD1B250093B994 /* FeedCell.swift in Sources */,
+				7CA372FB1DD13C3400B94C37 /* HomeViewController.swift in Sources */,
+				7CA372FE1DD13C4300B94C37 /* RecommendationsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

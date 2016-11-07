@@ -16,13 +16,13 @@ fileprivate struct Constants {
 class HorizontalFeedVC : UICollectionViewController {
     
     let items : [FeedItem]
+    var layout : UICollectionViewFlowLayout
     
     init (items : [FeedItem]) {
-        let layout = UICollectionViewFlowLayout()
+        layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         self.items = items
         super.init(collectionViewLayout: layout)
-        
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -34,6 +34,9 @@ class HorizontalFeedVC : UICollectionViewController {
         super.viewDidLoad()
         let cellNib = UINib(nibName: Constants.DefaultHorizontalFeedCellNibName, bundle: nil)
         collectionView?.register(cellNib, forCellWithReuseIdentifier: Constants.cellReuseIdentifier)
+        layout.itemSize = CGSize(width: 100, height: view.bounds.height)
+        collectionView?.backgroundColor = UIColor.clear
+
     }
     // MARK: - UICollectionViewController Methods
     
@@ -42,8 +45,8 @@ class HorizontalFeedVC : UICollectionViewController {
             fatalError("Could not load cell for collectionView")
         }
         
-        cell.configure(withFeedItem: items[indexPath.row])
-        return cell 
+       cell.configure(withFeedItem: items[indexPath.row])
+       return cell 
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
