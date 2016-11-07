@@ -18,14 +18,9 @@ class DefaultHorizontalFeedCell: FeedCell {
     
     override func configure(withFeedItem item: FeedItem) {
         if let imageURL = item.imageURL {
-            do {
-                try imageView.image = UIImage(data: Data(contentsOf: imageURL))
-            }
-                
-            catch {
-                assertionFailure("Could not load image from URL")
-            }
+
         }
+        
     }
     
 }
