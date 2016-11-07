@@ -11,7 +11,6 @@ import Foundation
 #if DEBUG
     class TestRecommendationDataSource {
         static func fetchRecommendations (type: RecommendationTypes, completionHandler: @escaping (([FeedItem]) -> Void)) {
-            
             switch type {
                 case .PurchaseHistory:
                     let item = Product(name: "Test Product", imageURL: "http://www.americanyp.com/users_content/users_images/logos/groceries.jpg")
@@ -19,8 +18,6 @@ import Foundation
                     
                 case .Recipes, .ShoppingList : break
             }
-            
-            
         }
     }
     

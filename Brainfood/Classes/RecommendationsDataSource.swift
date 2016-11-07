@@ -44,9 +44,7 @@ class RecommendationsDataSource {
                 catch {
                     assertionFailure("Error Parsing JSON")
                 }
-                
             }
-            
         }
         
         task.resume()
