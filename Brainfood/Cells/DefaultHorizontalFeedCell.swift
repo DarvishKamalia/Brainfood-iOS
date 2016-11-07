@@ -18,9 +18,8 @@ class DefaultHorizontalFeedCell: FeedCell {
     
     override func configure(withFeedItem item: FeedItem) {
         if let imageURL = item.imageURL {
-
+            imageView.sd_setImage(with: imageURL, placeholderImage: Utilities.defaultPlaceholderImage)
         }
-        
     }
     
 }
