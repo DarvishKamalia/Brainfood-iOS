@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
             
             self.addChildViewController(vc)
             vc.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100)
-            self.view.addSubview(vc.view)
+            self.scrollView.addSubview(vc.view)
             vc.didMove(toParentViewController: self)
         }
     }
