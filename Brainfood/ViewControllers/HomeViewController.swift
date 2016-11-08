@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.backgroundColor = UIColor.blue
+        
         TestRecommendationDataSource.fetchRecommendations(type: .PurchaseHistory) {
             products in
             

@@ -10,5 +10,6 @@ import Foundation
 
 protocol FeedItem {
     var imageURL : URL? { get }
-    var descriptors : [String] { get }
+    var titleString : String { get }
+    var subtitleString : String { get }
 }

@@ -41,7 +41,11 @@ class Product : FeedItem {
     
     // MARK: - FeedItem variables
     
-    var descriptors : [String] {
-        return [self.name]
+    var titleString: String {
+        return name
+    }
+    
+    var subtitleString : String {
+        return "$" + String (arc4random() % 10)
     }
 }

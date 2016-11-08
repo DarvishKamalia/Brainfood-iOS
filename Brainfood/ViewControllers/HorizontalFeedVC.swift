@@ -11,7 +11,7 @@ import UIKit
 fileprivate struct Constants {
     static let DefaultHorizontalFeedCellNibName = "DefaultHorizontalFeedCell"
     static let cellReuseIdentifier = "feedCell"
-    static let cellWidth: CGFloat = 30
+    static let cellWidth: CGFloat = 180
 }
 
 class HorizontalFeedVC : UICollectionViewController {
@@ -34,10 +34,16 @@ class HorizontalFeedVC : UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let cellNib = UINib(nibName: Constants.DefaultHorizontalFeedCellNibName, bundle: nil)
-        collectionView?.register(cellNib, forCellWithReuseIdentifier: Constants.cellReuseIdentifier)
-        layout.itemSize = CGSize(width: Constants.cellWidth, height: view.bounds.height)
-        collectionView?.backgroundColor = UIColor.clear
 
+        if let cView = collectionView {
+            cView.register(cellNib, forCellWithReuseIdentifier: Constants.cellReuseIdentifier)
+            cView.backgroundColor = UIColor.clear
+        }
+
+    }
+    
+    override func viewDidLayoutSubviews() {
+        layout.itemSize = CGSize(width: Constants.cellWidth, height: view.bounds.height)
     }
     // MARK: - UICollectionViewController Methods
     
