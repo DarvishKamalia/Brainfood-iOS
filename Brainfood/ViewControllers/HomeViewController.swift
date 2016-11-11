@@ -20,10 +20,10 @@ class HomeViewController: UIViewController {
         TestRecommendationDataSource.fetchRecommendations(type: .PurchaseHistory) {
             products in
             
-            let vc = HorizontalFeedVC(items: products)
+            let vc = HorizontalFeedVC(items: products, title: "PurchaseHistory")
             
             self.addChildViewController(vc)
-            vc.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100)
+            vc.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 120)
             self.scrollView.addSubview(vc.view)
             vc.didMove(toParentViewController: self)
         }
