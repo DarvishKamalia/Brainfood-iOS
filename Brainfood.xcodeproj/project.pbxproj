@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F0955B5484DD40097E2E7D9 /* Pods_Brainfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261D60CFDA9062FF6D21F96A /* Pods_Brainfood.framework */; };
+		7C1331F11DD8099E004F38C9 /* HomeFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1331F01DD8099E004F38C9 /* HomeFlowCoordinator.swift */; };
 		7C2743541DCD1B250093B994 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2743531DCD1B250093B994 /* FeedCell.swift */; };
 		7C2743551DCD1B250093B994 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2743531DCD1B250093B994 /* FeedCell.swift */; };
 		7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA761DC881D900085C0F /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		261D60CFDA9062FF6D21F96A /* Pods_Brainfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brainfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC740BC7223BB1AABEB7109 /* Pods-BrainfoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainfoodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainfoodTests/Pods-BrainfoodTests.release.xcconfig"; sourceTree = "<group>"; };
 		47F0CA486F32EB1773AF9586 /* Pods-BrainfoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainfoodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainfoodTests/Pods-BrainfoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C1331F01DD8099E004F38C9 /* HomeFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeFlowCoordinator.swift; path = ViewControllers/HomeFlowCoordinator.swift; sourceTree = "<group>"; };
 		7C2743531DCD1B250093B994 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = Protocols/FeedCell.swift; sourceTree = "<group>"; };
 		7C82AA731DC881D900085C0F /* Brainfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C82AA761DC881D900085C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			children = (
 				7CA372F91DD13C3400B94C37 /* HomeViewController.swift */,
 				7CDBA1931DCA73D000AE0560 /* HorizontalFeedVC.swift */,
+				7C1331F01DD8099E004F38C9 /* HomeFlowCoordinator.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				7CDBA1941DCA73D000AE0560 /* HorizontalFeedVC.swift in Sources */,
 				7CDBA1971DCA746300AE0560 /* FeedItem.swift in Sources */,
 				7C82AA991DC8828300085C0F /* Product.swift in Sources */,
+				7C1331F11DD8099E004F38C9 /* HomeFlowCoordinator.swift in Sources */,
 				7CA372FA1DD13C3400B94C37 /* HomeViewController.swift in Sources */,
 				7CA373001DD13C6300B94C37 /* TestRecommendationDataSource.swift in Sources */,
 				7C82AAA01DD018B200085C0F /* DefaultHorizontalFeedCell.swift in Sources */,
