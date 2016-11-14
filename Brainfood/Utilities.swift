@@ -6,7 +6,7 @@
 //  Copyright © 2016 Darvish Kamalia. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 struct Utilities {

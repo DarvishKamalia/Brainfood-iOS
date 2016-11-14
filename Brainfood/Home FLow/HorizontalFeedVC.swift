@@ -99,4 +99,6 @@ class HorizontalFeedVC : UIViewController, UICollectionViewDelegate, UICollectio
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         collectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
+    
+    
 }
