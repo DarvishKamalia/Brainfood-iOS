@@ -9,13 +9,14 @@
 import UIKit
 
 class ShoppingListVC: UITableViewController {
-
+    var dataSource: ShoppingListDataSource?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.dataSource = ShoppingListDataSource()
+        dataSource = ShoppingListDataSource()
+        tableView.dataSource = dataSource
         
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
