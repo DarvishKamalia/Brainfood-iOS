@@ -13,20 +13,20 @@
         <scene sceneID="u3c-7d-lhw">
             <objects>
                 <tableViewController id="4at-iz-Se5" customClass="ShoppingListVC" customModule="Brainfood" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="BKV-U9-9T9">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="BKV-U9-9T9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="shoppingListCell" textLabel="EgR-rr-tCY" style="IBUITableViewCellStyleDefault" id="mRe-JZ-EKx">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="shoppingListCell" textLabel="EgR-rr-tCY" style="IBUITableViewCellStyleDefault" id="mRe-JZ-EKx">
+                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mRe-JZ-EKx" id="Mmn-VC-dU7">
-                                    <rect key="frame" x="0.0" y="0.0" width="336" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EgR-rr-tCY">
-                                            <rect key="frame" x="15" y="0.0" width="321" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -41,7 +41,13 @@
                             <outlet property="delegate" destination="4at-iz-Se5" id="qpV-AV-16s"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FDb-TY-VdX"/>
+                    <navigationItem key="navigationItem" id="FDb-TY-VdX">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="Dml-4i-5QB">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="4at-iz-Se5" id="teK-x8-RM9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUK-TF-M5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

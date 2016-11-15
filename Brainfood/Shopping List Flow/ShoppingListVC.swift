@@ -9,7 +9,7 @@
 import UIKit
 
 class ShoppingListVC: UITableViewController {
-    var dataSource: ShoppingListDataSource?
+    var dataSource: ShoppingListDataSource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +24,15 @@ class ShoppingListVC: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func saveButtonPressed(_ sender: Any) {
+        dataSource.saveItems()
+        dismiss(animated: true, completion: nil)
+    }
 
     //UITableView Delegate Methods 
     
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        dataSource.purchaseItem(atIndex: indexPath.row)
+    }
 }

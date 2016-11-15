@@ -14,14 +14,20 @@ fileprivate struct Constants {
 
 class ShoppingListDataSource : NSObject,  UITableViewDataSource  {
     private (set) var items : [String] = []
+    private var purchasedItems : [String] = []
     
-    func addItem (item: String) {
-        items.append(item)
+    override init() {
+        super.init()
+        
+        #if DEBUG
+            items = ["Eggs", "Milk", "Bread", "Tomatoes", "Pasta", "Chicken"]
+            return
+        #endif
+        
+        
     }
     
-    func removeItem (atIndex index: Int) {
-        items.remove(at: index)
-    }
+    // MARK: - UITableViewDataSource Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -38,6 +44,24 @@ class ShoppingListDataSource : NSObject,  UITableViewDataSource  {
         
         cell.textLabel?.text = items[indexPath.row]
         return cell
+    }
+    
+    // MARK: - Managing Item State
+    
+    func addItem (item: String) {
+        items.append(item)
+    }
+    
+    func removeItem (atIndex index: Int) {
+        items.remove(at: index)
+    }
+    
+    func purchaseItem(atIndex index: Int) {
+        purchasedItems.append(items[index])
+    }
+    
+    func saveItems() {
+        // Send URL Request with all purchased items to update user's purchasing history
     }
     
     
