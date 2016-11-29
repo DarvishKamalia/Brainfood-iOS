@@ -8,9 +8,19 @@
 
 import Foundation
 
-enum RecommendationTypes {
+fileprivate let APIBaseURL = "https://pbiprrk71j.execute-api.us-west-2.amazonaws.com/prod/"
+
+enum RecommendationType {
     case ShoppingList
     case Recipes
     case PurchaseHistory
+    
+    var fetchURLString : String  {
+        switch (self) {
+        case .PurchaseHistory: return "google.com"
+        case .Recipes: return APIBaseURL + "getRecommendedRecipes?customerID=1234"
+        case .ShoppingList: return ""
+        }
+    }
 }
 

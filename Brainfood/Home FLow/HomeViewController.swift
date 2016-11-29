@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
             self.scrollView.addSubview(vc.view)
             vc.didMove(toParentViewController: self)
         }
+        
     }
 
     override func didReceiveMemoryWarning() {

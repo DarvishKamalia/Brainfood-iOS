@@ -13,6 +13,8 @@
 		7C27A8241DD939A800FB72E0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C27A8231DD939A800FB72E0 /* Utilities.swift */; };
 		7C27A8261DD93B5B00FB72E0 /* ShoppingListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C27A8251DD93B5B00FB72E0 /* ShoppingListDataSource.swift */; };
 		7C27A8271DD93BBA00FB72E0 /* ShoppingListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C27A8251DD93B5B00FB72E0 /* ShoppingListDataSource.swift */; };
+		7C4A075F1DEE12B00094E44F /* RecommendationTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */; };
+		7C4A07611DEE15040094E44F /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A07601DEE15040094E44F /* Recipe.swift */; };
 		7C6ADD631DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD5F1DD93520008F4836 /* DefaultHorizontalFeedCell.swift */; };
 		7C6ADD641DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD5F1DD93520008F4836 /* DefaultHorizontalFeedCell.swift */; };
 		7C6ADD651DD93520008F4836 /* DefaultHorizontalFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */; };
@@ -61,6 +63,7 @@
 		7C27A8221DD939A800FB72E0 /* Brainfood-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Brainfood-Bridging.h"; sourceTree = "<group>"; };
 		7C27A8231DD939A800FB72E0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7C27A8251DD93B5B00FB72E0 /* ShoppingListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListDataSource.swift; path = "Shopping List Flow/ShoppingListDataSource.swift"; sourceTree = "<group>"; };
+		7C4A07601DEE15040094E44F /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Data/Recipe.swift; sourceTree = "<group>"; };
 		7C6ADD5F1DD93520008F4836 /* DefaultHorizontalFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultHorizontalFeedCell.swift; path = "Home FLow/DefaultHorizontalFeedCell.swift"; sourceTree = "<group>"; };
 		7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefaultHorizontalFeedCell.xib; path = "Home FLow/DefaultHorizontalFeedCell.xib"; sourceTree = "<group>"; };
 		7C6ADD611DD93520008F4836 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "Home FLow/HomeViewController.swift"; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 				7C6ADD771DD938E0008F4836 /* Product.swift */,
 				7C6ADD781DD938E0008F4836 /* RecommendationsDataSource.swift */,
 				7C6ADD791DD938E0008F4836 /* TestRecommendationDataSource.swift */,
+				7C4A07601DEE15040094E44F /* Recipe.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -456,6 +460,7 @@
 				7C6ADD711DD93892008F4836 /* ShoppingListVC.swift in Sources */,
 				7C27A8241DD939A800FB72E0 /* Utilities.swift in Sources */,
 				7C6ADD7C1DD938E0008F4836 /* RecommendationsDataSource.swift in Sources */,
+				7C4A07611DEE15040094E44F /* Recipe.swift in Sources */,
 				7C6ADD691DD93520008F4836 /* HorizontalFeedVC.swift in Sources */,
 				7C6ADD7A1DD938E0008F4836 /* Product.swift in Sources */,
 				7C6ADD7E1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */,
@@ -477,6 +482,7 @@
 				7C2743551DCD1B250093B994 /* FeedCell.swift in Sources */,
 				7C6ADD681DD93520008F4836 /* HomeViewController.swift in Sources */,
 				7C6ADD7D1DD938E0008F4836 /* RecommendationsDataSource.swift in Sources */,
+				7C4A075F1DEE12B00094E44F /* RecommendationTypes.swift in Sources */,
 				7C27A8271DD93BBA00FB72E0 /* ShoppingListDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

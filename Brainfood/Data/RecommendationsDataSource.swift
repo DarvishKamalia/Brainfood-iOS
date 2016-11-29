@@ -14,15 +14,8 @@ fileprivate struct Constants {
 
 class RecommendationsDataSource {
 
-    static func fetchRecommendations (type: RecommendationTypes, completionHandler: @escaping (([FeedItem]) -> Void)) {
-        var fetchURL: URL?
-        
-        switch type {
-            case .PurchaseHistory: fetchURL = URL(string: Constants.productFetchURL)
-            default : break
-        }
-        
-        guard let url = fetchURL else {
+    static func fetchRecommendations (type: RecommendationType, completionHandler: @escaping (([FeedItem]) -> Void)) {
+        guard let url = URL(string: type.fetchURLString) else {
             assertionFailure("Could not create valid URL to fetch recommendations")
             return
         }
@@ -32,12 +25,17 @@ class RecommendationsDataSource {
                 do {
                     let objects = try JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
                     
-                    if let productsJSON = (objects as? [[String : AnyObject]]) {
-                        let products = productsJSON.map(){ (productJSON) in
-                            return Product(fromJSON: productJSON)
+                    if let itemsJSON = (objects as? [[String : AnyObject]]) {
+                        let items = itemsJSON.map() { (json) in
+                            /*switch (type) {
+                                case .PurchaseHistory, .ShoppingList: return Product(fromJSON: json)
+                                case .Recipe: return Recipe(fromJSON: json)
+                                case .ShoppingList: return nil
+                            }*/
+                            return type == .Recipes ? Recipe(fromJSON: json) : Product(fromJSON: json)
                         }.flatMap {$0}
                         
-                        completionHandler(products)
+                        completionHandler(items)
                     }
                 }
                 

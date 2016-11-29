@@ -18,12 +18,10 @@ class ShoppingListDataSource : NSObject,  UITableViewDataSource  {
     
     override init() {
         super.init()
-        
         #if DEBUG
             items = ["Eggs", "Milk", "Bread", "Tomatoes", "Pasta", "Chicken"]
             return
         #endif
-        
         
     }
     
@@ -61,7 +59,7 @@ class ShoppingListDataSource : NSObject,  UITableViewDataSource  {
     }
     
     func saveItems() {
-        // Send URL Request with all purchased items to update user's purchasing history
+        
     }
     
     
