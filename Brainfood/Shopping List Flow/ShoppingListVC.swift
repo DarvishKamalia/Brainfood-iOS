@@ -74,6 +74,7 @@ class ShoppingListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Basic", for: indexPath)
         cell.textLabel?.text = items[indexPath.row]
+        cell.accessoryType = .none
         return cell
     }
     
