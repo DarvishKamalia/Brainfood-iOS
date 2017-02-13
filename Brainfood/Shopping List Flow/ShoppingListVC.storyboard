@@ -43,11 +43,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Items" id="Dus-gK-Osw">
                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="LTj-iH-BPX">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="dismiss" destination="18z-g4-PIs" id="s3X-cH-Zh7"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dhe-IX-xzc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="add" destination="18z-g4-PIs" id="flk-BL-04Q"/>
                             </connections>

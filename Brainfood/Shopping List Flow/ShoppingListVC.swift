@@ -25,6 +25,8 @@ class ShoppingListViewController: UITableViewController {
         if let cachedItems = UserDefaults.standard.array(forKey: Constants.shoppingListUserDefaultsKey) as? [ListItem] {
             items = cachedItems
         }
+        
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
     }
     
     // MARK: - Actions
@@ -32,7 +34,6 @@ class ShoppingListViewController: UITableViewController {
     @IBAction func dismiss() {
         UserDefaults.standard.set(self.items, forKey: Constants.shoppingListUserDefaultsKey)
         dismiss(animated: true)
-        
     }
     
     @IBAction func add() {
