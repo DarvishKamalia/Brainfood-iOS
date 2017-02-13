@@ -8,6 +8,10 @@
 
 import UIKit
 
+fileprivate struct Constants {
+    static let shoppingListUserDefaultsKey = "ShoppingList"
+}
+
 class ShoppingListViewController: UITableViewController {
     
     let client = APIClient()
@@ -15,8 +19,20 @@ class ShoppingListViewController: UITableViewController {
     
     @IBOutlet weak var refreshButton: UIBarButtonItem?
     
+    // MARK: - ViewController lifecycle 
+    
+    override func viewDidLoad() {
+        if let cachedItems = UserDefaults.standard.array(forKey: Constants.shoppingListUserDefaultsKey) as? [ListItem] {
+            items = cachedItems
+        }
+    }
+    
+    // MARK: - Actions
+    
     @IBAction func dismiss() {
-        dismiss(animated: true, completion: nil)
+        UserDefaults.standard.set(self.items, forKey: Constants.shoppingListUserDefaultsKey)
+        dismiss(animated: true)
+        
     }
     
     @IBAction func add() {
@@ -25,11 +41,16 @@ class ShoppingListViewController: UITableViewController {
             if let textField = alertController.textFields?.first {
                 let vendorId = UIDevice.current.identifierForVendor?.uuidString ?? "placeholder"
                 let itemDescription = textField.text ?? ""
-                let foodItem = ListItem(vendorID: vendorId, itemDescription: itemDescription)
-                let _ = self?.client.addFoodItem(item: foodItem).then {
-                    alertController.dismiss(animated: true, completion: nil)
-                    }.always {
-                        self?.refresh()
+                let newItem = ListItem(vendorID: vendorId, itemDescription: itemDescription)
+                let _ = self?.client.addFoodItem(item: newItem)
+                    .then {
+                        alertController.dismiss(animated: true, completion: nil)
+                    }
+                    .then {
+                        self?.items.append(newItem)
+                    }
+                    .always {
+                        self?.tableView.reloadData()
                 }
             }
         }
@@ -43,7 +64,7 @@ class ShoppingListViewController: UITableViewController {
     }
     
     
-    // MARK: - Table view data source
+    // MARK: - Data Source Methods
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -58,9 +79,15 @@ class ShoppingListViewController: UITableViewController {
         let item = items[indexPath.row]
         
         cell.textLabel?.text = item.itemDescription
-        cell.detailTextLabel?.text = item.vendorID
         
         return cell
     }
     
+    // MARK: - Delegate Methods 
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        items.remove(at: indexPath.row)
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        tableView.deleteRows(at: [indexPath], with: .right)
+    }
 }
