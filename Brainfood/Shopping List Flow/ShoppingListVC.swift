@@ -46,10 +46,8 @@ class ShoppingListViewController: UITableViewController {
                     .then {
                         alertController.dismiss(animated: true, completion: nil)
                     }
-                    .then {
-                        self?.items.append(newItem)
-                    }
                     .always {
+                        self?.items.append(newItem)
                         self?.tableView.reloadData()
                 }
             }
@@ -88,6 +86,6 @@ class ShoppingListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         items.remove(at: indexPath.row)
         tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-        tableView.deleteRows(at: [indexPath], with: .right)
+        tableView.deleteRows(at: [indexPath], with: .top)
     }
 }
