@@ -23,20 +23,20 @@ class RecommendationsDataSource {
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let jsonData = data {
                 do {
-                    let objects = try JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
-                    
-                    if let itemsJSON = (objects as? [[String : AnyObject]]) {
-                        let items = itemsJSON.map() { (json) in
-                            /*switch (type) {
-                                case .PurchaseHistory, .ShoppingList: return Product(fromJSON: json)
-                                case .Recipe: return Recipe(fromJSON: json)
-                                case .ShoppingList: return nil
-                            }*/
-                            return type == .Recipes ? Recipe(fromJSON: json) : Product(fromJSON: json)
-                        }.flatMap {$0}
-                        
-                        completionHandler(items)
-                    }
+//                    let objects = try JSONSerialization.jsonObject(with: jsonData, options: .mutableContainers)
+//                    
+//                    if let itemsJSON = (objects as? [[String : AnyObject]]) {
+//                        let items = itemsJSON.map() { (json) in
+//                            switch (type) {
+//                                case .PurchaseHistory, .ShoppingList: return Product(fromJSON: json)
+//                                case .Recipe: return Recipe(fromJSON: json)
+//                                case .ShoppingList: return nil
+//                            }
+//                            return type == .Recipes ? Recipe(fromJSON: json) : Product(fromJSON: json)
+//                        }.flatMap {$0}
+//                        
+//                        completionHandler(items)
+//                    }
                 }
                 
                 catch {

@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ctT-BX-VxJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0CZ-2H-IDX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Shopping ListVC-->
-        <scene sceneID="u3c-7d-lhw">
+        <!--ShoppingList-->
+        <scene sceneID="bsI-Uc-LZh">
             <objects>
-                <tableViewController id="4at-iz-Se5" customClass="ShoppingListVC" customModule="Brainfood" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="BKV-U9-9T9">
+                <tableViewController id="18z-g4-PIs" userLabel="ShoppingList" customClass="ShoppingListViewController" customModule="Brainfood" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HgK-ZE-y9e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="shoppingListCell" textLabel="EgR-rr-tCY" style="IBUITableViewCellStyleDefault" id="mRe-JZ-EKx">
-                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Basic" textLabel="ADl-DT-5w9" detailTextLabel="1Ml-nf-Rkq" style="IBUITableViewCellStyleValue1" id="kRN-9t-MU7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mRe-JZ-EKx" id="Mmn-VC-dU7">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kRN-9t-MU7" id="012-Q3-xRA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EgR-rr-tCY">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ADl-DT-5w9">
+                                            <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Ml-nf-Rkq">
+                                            <rect key="frame" x="327" y="17" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -37,39 +44,47 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="4at-iz-Se5" id="MdB-WV-yaU"/>
-                            <outlet property="delegate" destination="4at-iz-Se5" id="qpV-AV-16s"/>
+                            <outlet property="dataSource" destination="18z-g4-PIs" id="6fp-Yn-Xuj"/>
+                            <outlet property="delegate" destination="18z-g4-PIs" id="rTA-nB-WZn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FDb-TY-VdX">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="Dml-4i-5QB">
+                    <navigationItem key="navigationItem" title="Items" id="Dus-gK-Osw">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="LTj-iH-BPX">
                             <connections>
-                                <action selector="saveButtonPressed:" destination="4at-iz-Se5" id="teK-x8-RM9"/>
+                                <action selector="refresh" destination="18z-g4-PIs" id="vTS-fw-0O1"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dhe-IX-xzc">
+                            <connections>
+                                <action selector="add" destination="18z-g4-PIs" id="flk-BL-04Q"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="refreshButton" destination="LTj-iH-BPX" id="k6s-PM-UpA"/>
+                    </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rUK-TF-M5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbY-dr-2FK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088.8" y="112.89355322338831"/>
+            <point key="canvasLocation" x="1044" y="251.42428785607197"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="2ac-h5-Yyb">
+        <scene sceneID="MaQ-by-aT4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ctT-BX-VxJ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0CZ-2H-IDX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FCT-yA-GNe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NhR-uP-VK6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="4at-iz-Se5" kind="relationship" relationship="rootViewController" id="3Hz-iI-aox"/>
+                        <segue destination="18z-g4-PIs" kind="relationship" relationship="rootViewController" id="rMa-gS-RSw"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="78X-DY-fTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Phu-er-yVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149.59999999999999" y="112.89355322338831"/>
+            <point key="canvasLocation" x="104.8" y="251.42428785607197"/>
         </scene>
     </scenes>
 </document>

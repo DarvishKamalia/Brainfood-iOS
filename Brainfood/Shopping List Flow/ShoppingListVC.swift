@@ -1,38 +1,66 @@
 //
-//  ShoppingListVC.swift
+//  FoodListTableViewController.swift
 //  Brainfood
 //
-//  Created by Darvish Kamalia on 11/13/16.
-//  Copyright © 2016 Darvish Kamalia. All rights reserved.
+//  Created by Ayush Saraswat on 1/29/17.
+//  Copyright © 2017 SwatTech, LLC. All rights reserved.
 //
 
 import UIKit
 
-class ShoppingListVC: UITableViewController {
-    var dataSource: ShoppingListDataSource!
+class ShoppingListViewController: UITableViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        dataSource = ShoppingListDataSource()
-        tableView.dataSource = dataSource
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    let client = APIClient()
+    var items = [ListItem]()
     
-    @IBAction func saveButtonPressed(_ sender: Any) {
-        dataSource.saveItems()
+    @IBOutlet weak var refreshButton: UIBarButtonItem?
+    
+    @IBAction func dismiss() {
         dismiss(animated: true, completion: nil)
     }
-
-    //UITableView Delegate Methods 
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-        dataSource.purchaseItem(atIndex: indexPath.row)
+    @IBAction func add() {
+        let alertController = UIAlertController(title: "Add New Item", message: "Enter item name", preferredStyle: .alert)
+        let submitAction = UIAlertAction(title: "Submit", style: .default) { [weak self] action in
+            if let textField = alertController.textFields?.first {
+                let vendorId = UIDevice.current.identifierForVendor?.uuidString ?? "placeholder"
+                let itemDescription = textField.text ?? ""
+                let foodItem = ListItem(vendorID: vendorId, itemDescription: itemDescription)
+                let _ = self?.client.addFoodItem(item: foodItem).then {
+                    alertController.dismiss(animated: true, completion: nil)
+                    }.always {
+                        self?.refresh()
+                }
+            }
+        }
+        
+        alertController.addAction(submitAction)
+        alertController.addTextField { textField in
+            textField.placeholder = "pineapple"
+        }
+        
+        present(alertController, animated: true, completion: nil)
     }
+    
+    
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Basic", for: indexPath)
+        let item = items[indexPath.row]
+        
+        cell.textLabel?.text = item.itemDescription
+        cell.detailTextLabel?.text = item.vendorID
+        
+        return cell
+    }
+    
 }

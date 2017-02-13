@@ -6,8 +6,11 @@ target 'Brainfood' do
   use_frameworks!
 
   pod 'SDWebImage', '~>3.8'
-  
-  target 'BrainfoodTests' do
+  pod 'SwiftyJSON'
+  pod 'PromiseKit', '~> 4.0'
+  pod 'Alamofire' 
+
+ target 'BrainfoodTests' do
     inherit! :search_paths
     # Pods for testing
   end
