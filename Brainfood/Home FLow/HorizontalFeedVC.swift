@@ -91,7 +91,7 @@ class HorizontalFeedVC : UIViewController, UICollectionViewDelegate, UICollectio
         
         headerLabel.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         headerLabel.heightAnchor.constraint(equalToConstant: Constants.headerHeight).isActive = true
-        headerLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        headerLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 20).isActive = true
         headerLabel.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         
         collectionView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
@@ -99,6 +99,4 @@ class HorizontalFeedVC : UIViewController, UICollectionViewDelegate, UICollectio
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         collectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
-    
-    
 }

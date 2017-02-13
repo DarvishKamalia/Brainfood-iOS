@@ -17,43 +17,45 @@ struct APIClient {
     
     private let baseUrl = URL(string: "https://pbiprrk71j.execute-api.us-west-2.amazonaws.com/prod/purchase_function")
     
-    func request() -> Promise<[ListItem]> {
+//    func request() -> Promise<[ListItem]> {
+//        guard let baseUrl = baseUrl else {
+//            return Promise(error: InvalidURLError.invalidURL)
+//        }
+//    
+//        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+//        
+//        return Promise { fulfill, reject in
+//            Alamofire.request(baseUrl, method: .get).responseJSON { response in
+//                switch response.result {
+//                case .success(let data):
+//                    let json = JSON(data)
+//                    let items = json.array?.flatMap { ListItem(json: $0) }
+//                    
+//                    if let items = items {
+//                        fulfill(items)
+//                    } else {
+//                        reject(InvalidJSONError.inputDataNil)
+//                    }
+//                case .failure(let error):
+//                    reject(error)
+//                }
+//            }
+//        }.always {
+//            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+//        }
+//    }
+    
+    func addFoodItem(item: String) -> Promise<Void> {
         guard let baseUrl = baseUrl else {
             return Promise(error: InvalidURLError.invalidURL)
         }
-    
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        
-        return Promise { fulfill, reject in
-            Alamofire.request(baseUrl, method: .get).responseJSON { response in
-                switch response.result {
-                case .success(let data):
-                    let json = JSON(data)
-                    let items = json.array?.flatMap { ListItem(json: $0) }
-                    
-                    if let items = items {
-                        fulfill(items)
-                    } else {
-                        reject(InvalidJSONError.inputDataNil)
-                    }
-                case .failure(let error):
-                    reject(error)
-                }
-            }
-        }.always {
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        }
-    }
-    
-    func addFoodItem(item: ListItem) -> Promise<Void> {
-        guard let baseUrl = baseUrl else {
-            return Promise(error: InvalidURLError.invalidURL)
-        }
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
+        let parameters = ["Item" : item, "User" : ]
 
         return Promise { fulfill, reject in
-            Alamofire.request(baseUrl, method: .post, parameters: item.serialize()).response { response in
+            Alamofire.request(baseUrl, method: .post, parameters: ["Item" : item]).response { response in
                 if let error = response.error {
                     reject(error)
                 } else {

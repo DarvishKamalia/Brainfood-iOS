@@ -15,14 +15,14 @@ fileprivate struct Constants {
 class ShoppingListViewController: UITableViewController {
     
     let client = APIClient()
-    var items = [ListItem]()
+    var items = [String]()
     
     @IBOutlet weak var refreshButton: UIBarButtonItem?
     
     // MARK: - ViewController lifecycle 
     
     override func viewDidLoad() {
-        if let cachedItems = UserDefaults.standard.array(forKey: Constants.shoppingListUserDefaultsKey) as? [ListItem] {
+        if let cachedItems = UserDefaults.standard.array(forKey: Constants.shoppingListUserDefaultsKey) as? [String] {
             items = cachedItems
         }
         
@@ -40,15 +40,13 @@ class ShoppingListViewController: UITableViewController {
         let alertController = UIAlertController(title: "Add New Item", message: "Enter item name", preferredStyle: .alert)
         let submitAction = UIAlertAction(title: "Submit", style: .default) { [weak self] action in
             if let textField = alertController.textFields?.first {
-                let vendorId = UIDevice.current.identifierForVendor?.uuidString ?? "placeholder"
                 let itemDescription = textField.text ?? ""
-                let newItem = ListItem(vendorID: vendorId, itemDescription: itemDescription)
-                let _ = self?.client.addFoodItem(item: newItem)
+                let _ = self?.client.addFoodItem(item: itemDescription)
                     .then {
                         alertController.dismiss(animated: true, completion: nil)
                     }
                     .always {
-                        self?.items.append(newItem)
+                        self?.items.append(itemDescription)
                         self?.tableView.reloadData()
                 }
             }

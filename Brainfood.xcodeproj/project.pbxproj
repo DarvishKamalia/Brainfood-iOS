@@ -43,7 +43,6 @@
 		8EBDB71F433CD5413ECAA0BD /* Pods_BrainfoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7DAB2F9625CF0C5FCCB9E72 /* Pods_BrainfoodTests.framework */; };
 		A86E99731E512E09006D21DB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E99701E512E09006D21DB /* APIClient.swift */; };
 		A86E99741E512E09006D21DB /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E99711E512E09006D21DB /* Error.swift */; };
-		A86E99751E512E09006D21DB /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E99721E512E09006D21DB /* ListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +86,6 @@
 		A7DAB2F9625CF0C5FCCB9E72 /* Pods_BrainfoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainfoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86E99701E512E09006D21DB /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A86E99711E512E09006D21DB /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		A86E99721E512E09006D21DB /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		CB0A886D3F6503C46EE6C9FE /* Pods-Brainfood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainfood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brainfood/Pods-Brainfood.debug.xcconfig"; sourceTree = "<group>"; };
 		D7064C2FFCFD2C7B911DC075 /* Pods-Brainfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainfood.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brainfood/Pods-Brainfood.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,10 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				7C6ADD731DD938C9008F4836 /* Main.storyboard */,
-				7C6ADD5F1DD93520008F4836 /* DefaultHorizontalFeedCell.swift */,
-				7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */,
 				7C6ADD611DD93520008F4836 /* HomeViewController.swift */,
-				7C6ADD621DD93520008F4836 /* HorizontalFeedVC.swift */,
 			);
 			name = "Home Flow";
 			sourceTree = "<group>";
@@ -145,9 +140,7 @@
 		7C6ADD6C1DD9386D008F4836 /* Shopping List Flow */ = {
 			isa = PBXGroup;
 			children = (
-				A86E99701E512E09006D21DB /* APIClient.swift */,
 				A86E99711E512E09006D21DB /* Error.swift */,
-				A86E99721E512E09006D21DB /* ListItem.swift */,
 				7C6ADD6D1DD93892008F4836 /* ShoppingListVC.storyboard */,
 				7C6ADD6E1DD93892008F4836 /* ShoppingListVC.swift */,
 			);
@@ -157,6 +150,8 @@
 		7C6ADD761DD938D6008F4836 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A86E99701E512E09006D21DB /* APIClient.swift */,
+				7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */,
 				7C6ADD771DD938E0008F4836 /* Product.swift */,
 				7C6ADD781DD938E0008F4836 /* RecommendationsDataSource.swift */,
 				7C6ADD791DD938E0008F4836 /* TestRecommendationDataSource.swift */,
@@ -192,9 +187,8 @@
 				7C27A8231DD939A800FB72E0 /* Utilities.swift */,
 				7C6ADD761DD938D6008F4836 /* Data */,
 				7C6ADD6C1DD9386D008F4836 /* Shopping List Flow */,
-				7CDBA1951DCA742000AE0560 /* Protocols  */,
-				7C82AA9B1DC8835000085C0F /* Enums */,
 				7C82AA761DC881D900085C0F /* AppDelegate.swift */,
+				A83A294D1E514AA200A232EF /* Horizontal Feed */,
 				7C6ADD6B1DD93525008F4836 /* Home Flow */,
 				7C82AA7D1DC881D900085C0F /* Assets.xcassets */,
 				7C82AA7F1DC881D900085C0F /* LaunchScreen.storyboard */,
@@ -221,21 +215,16 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		7C82AA9B1DC8835000085C0F /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */,
-			);
-			name = Enums;
-			sourceTree = "<group>";
-		};
-		7CDBA1951DCA742000AE0560 /* Protocols  */ = {
+		A83A294D1E514AA200A232EF /* Horizontal Feed */ = {
 			isa = PBXGroup;
 			children = (
 				7CDBA1961DCA746300AE0560 /* FeedItem.swift */,
 				7C2743531DCD1B250093B994 /* FeedCell.swift */,
+				7C6ADD5F1DD93520008F4836 /* DefaultHorizontalFeedCell.swift */,
+				7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */,
+				7C6ADD621DD93520008F4836 /* HorizontalFeedVC.swift */,
 			);
-			name = "Protocols ";
+			name = "Horizontal Feed";
 			sourceTree = "<group>";
 		};
 		CA9F52B5E97A0307C682AC35 /* Frameworks */ = {
@@ -456,7 +445,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A86E99751E512E09006D21DB /* ListItem.swift in Sources */,
 				7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */,
 				A86E99731E512E09006D21DB /* APIClient.swift in Sources */,
 				7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */,

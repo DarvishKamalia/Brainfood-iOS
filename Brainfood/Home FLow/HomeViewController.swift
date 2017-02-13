@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
             let vc = HorizontalFeedVC(items: products, title: "Based on your shopping list")
             
             self.addChildViewController(vc)
-            vc.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 200)
+            vc.view.frame = CGRect(x: 0, y: 20, width: self.view.frame.width, height: 200)
             self.scrollView.translatesAutoresizingMaskIntoConstraints = false
             self.scrollView.addSubview(vc.view)
             vc.didMove(toParentViewController: self)
