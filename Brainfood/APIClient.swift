@@ -52,10 +52,10 @@ struct APIClient {
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
-        let parameters = ["Item" : item, "User" : ]
+        let parameters = ["Item" : item, "User" : UIDevice.current.identifierForVendor?.uuidString ?? ""]
 
         return Promise { fulfill, reject in
-            Alamofire.request(baseUrl, method: .post, parameters: ["Item" : item]).response { response in
+            Alamofire.request(baseUrl, method: .post, parameters: parameters).response { response in
                 if let error = response.error {
                     reject(error)
                 } else {
