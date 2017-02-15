@@ -42,8 +42,9 @@ class ShoppingListViewController: UITableViewController {
             if let textField = alertController.textFields?.first {
                 let itemDescription = textField.text ?? ""
                 let _ = self?.client.addFoodItem(item: itemDescription)
-                    .then {
+                    .then { [weak self] variations -> Void in
                         alertController.dismiss(animated: true, completion: nil)
+                        self?.handleVariations(variations, ofItem: itemDescription)
                     }
                     .always {
                         self?.items.append(itemDescription)
@@ -84,5 +85,23 @@ class ShoppingListViewController: UITableViewController {
         items.remove(at: indexPath.row)
         tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         tableView.deleteRows(at: [indexPath], with: .top)
+    }
+    
+    // MARK: - Private Helpers
+    
+    private func handleVariations(_ variations: [String], ofItem item: String) {
+        guard variations.count > 0 else {
+            return
+        }
+        
+        let alertController = UIAlertController(title: "Choose a variation", message: "What kind of \(item) do you usually buy?", preferredStyle: .actionSheet)
+        variations.forEach { variation in
+            alertController.addAction(UIAlertAction(title: variation, style: .default, handler: { [weak self] _ in
+                self?.client.addFoodItem(item: variation).always {
+                    alertController.dismiss(animated: true, completion: nil)
+                }
+            }))
+        }
+        present(alertController, animated: true, completion: nil)
     }
 }

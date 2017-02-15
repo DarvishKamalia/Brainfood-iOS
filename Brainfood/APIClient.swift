@@ -45,21 +45,32 @@ struct APIClient {
 //        }
 //    }
     
-    func addFoodItem(item: String) -> Promise<Void> {
+    ///
+    /// Send a request to the backend to add the item to the user's purchasing history
+    /// parameter item The item to add
+    /// return An array of strings, that contains the possible variations of the item, if any
+    ///
+    func addFoodItem(item: String) -> Promise<[String]> {
         guard let baseUrl = baseUrl else {
             return Promise(error: InvalidURLError.invalidURL)
         }
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
-        let parameters = ["Item" : item, "User" : UIDevice.current.identifierForVendor?.uuidString ?? ""]
+        let parameters = ["Item" : item, "User" : "darvishAB" ]//UIDevice.current.identifierForVendor?.uuidString ?? ""]
 
         return Promise { fulfill, reject in
-            Alamofire.request(baseUrl, method: .post, parameters: parameters).response { response in
+            Alamofire.request(baseUrl, method: .post, parameters: parameters, encoding: URLEncoding.queryString).response { response in
                 if let error = response.error {
                     reject(error)
                 } else {
-                    fulfill()
+                    if let data = response.data,
+                        let variations = JSON(data).array?.flatMap({ $0.string }) {
+                        fulfill(variations)
+                    }
+                    else {
+                        fulfill([])
+                    }
                 }
             }
         }.always {
