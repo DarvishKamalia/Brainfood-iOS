@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class Product : FeedItem {
     let name: String
@@ -20,9 +21,9 @@ class Product : FeedItem {
         }
     }
     
-    init? (fromJSON json: [String : AnyObject]) {
+    init? (fromJSON json: JSON) {
         
-        if let name = json["name"] as? String {
+        if let name = json["name"].string {
             self.name = name
         }
         
@@ -31,7 +32,7 @@ class Product : FeedItem {
         }
         
         if
-            let imageURLString = json["imageURL"] as? String,
+            let imageURLString = json["imageURL"].string,
             let imageURL = URL(string: imageURLString)
         {
             self.imageURL = imageURL

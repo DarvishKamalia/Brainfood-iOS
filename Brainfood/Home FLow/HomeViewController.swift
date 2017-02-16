@@ -12,23 +12,27 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
+    let client = APIClient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.navigationBar.backgroundColor = UIColor.blue
-        
-        TestRecommendationDataSource.fetchRecommendations(type: .PurchaseHistory) {
-            products in
-            
-            let vc = HorizontalFeedVC(items: products, title: "Based on your shopping list")
-            
+        self.scrollView.translatesAutoresizingMaskIntoConstraints = false
+
+        let _ = client.fetchRecommendations(type: .PurchaseHistory).then { items -> Void in
+            let vc = HorizontalFeedVC(items: items, title: "Based on your shopping list")
             self.addChildViewController(vc)
             vc.view.frame = CGRect(x: 0, y: 20, width: self.view.frame.width, height: 200)
-            self.scrollView.translatesAutoresizingMaskIntoConstraints = false
             self.scrollView.addSubview(vc.view)
             vc.didMove(toParentViewController: self)
         }
         
+        let _ = client.fetchRecommendations(type: .Recipes).then { recipes -> Void in
+            let vc = HorizontalFeedVC(items: recipes, title: "Recipes that use items in your list")
+            self.addChildViewController(vc)
+            vc.view.frame = CGRect(x: 0, y: 220, width: self.view.frame.width, height: 200)
+            self.scrollView.addSubview(vc.view)
+            vc.didMove(toParentViewController: self)
+        }
     }
 
     override func didReceiveMemoryWarning() {
