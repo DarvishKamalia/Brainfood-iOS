@@ -97,7 +97,7 @@ class ShoppingListViewController: UITableViewController {
         let alertController = UIAlertController(title: "Choose a variation", message: "What kind of \(item) do you usually buy?", preferredStyle: .actionSheet)
         variations.forEach { variation in
             alertController.addAction(UIAlertAction(title: variation, style: .default, handler: { [weak self] _ in
-                self?.client.addFoodItem(item: variation).always {
+                self?.client.addFoodItem(item: variation + " " + item).always {
                     alertController.dismiss(animated: true, completion: nil)
                 }
             }))

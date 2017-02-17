@@ -25,7 +25,7 @@ struct APIClient {
             return Promise(error: InvalidURLError.invalidURL)
         }
         
-        let parameters = ["User" : "darvishAB"]
+        let parameters = ["User" : Constants.userID]
         
         return Promise { fulfill, reject in
             Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.queryString).response { response in
@@ -44,11 +44,9 @@ struct APIClient {
         }
     }
     
-    ///
     /// Send a request to the backend to add the item to the user's purchasing history
     /// parameter item The item to add
     /// return An array of strings, that contains the possible variations of the item, if any
-    ///
     func addFoodItem(item: String) -> Promise<[String]> {
         guard let url = URL(string: Constants.baseURL + Constants.purchaseFunctionEndpoint) else {
             return Promise(error: InvalidURLError.invalidURL)
