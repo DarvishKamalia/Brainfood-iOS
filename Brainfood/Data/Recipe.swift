@@ -55,7 +55,7 @@ class Recipe : FeedItem {
     // MARK: - FeedItem variables
     
     var titleString: String {
-        return name
+        return name.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
     var subtitleString : String {

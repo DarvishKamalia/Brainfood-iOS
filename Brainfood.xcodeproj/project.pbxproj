@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A5036871E58F59E00C086F7 /* APIClient+Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5036861E58F59E00C086F7 /* APIClient+Recipes.swift */; };
+		2A5036891E59060E00C086F7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5036881E59060E00C086F7 /* HomeViewController.swift */; };
+		2A50368B1E59084100C086F7 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A50368A1E59084100C086F7 /* RecipeCell.swift */; };
+		2A50368F1E590F2300C086F7 /* RecipeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A50368E1E590F2300C086F7 /* RecipeHeaderView.swift */; };
 		6F0955B5484DD40097E2E7D9 /* Pods_Brainfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261D60CFDA9062FF6D21F96A /* Pods_Brainfood.framework */; };
 		7C2743541DCD1B250093B994 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2743531DCD1B250093B994 /* FeedCell.swift */; };
 		7C2743551DCD1B250093B994 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2743531DCD1B250093B994 /* FeedCell.swift */; };
@@ -17,8 +21,6 @@
 		7C6ADD641DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD5F1DD93520008F4836 /* DefaultHorizontalFeedCell.swift */; };
 		7C6ADD651DD93520008F4836 /* DefaultHorizontalFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */; };
 		7C6ADD661DD93520008F4836 /* DefaultHorizontalFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */; };
-		7C6ADD671DD93520008F4836 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD611DD93520008F4836 /* HomeViewController.swift */; };
-		7C6ADD681DD93520008F4836 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD611DD93520008F4836 /* HomeViewController.swift */; };
 		7C6ADD691DD93520008F4836 /* HorizontalFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD621DD93520008F4836 /* HorizontalFeedVC.swift */; };
 		7C6ADD6A1DD93520008F4836 /* HorizontalFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD621DD93520008F4836 /* HorizontalFeedVC.swift */; };
 		7C6ADD6F1DD93892008F4836 /* ShoppingListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ADD6D1DD93892008F4836 /* ShoppingListVC.storyboard */; };
@@ -57,15 +59,17 @@
 
 /* Begin PBXFileReference section */
 		261D60CFDA9062FF6D21F96A /* Pods_Brainfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brainfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5036861E58F59E00C086F7 /* APIClient+Recipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Recipes.swift"; sourceTree = "<group>"; };
+		2A5036881E59060E00C086F7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2A50368A1E59084100C086F7 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		2A50368E1E590F2300C086F7 /* RecipeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeHeaderView.swift; sourceTree = "<group>"; };
 		2DC740BC7223BB1AABEB7109 /* Pods-BrainfoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainfoodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainfoodTests/Pods-BrainfoodTests.release.xcconfig"; sourceTree = "<group>"; };
 		47F0CA486F32EB1773AF9586 /* Pods-BrainfoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainfoodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainfoodTests/Pods-BrainfoodTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C2743531DCD1B250093B994 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = Protocols/FeedCell.swift; sourceTree = "<group>"; };
-		7C27A8221DD939A800FB72E0 /* Brainfood-Bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Brainfood-Bridging.h"; sourceTree = "<group>"; };
 		7C27A8231DD939A800FB72E0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7C4A07601DEE15040094E44F /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Data/Recipe.swift; sourceTree = "<group>"; };
 		7C6ADD5F1DD93520008F4836 /* DefaultHorizontalFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultHorizontalFeedCell.swift; path = "Home FLow/DefaultHorizontalFeedCell.swift"; sourceTree = "<group>"; };
 		7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefaultHorizontalFeedCell.xib; path = "Home FLow/DefaultHorizontalFeedCell.xib"; sourceTree = "<group>"; };
-		7C6ADD611DD93520008F4836 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "Home FLow/HomeViewController.swift"; sourceTree = "<group>"; };
 		7C6ADD621DD93520008F4836 /* HorizontalFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalFeedVC.swift; path = "Home FLow/HorizontalFeedVC.swift"; sourceTree = "<group>"; };
 		7C6ADD6D1DD93892008F4836 /* ShoppingListVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ShoppingListVC.storyboard; path = "Shopping List Flow/ShoppingListVC.storyboard"; sourceTree = "<group>"; };
 		7C6ADD6E1DD93892008F4836 /* ShoppingListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListVC.swift; path = "Shopping List Flow/ShoppingListVC.swift"; sourceTree = "<group>"; };
@@ -132,7 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				7C6ADD731DD938C9008F4836 /* Main.storyboard */,
-				7C6ADD611DD93520008F4836 /* HomeViewController.swift */,
+				2A5036881E59060E00C086F7 /* HomeViewController.swift */,
+				2A50368A1E59084100C086F7 /* RecipeCell.swift */,
+				2A50368E1E590F2300C086F7 /* RecipeHeaderView.swift */,
 			);
 			name = "Home Flow";
 			sourceTree = "<group>";
@@ -151,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				A86E99701E512E09006D21DB /* APIClient.swift */,
+				2A5036861E58F59E00C086F7 /* APIClient+Recipes.swift */,
 				7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */,
 				7C6ADD771DD938E0008F4836 /* Product.swift */,
 				7C6ADD781DD938E0008F4836 /* RecommendationsDataSource.swift */,
@@ -183,7 +190,6 @@
 		7C82AA751DC881D900085C0F /* Brainfood */ = {
 			isa = PBXGroup;
 			children = (
-				7C27A8221DD939A800FB72E0 /* Brainfood-Bridging.h */,
 				7C27A8231DD939A800FB72E0 /* Utilities.swift */,
 				7C6ADD761DD938D6008F4836 /* Data */,
 				7C6ADD6C1DD9386D008F4836 /* Shopping List Flow */,
@@ -446,9 +452,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */,
+				2A5036871E58F59E00C086F7 /* APIClient+Recipes.swift in Sources */,
 				A86E99731E512E09006D21DB /* APIClient.swift in Sources */,
 				7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */,
-				7C6ADD671DD93520008F4836 /* HomeViewController.swift in Sources */,
+				2A50368B1E59084100C086F7 /* RecipeCell.swift in Sources */,
 				7CDBA1971DCA746300AE0560 /* FeedItem.swift in Sources */,
 				7C6ADD631DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */,
 				7C6ADD711DD93892008F4836 /* ShoppingListVC.swift in Sources */,
@@ -456,7 +463,9 @@
 				7C6ADD7C1DD938E0008F4836 /* RecommendationsDataSource.swift in Sources */,
 				7C4A07611DEE15040094E44F /* Recipe.swift in Sources */,
 				7C6ADD691DD93520008F4836 /* HorizontalFeedVC.swift in Sources */,
+				2A5036891E59060E00C086F7 /* HomeViewController.swift in Sources */,
 				7C6ADD7A1DD938E0008F4836 /* Product.swift in Sources */,
+				2A50368F1E590F2300C086F7 /* RecipeHeaderView.swift in Sources */,
 				7C6ADD7E1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */,
 				A86E99741E512E09006D21DB /* Error.swift in Sources */,
 				7C2743541DCD1B250093B994 /* FeedCell.swift in Sources */,
@@ -475,7 +484,6 @@
 				7C6ADD7F1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */,
 				7C6ADD641DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */,
 				7C2743551DCD1B250093B994 /* FeedCell.swift in Sources */,
-				7C6ADD681DD93520008F4836 /* HomeViewController.swift in Sources */,
 				7C6ADD7D1DD938E0008F4836 /* RecommendationsDataSource.swift in Sources */,
 				7C4A075F1DEE12B00094E44F /* RecommendationTypes.swift in Sources */,
 			);
@@ -606,7 +614,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DK.Brainfood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Brainfood/Brainfood-Bridging.h";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -621,7 +630,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DK.Brainfood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Brainfood/Brainfood-Bridging.h";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -13,36 +13,45 @@ import SwiftyJSON
 
 import PromiseKit
 
-fileprivate struct Constants {
-    static let baseURL = "https://pbiprrk71j.execute-api.us-west-2.amazonaws.com/prod/"
-    static let purchaseFunctionEndpoint = "purchase_function"
-    static let userID = UIDevice.current.identifierForVendor?.uuidString ?? ""
-}
-
 struct APIClient {
-    func fetchRecommendations (type: RecommendationType) -> Promise<[FeedItem]>  {
+    
+    internal struct Constants {
+        static let baseURL = "https://pbiprrk71j.execute-api.us-west-2.amazonaws.com/prod/"
+        static let purchaseFunctionEndpoint = "purchase_function"
+        static let userID = UIDevice.current.identifierForVendor?.uuidString ?? ""
+    }
+    
+    func fetchRecommendations(type: RecommendationType) -> Promise<[FeedItem]>  {
         guard let url = URL(string: Constants.baseURL + type.fetchEndpoint) else {
             return Promise(error: InvalidURLError.invalidURL)
         }
         
-        let parameters = ["User" : Constants.userID]
+        let parameters = ["User": Constants.userID]
         
         return Promise { fulfill, reject in
             Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.queryString).response { response in
                 if let error = response.error {
                     reject(error)
+                    return
                 }
                 
                 if let responseData = response.data, let responseJSON = JSON(data: responseData).array  {
                     switch type {
-                        case .PurchaseHistory: fulfill(responseJSON.flatMap() { Product(fromJSON: $0) })
-                        case .Recipes : fulfill(responseJSON.flatMap() { Recipe(fromJSON: $0)} )
-                        case .ShoppingList : fulfill([])
+                        case .PurchaseHistory:
+                            let products = responseJSON.flatMap() { Product(fromJSON: $0) }
+                            fulfill(products)
+                        case .Recipes:
+                            let recipes = responseJSON.flatMap() { Recipe(fromJSON: $0)}
+                            fulfill(recipes)
+                        case .ShoppingList:
+                            fulfill([])
                     }
                 }
             }
         }
     }
+    
+    // MARK: - Edit Shopping Cart
     
     /// Send a request to the backend to add the item to the user's purchasing history
     /// parameter item The item to add
@@ -54,18 +63,19 @@ struct APIClient {
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
-        let parameters = ["Item" : item, "User" : Constants.userID]
+        let parameters = ["Item": item, "User": Constants.userID]
 
         return Promise { fulfill, reject in
             Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.queryString).response { response in
                 if let error = response.error {
                     reject(error)
                 } else {
-                    if let data = response.data,
-                        let variations = JSON(data).array?.flatMap({ $0.string }) {
+                    if
+                        let data = response.data,
+                        let variations = JSON(data).array?.flatMap({ $0.string })
+                    {
                         fulfill(variations)
-                    }
-                    else {
+                    } else {
                         fulfill([])
                     }
                 }

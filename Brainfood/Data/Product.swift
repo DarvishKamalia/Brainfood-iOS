@@ -22,7 +22,6 @@ class Product : FeedItem {
     }
     
     init? (fromJSON json: JSON) {
-        
         if let name = json["name"].string {
             self.name = name
         }

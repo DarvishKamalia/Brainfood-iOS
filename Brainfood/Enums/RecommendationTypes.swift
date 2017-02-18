@@ -13,7 +13,7 @@ enum RecommendationType {
     case Recipes
     case PurchaseHistory
     
-    var fetchEndpoint : String  {
+    var fetchEndpoint: String  {
         switch (self) {
             case .PurchaseHistory: return "getPurchaseHistoryRecommendations"
             case .Recipes: return  "getRecommendedRecipes"

@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.3.0)
+  - ARCollectionViewMasonryLayout (2.2.0)
+  - Nuke (5.0.1)
   - PromiseKit (4.1.4):
     - PromiseKit/Foundation (= 4.1.4)
     - PromiseKit/QuartzCore (= 4.1.4)
@@ -11,23 +13,22 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (4.1.4):
     - PromiseKit/CorePromise
-  - SDWebImage (3.8.1):
-    - SDWebImage/Core (= 3.8.1)
-  - SDWebImage/Core (3.8.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
+  - ARCollectionViewMasonryLayout
+  - Nuke
   - PromiseKit (~> 4.0)
-  - SDWebImage (~> 3.8)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  ARCollectionViewMasonryLayout: 9e87541c1d59cd9e6f538c19bbed3f52ceeef421
+  Nuke: d47030a761bdd0f7589a734a90819d71eda2500d
   PromiseKit: e69aead34c817988ea688b1085aee21300d6dcb8
-  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 1a9b5adaef1d6afeed4dd7e2a03886324bf7ddd9
+PODFILE CHECKSUM: 3fa8a0baf59dcf22e9e9589112499e933bc52cba
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

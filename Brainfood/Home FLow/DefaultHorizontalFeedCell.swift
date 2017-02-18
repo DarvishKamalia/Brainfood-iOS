@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Nuke
 
 class DefaultHorizontalFeedCell: FeedCell {
     @IBOutlet var imageView: UIImageView!
@@ -21,7 +22,7 @@ class DefaultHorizontalFeedCell: FeedCell {
     
     override func configure(withFeedItem item: FeedItem) {
         if let imageURL = item.imageURL {
-            imageView.sd_setImage(with: imageURL, placeholderImage: Utilities.defaultPlaceholderImage)
+            Nuke.loadImage(with: imageURL, into: imageView)
         }
         
         titleLabel.text = item.titleString

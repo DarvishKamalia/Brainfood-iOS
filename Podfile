@@ -5,10 +5,11 @@ target 'Brainfood' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'SDWebImage', '~>3.8'
   pod 'SwiftyJSON'
   pod 'PromiseKit', '~> 4.0'
-  pod 'Alamofire' 
+  pod 'Alamofire'
+  pod 'Nuke'
+  pod 'ARCollectionViewMasonryLayout'
 
  target 'BrainfoodTests' do
     inherit! :search_paths
