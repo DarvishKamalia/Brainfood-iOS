@@ -12,8 +12,8 @@ import Foundation
     class TestRecommendationDataSource {
         static func fetchRecommendations (type: RecommendationType, completionHandler: @escaping (([FeedItem]) -> Void)) {
             switch type {
-                case .PurchaseHistory, .Deals:
-                    let item = Product(name: "Test Product", imageURL: "http://www.americanyp.com/users_content/users_images/logos/groceries.jpg")
+                case .PurchaseHistory:
+                    let item = Product(name: "Test Product", imageUrl: URL(string: "http://www.americanyp.com/users_content/users_images/logos/groceries.jpg"))
                     completionHandler(Array(repeating: item, count: 10))
                     
                 case .Recipes, .ShoppingList : break

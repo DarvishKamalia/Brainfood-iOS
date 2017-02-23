@@ -35,7 +35,7 @@ extension APIClient {
                     return
                 }
                 
-                let recipes = json.flatMap() { Recipe(fromJSON: $0)}
+                let recipes = json.flatMap() { Recipe(from: $0)}
                 fulfill(recipes)
             }
         }

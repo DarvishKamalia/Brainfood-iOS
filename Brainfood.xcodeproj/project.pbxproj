@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2934A91E5E35600049E429 /* RecipeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2934A81E5E35600049E429 /* RecipeSection.swift */; };
+		2A2934AB1E5E38100049E429 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2934AA1E5E38100049E429 /* ShoppingCart.swift */; };
 		2A5036871E58F59E00C086F7 /* APIClient+Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5036861E58F59E00C086F7 /* APIClient+Recipes.swift */; };
 		2A5036891E59060E00C086F7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5036881E59060E00C086F7 /* HomeViewController.swift */; };
 		2A50368B1E59084100C086F7 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A50368A1E59084100C086F7 /* RecipeCell.swift */; };
 		2A50368F1E590F2300C086F7 /* RecipeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A50368E1E590F2300C086F7 /* RecipeHeaderView.swift */; };
+		2A66211A1E5E77460086448C /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6621191E5E77460086448C /* ViewState.swift */; };
+		2AD426641E5E4F42009F3D1B /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD426631E5E4F42009F3D1B /* IngredientsViewController.swift */; };
+		2AD426661E5E5834009F3D1B /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD426651E5E5834009F3D1B /* ShoppingCartViewController.swift */; };
 		6F0955B5484DD40097E2E7D9 /* Pods_Brainfood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261D60CFDA9062FF6D21F96A /* Pods_Brainfood.framework */; };
 		7C2743541DCD1B250093B994 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2743531DCD1B250093B994 /* FeedCell.swift */; };
 		7C2743551DCD1B250093B994 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2743531DCD1B250093B994 /* FeedCell.swift */; };
@@ -59,10 +64,15 @@
 
 /* Begin PBXFileReference section */
 		261D60CFDA9062FF6D21F96A /* Pods_Brainfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brainfood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2934A81E5E35600049E429 /* RecipeSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeSection.swift; sourceTree = "<group>"; };
+		2A2934AA1E5E38100049E429 /* ShoppingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		2A5036861E58F59E00C086F7 /* APIClient+Recipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Recipes.swift"; sourceTree = "<group>"; };
 		2A5036881E59060E00C086F7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2A50368A1E59084100C086F7 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		2A50368E1E590F2300C086F7 /* RecipeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeHeaderView.swift; sourceTree = "<group>"; };
+		2A6621191E5E77460086448C /* ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		2AD426631E5E4F42009F3D1B /* IngredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
+		2AD426651E5E5834009F3D1B /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		2DC740BC7223BB1AABEB7109 /* Pods-BrainfoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainfoodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainfoodTests/Pods-BrainfoodTests.release.xcconfig"; sourceTree = "<group>"; };
 		47F0CA486F32EB1773AF9586 /* Pods-BrainfoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainfoodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainfoodTests/Pods-BrainfoodTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C2743531DCD1B250093B994 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = Protocols/FeedCell.swift; sourceTree = "<group>"; };
@@ -139,6 +149,10 @@
 				2A5036881E59060E00C086F7 /* HomeViewController.swift */,
 				2A50368A1E59084100C086F7 /* RecipeCell.swift */,
 				2A50368E1E590F2300C086F7 /* RecipeHeaderView.swift */,
+				2A2934A81E5E35600049E429 /* RecipeSection.swift */,
+				2AD426631E5E4F42009F3D1B /* IngredientsViewController.swift */,
+				2AD426651E5E5834009F3D1B /* ShoppingCartViewController.swift */,
+				2A6621191E5E77460086448C /* ViewState.swift */,
 			);
 			name = "Home Flow";
 			sourceTree = "<group>";
@@ -149,6 +163,7 @@
 				A86E99711E512E09006D21DB /* Error.swift */,
 				7C6ADD6D1DD93892008F4836 /* ShoppingListVC.storyboard */,
 				7C6ADD6E1DD93892008F4836 /* ShoppingListVC.swift */,
+				2A2934AA1E5E38100049E429 /* ShoppingCart.swift */,
 			);
 			name = "Shopping List Flow";
 			sourceTree = "<group>";
@@ -452,12 +467,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */,
+				2A2934AB1E5E38100049E429 /* ShoppingCart.swift in Sources */,
 				2A5036871E58F59E00C086F7 /* APIClient+Recipes.swift in Sources */,
 				A86E99731E512E09006D21DB /* APIClient.swift in Sources */,
 				7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */,
 				2A50368B1E59084100C086F7 /* RecipeCell.swift in Sources */,
 				7CDBA1971DCA746300AE0560 /* FeedItem.swift in Sources */,
 				7C6ADD631DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */,
+				2A66211A1E5E77460086448C /* ViewState.swift in Sources */,
 				7C6ADD711DD93892008F4836 /* ShoppingListVC.swift in Sources */,
 				7C27A8241DD939A800FB72E0 /* Utilities.swift in Sources */,
 				7C6ADD7C1DD938E0008F4836 /* RecommendationsDataSource.swift in Sources */,
@@ -468,6 +485,9 @@
 				2A50368F1E590F2300C086F7 /* RecipeHeaderView.swift in Sources */,
 				7C6ADD7E1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */,
 				A86E99741E512E09006D21DB /* Error.swift in Sources */,
+				2AD426641E5E4F42009F3D1B /* IngredientsViewController.swift in Sources */,
+				2A2934A91E5E35600049E429 /* RecipeSection.swift in Sources */,
+				2AD426661E5E5834009F3D1B /* ShoppingCartViewController.swift in Sources */,
 				7C2743541DCD1B250093B994 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

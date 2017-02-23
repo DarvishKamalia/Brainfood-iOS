@@ -9,7 +9,9 @@
 import Foundation
 
 protocol FeedItem {
-    var imageURL : URL? { get }
-    var titleString : String { get }
-    var subtitleString : String { get }
+    
+    var imageUrl: URL? { get }
+    var titleString: String { get }
+    var subtitleString: String { get }
+    
 }

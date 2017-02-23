@@ -14,8 +14,9 @@ fileprivate struct Constants {
     static let DefaultHorizontalFeedCellNibName = "DefaultHorizontalFeedCell"
     static let cellReuseIdentifier = "feedCell"
     static let headerReuseIdentifier = "headerView"
-    static let cellWidth: CGFloat = 180
-    static let headerHeight: CGFloat = 20
+    static let cellWidth: CGFloat = 120
+    static let cellHeight: CGFloat = 144
+    static let headerHeight: CGFloat = 16
 }
 
 // MARK: - HorizontalFeedVC
@@ -65,7 +66,7 @@ class HorizontalFeedVC : UIViewController, UICollectionViewDelegate, UICollectio
     }
     
     override func viewDidLayoutSubviews() {
-        layout.itemSize = CGSize(width: Constants.cellWidth, height: view.frame.height - Constants.headerHeight)
+        layout.itemSize = CGSize(width: Constants.cellWidth, height: Constants.cellHeight)
     }
     
     // MARK: - UICollectionViewController Methods

@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "ARCollectionViewMasonryLayout.h"
+#import "FBLikeLayout.h"
 
-FOUNDATION_EXPORT double ARCollectionViewMasonryLayoutVersionNumber;
-FOUNDATION_EXPORT const unsigned char ARCollectionViewMasonryLayoutVersionString[];
+FOUNDATION_EXPORT double FBLikeLayoutVersionNumber;
+FOUNDATION_EXPORT const unsigned char FBLikeLayoutVersionString[];
 

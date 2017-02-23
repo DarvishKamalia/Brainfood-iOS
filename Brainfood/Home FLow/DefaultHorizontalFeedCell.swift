@@ -21,7 +21,7 @@ class DefaultHorizontalFeedCell: FeedCell {
     }
     
     override func configure(withFeedItem item: FeedItem) {
-        if let imageURL = item.imageURL {
+        if let imageURL = item.imageUrl {
             Nuke.loadImage(with: imageURL, into: imageView)
         }
         
