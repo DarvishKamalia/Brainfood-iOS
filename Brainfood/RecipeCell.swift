@@ -57,7 +57,7 @@ class RecipeCell: UICollectionViewCell {
         ingredientAvailabilityImageView.image = acquiredIngredients ? #imageLiteral(resourceName: "Complete") : #imageLiteral(resourceName: "Warning")
         
         titleLabel?.text = recipe.titleString
-        descriptionLabel?.text = recipe.subtitleString
+        descriptionLabel?.attributedText = recipe.subtitleString
     }
     
     func tapOnWarning(gesture: UITapGestureRecognizer) {

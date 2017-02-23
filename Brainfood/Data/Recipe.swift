@@ -45,8 +45,8 @@ class Recipe: Equatable, FeedItem {
         return name.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
-    var subtitleString : String {
-        return "$" + String (arc4random() % 10)
+    var subtitleString : NSAttributedString {
+        return NSAttributedString(string: "")
     }
     
 }

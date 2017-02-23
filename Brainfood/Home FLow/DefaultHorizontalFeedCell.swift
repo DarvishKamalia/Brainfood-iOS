@@ -1,4 +1,4 @@
-//
+    //
 //  DefaultHorizontalFeedCell.swift
 //  Brainfood
 //
@@ -26,7 +26,7 @@ class DefaultHorizontalFeedCell: FeedCell {
         }
         
         titleLabel.text = item.titleString
-        subtitleLabel.text = item.subtitleString        
+        subtitleLabel.attributedText = item.subtitleString
     }
     
     override func prepareForReuse() {

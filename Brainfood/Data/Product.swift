@@ -13,6 +13,8 @@ class Product : FeedItem {
     
     let name: String
     var imageUrl: URL?
+    var msrp: Double?
+    var salePrice: Double?
     
     init (name: String, imageUrl: URL? = nil) {
         self.name = name
@@ -24,6 +26,8 @@ class Product : FeedItem {
         
         self.name = name
         imageUrl = json["imageURL"].url
+        msrp = json["msrp"].double
+        salePrice = json["salePrice"].double
     }
     
     // MARK: - FeedItem variables
@@ -32,8 +36,20 @@ class Product : FeedItem {
         return name
     }
     
-    var subtitleString : String {
-        return "$" + String (arc4random() % 10)
+    var subtitleString : NSAttributedString {
+        if let price = msrp,
+           let sale = salePrice {
+            let result = NSMutableAttributedString(string: "$")
+            result.append(NSAttributedString(string:  "\(price)", attributes: [NSStrikethroughStyleAttributeName : NSUnderlineStyle.styleSingle.rawValue]))
+            result.append(NSAttributedString(string: " $\(sale)"))
+            return result
+        }
+        else if let price = salePrice {
+            return NSAttributedString(string: "$\(price)")
+        }
+        else {
+            return NSAttributedString(string:"")
+        }
     }
     
 }

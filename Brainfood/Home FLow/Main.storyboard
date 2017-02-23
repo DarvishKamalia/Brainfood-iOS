@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="136" y="837"/>
         </scene>
-        <!--Recipes-->
+        <!--Discover-->
         <scene sceneID="ifr-bi-6Nu">
             <objects>
                 <viewController id="iia-6X-zbf" customClass="HomeViewController" customModule="Brainfood" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,14 +89,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJj-jm-st7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="164" id="Aby-0R-kuu"/>
+                                            <constraint firstAttribute="height" constant="200" id="Aby-0R-kuu"/>
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qWY-Ub-9dJ">
-                                        <rect key="frame" x="0.0" y="164" width="375" height="439"/>
+                                        <rect key="frame" x="0.0" y="200" width="375" height="403"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tye-MH-3zQ">
                                             <size key="itemSize" width="120" height="120"/>
@@ -226,7 +226,7 @@
                             <constraint firstItem="nAj-it-6pv" firstAttribute="centerY" secondItem="g5t-kc-udP" secondAttribute="centerY" id="rql-ZB-Cvd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Recipes" id="9GC-aW-nkU">
+                    <navigationItem key="navigationItem" title="Discover" id="9GC-aW-nkU">
                         <barButtonItem key="backBarButtonItem" title=" " id="fo1-Sq-jTZ"/>
                         <barButtonItem key="rightBarButtonItem" image="Shopping Cart" id="5Lc-6T-hte">
                             <connections>

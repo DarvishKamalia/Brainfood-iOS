@@ -12,6 +12,7 @@ protocol FeedItem {
     
     var imageUrl: URL? { get }
     var titleString: String { get }
-    var subtitleString: String { get }
+    //Fix this to be slightly better pls 
+    var subtitleString: NSAttributedString { get }
     
 }
