@@ -12,12 +12,14 @@ enum RecommendationType {
     case ShoppingList
     case Recipes
     case PurchaseHistory
+    case Deals
     
     var fetchEndpoint: String  {
         switch (self) {
             case .PurchaseHistory: return "getPurchaseHistoryRecommendations"
             case .Recipes: return  "getRecommendedRecipes"
             case .ShoppingList: return ""
+            case .Deals: return "getDeals"
         }
     }
 }

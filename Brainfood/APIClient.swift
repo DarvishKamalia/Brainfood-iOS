@@ -21,7 +21,7 @@ struct APIClient {
         static let userID = UIDevice.current.identifierForVendor?.uuidString ?? ""
     }
     
-    func fetchRecommendations(type: RecommendationType) -> Promise<[FeedItem]>  {
+    func fetchRecommendations(type: RecommendationType, forItems items: [Product]? = nil) -> Promise<[FeedItem]>  {
         guard let url = URL(string: Constants.baseURL + type.fetchEndpoint) else {
             return Promise(error: InvalidURLError.invalidURL)
         }
@@ -37,7 +37,7 @@ struct APIClient {
                 
                 if let responseData = response.data, let responseJSON = JSON(data: responseData).array  {
                     switch type {
-                        case .PurchaseHistory:
+                        case .PurchaseHistory, .Deals:
                             let products = responseJSON.flatMap() { Product(fromJSON: $0) }
                             fulfill(products)
                         case .Recipes:
