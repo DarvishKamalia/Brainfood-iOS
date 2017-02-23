@@ -26,7 +26,13 @@ struct APIClient {
             return Promise(error: InvalidURLError.invalidURL)
         }
         
-        let parameters = ["User": Constants.userID]
+        
+        var parameters = ["User": Constants.userID]
+        
+        if let items = items {
+            let productNames = items.map { $0.name }.joined(separator: ",")
+            parameters["items"] = productNames
+        }
         
         return Promise { fulfill, reject in
             Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.queryString).response { response in
