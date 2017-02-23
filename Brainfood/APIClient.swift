@@ -41,8 +41,8 @@ struct APIClient {
                             let products = responseJSON.flatMap() { Product(fromJSON: $0) }
                             fulfill(products)
                         case .Recipes:
-                            let recipes = responseJSON.flatMap() { Recipe(fromJSON: $0)}
-                            fulfill(recipes)
+                            let recipes = responseJSON.flatMap() { Recipe(from: $0)}
+//                            fulfill(recipes)
                         case .ShoppingList:
                             fulfill([])
                     }
@@ -64,7 +64,6 @@ struct APIClient {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
         let parameters = ["Item": item, "User": Constants.userID]
-
         return Promise { fulfill, reject in
             Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.queryString).response { response in
                 if let error = response.error {

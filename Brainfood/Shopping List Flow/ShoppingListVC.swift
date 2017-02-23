@@ -36,30 +36,7 @@ class ShoppingListViewController: UITableViewController {
         dismiss(animated: true)
     }
     
-    @IBAction func add() {
-        let alertController = UIAlertController(title: "Add New Item", message: "Enter item name", preferredStyle: .alert)
-        let submitAction = UIAlertAction(title: "Submit", style: .default) { [weak self] action in
-            if let textField = alertController.textFields?.first {
-                let itemDescription = textField.text ?? ""
-                let _ = self?.client.addFoodItem(item: itemDescription)
-                    .then { [weak self] variations -> Void in
-                        alertController.dismiss(animated: true, completion: nil)
-                        self?.handleVariations(variations, ofItem: itemDescription)
-                    }
-                    .always {
-                        self?.items.append(itemDescription)
-                        self?.tableView.reloadData()
-                }
-            }
-        }
-        
-        alertController.addAction(submitAction)
-        alertController.addTextField { textField in
-            textField.placeholder = "pineapple"
-        }
-        
-        present(alertController, animated: true, completion: nil)
-    }
+    
     
     
     // MARK: - Data Source Methods
@@ -89,19 +66,5 @@ class ShoppingListViewController: UITableViewController {
     
     // MARK: - Private Helpers
     
-    private func handleVariations(_ variations: [String], ofItem item: String) {
-        guard variations.count > 0 else {
-            return
-        }
-        
-        let alertController = UIAlertController(title: "Choose a variation", message: "What kind of \(item) do you usually buy?", preferredStyle: .actionSheet)
-        variations.forEach { variation in
-            alertController.addAction(UIAlertAction(title: variation, style: .default, handler: { [weak self] _ in
-                self?.client.addFoodItem(item: variation + " " + item).always {
-                    alertController.dismiss(animated: true, completion: nil)
-                }
-            }))
-        }
-        present(alertController, animated: true, completion: nil)
-    }
+    
 }

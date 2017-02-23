@@ -7,14 +7,19 @@
 //
 
 import UIKit
-import ARCollectionViewMasonryLayout
+import FBLikeLayout
+import SafariServices
 
-class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var loadingView: UIView!
+    
+    @IBOutlet weak var recommendationsView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var dataSource: [RecipeSection] = [] {
         didSet {
+            guard dataSource != oldValue else { return }
             collectionView.reloadData()
         }
     }
@@ -23,59 +28,89 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return APIClient()
     }()
     
+    var viewState: ViewState = .loading {
+        didSet {
+            guard viewState != oldValue else { return }
+            DispatchQueue.main.async { self.updateViewState() }
+        }
+    }
+    
+    var viewDetail: ViewDetail = .compact {
+        didSet {
+            guard viewDetail != oldValue else { return }
+            DispatchQueue.main.async { self.updateViewDetail() }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        self.scrollView.translatesAutoresizingMaskIntoConstraints = false
-        //
-        //        let _ = client.fetchRecommendations(type: .PurchaseHistory).then { items -> Void in
-        //            let vc = HorizontalFeedVC(items: items, title: "Based on your shopping list")
-        //            self.addChildViewController(vc)
-        //            vc.view.frame = CGRect(x: 0, y: 20, width: self.view.frame.width, height: 200)
-        //            self.scrollView.addSubview(vc.view)
-        //            vc.didMove(toParentViewController: self)
-        //        }
-        //
-        //
-        //        let _ = client.fetchRecommendations(type: .Recipes).then { recipes -> Void in
-        //            let vc = HorizontalFeedVC(items: recipes, title: "Recipes that use items in your list")
-        //            self.addChildViewController(vc)
-        //            vc.view.frame = CGRect(x: 0, y: 220, width: self.view.frame.width, height: 200)
-        //            self.scrollView.addSubview(vc.view)
-        //            vc.didMove(toParentViewController: self)
-        //        }
+        
+        let _ = apiClient.fetchRecommendations(type: .PurchaseHistory).then { items -> Void in
+            let vc = HorizontalFeedVC(items: items, title: "Based on your shopping list")
+            self.addChildViewController(vc)
+            vc.view.frame = CGRect(x: 0, y: 20, width: self.recommendationsView.frame.width, height: self.recommendationsView.frame.size.height)
+            self.recommendationsView.addSubview(vc.view)
+            vc.didMove(toParentViewController: self)
+            
+            self.viewDetail = .expanded
+        }
         
         configureLayout()
         loadRecipes()
     }
     
+    func updateViewState() {
+        switch viewState {
+        case .ready:
+            loadingView.isHidden = true
+            recommendationsView.isHidden = false
+            collectionView.isHidden = false
+        case .loading:
+            loadingView.isHidden = false
+            recommendationsView.isHidden = true
+            collectionView.isHidden = true
+        default:
+            break
+        }
+        
+        updateViewDetail()
+    }
+    
+    func updateViewDetail() {
+        switch viewDetail {
+        case .compact:
+            recommendationsView.isHidden = true
+            collectionView.isHidden = false
+        case .expanded:
+            recommendationsView.isHidden = false
+            collectionView.isHidden = false
+        }
+    }
+    
     // MARK: - Configure Layout
     
     func configureLayout() {
-//        guard let waterfallLayout = ARCollectionViewMasonryLayout(direction: .vertical) else { return }
-//        waterfallLayout.minimumLineSpacing = 10
-//        waterfallLayout.minimumInteritemSpacing = 10
-//        collectionView.setCollectionViewLayout(waterfallLayout, animated: false)
+        let layout = FBLikeLayout()
+        layout.minimumInteritemSpacing = 0
+        layout.singleCellWidth = min(collectionView.bounds.size.width, collectionView.bounds.size.height) / 3.0
+        layout.maxCellSpace = 3
+        layout.forceCellWidthForMinimumInteritemSpacing = true
+        layout.fullImagePercentageOfOccurrency = 10
+        
+        collectionView.contentInset = .zero
+        collectionView.collectionViewLayout = layout
     }
     
     // MARK: - Initialize Data Sources
     
     func loadRecipes() {
-        let eggs = Product(name: "eggs")
-        let _ = apiClient.getRecipes(forItems: [eggs]).then { recipes -> Void in
-            let recipeSection = RecipeSection(title: "Recipes matching eggs.", recipes: recipes)
-            self.dataSource.append(recipeSection)
-        }
-        
-        let milk = Product(name: "milk")
-        let _ = apiClient.getRecipes(forItems: [milk]).then { recipes -> Void in
-            let recipeSection = RecipeSection(title: "Recipes matching milk.", recipes: recipes)
-            self.dataSource.append(recipeSection)
-        }
-        
-        let flour = Product(name: "flour")
-        let _ = apiClient.getRecipes(forItems: [flour]).then { recipes -> Void in
-            let recipeSection = RecipeSection(title: "Recipes matching flour.", recipes: recipes)
-            self.dataSource.append(recipeSection)
+        ShoppingCart.shared.cartItems.forEach { item in
+            let _ = apiClient.getRecipes(forItems: [Product(name: item)]).then { recipes -> Void in
+                let recipeSection = RecipeSection(title: "Recipes matching \(item).", recipes: recipes)
+                self.dataSource.append(recipeSection)
+                
+                self.viewState = .ready
+            }
         }
     }
     
@@ -95,6 +130,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         let recipe = dataSource[indexPath.section].recipes[indexPath.row]
         cell?.configure(for: recipe)
+        cell?.delegate = self
         
         return cell ?? UICollectionViewCell()
     }
@@ -119,15 +155,38 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         return CGSize(width: collectionView.frame.size.width, height: 80.0)
     }
     
-    // MARK: - Masonry Layout Delegate
+    // MARK: - Collection View Flow Layout Delegate
     
-//    func collectionView(_ collectionView: UICollectionView!, layout collectionViewLayout: ARCollectionViewMasonryLayout!, variableDimensionForItemAt indexPath: IndexPath!) -> CGFloat {
-//        return CGFloat((indexPath.row * 30 % 120) + 80)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: CGFloat(arc4random_uniform(120) + 120), height: CGFloat(arc4random_uniform(120) + 120))
+    }
+    
+    // MARK: - Collection View Delegate
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let url = dataSource[indexPath.section].recipes[indexPath.row].linkUrl else { return }
+        let safariViewController = SFSafariViewController(url: url)
+        present(safariViewController, animated: true, completion: nil)
+    }
     
 }
 
-struct RecipeSection {
-    let title: String
-    let recipes: [Recipe]
+extension HomeViewController: RecipeCellDelegate {
+    
+    func recipeCell(_ cell: RecipeCell, didSelectWarningLabelFor recipe: Recipe) {
+        let alertController = UIAlertController(title: "Recipe Ingredients", message: nil, preferredStyle: .alert)
+        
+        let ingredientsTableViewController = IngredientsViewController(style: .plain)
+        ingredientsTableViewController.ingredients = recipe.ingredients
+        alertController.setValue(ingredientsTableViewController, forKey: "contentViewController")
+        
+        let doneAction = UIAlertAction(title: "Done", style: .default) { _ in
+            alertController.dismiss(animated: true, completion: nil)
+        }
+        alertController.addAction(doneAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
 }
+

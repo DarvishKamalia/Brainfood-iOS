@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.3.0)
-  - ARCollectionViewMasonryLayout (2.2.0)
+  - FBLikeLayout (1.2)
   - Nuke (5.0.1)
   - PromiseKit (4.1.4):
     - PromiseKit/Foundation (= 4.1.4)
@@ -17,18 +17,18 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - ARCollectionViewMasonryLayout
+  - FBLikeLayout
   - Nuke
   - PromiseKit (~> 4.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
-  ARCollectionViewMasonryLayout: 9e87541c1d59cd9e6f538c19bbed3f52ceeef421
+  FBLikeLayout: 687de95c7f29623dc4f7591c9746b99756952607
   Nuke: d47030a761bdd0f7589a734a90819d71eda2500d
   PromiseKit: e69aead34c817988ea688b1085aee21300d6dcb8
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 3fa8a0baf59dcf22e9e9589112499e933bc52cba
+PODFILE CHECKSUM: 98e4d478183c318c2ad9ea09bb3918f4289f0380
 
 COCOAPODS: 1.2.0

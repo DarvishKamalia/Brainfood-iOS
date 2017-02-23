@@ -9,7 +9,7 @@ target 'Brainfood' do
   pod 'PromiseKit', '~> 4.0'
   pod 'Alamofire'
   pod 'Nuke'
-  pod 'ARCollectionViewMasonryLayout'
+  pod 'FBLikeLayout'
 
  target 'BrainfoodTests' do
     inherit! :search_paths
