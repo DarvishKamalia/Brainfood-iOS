@@ -10,33 +10,20 @@ import Foundation
 import SwiftyJSON
 
 class Product : FeedItem {
-    let name: String
-    var imageURL: URL?
     
-    init (name: String, imageURL: String? = nil) {
+    let name: String
+    var imageUrl: URL?
+    
+    init (name: String, imageUrl: URL? = nil) {
         self.name = name
-        
-        if let urlString = imageURL {
-            self.imageURL = URL(string: urlString)
-        }
+        self.imageUrl = imageUrl
     }
     
     init? (fromJSON json: JSON) {
-        if let name = json["name"].string {
-            self.name = name
-        }
+        guard let name = json["name"].string else { return nil }
         
-        else {
-            return nil
-        }
-        
-        if
-            let imageURLString = json["imageURL"].string,
-            let imageURL = URL(string: imageURLString)
-        {
-            self.imageURL = imageURL
-        }
-    
+        self.name = name
+        imageUrl = json["imageURL"].url
     }
     
     // MARK: - FeedItem variables
@@ -48,4 +35,5 @@ class Product : FeedItem {
     var subtitleString : String {
         return "$" + String (arc4random() % 10)
     }
+    
 }

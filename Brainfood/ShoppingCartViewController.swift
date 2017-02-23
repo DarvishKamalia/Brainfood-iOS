@@ -10,6 +10,8 @@ import UIKit
 
 class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var emptyView: UIView!
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var purchasedButton: UIButton!
 
@@ -35,11 +37,17 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
     func updateViewState() {
         switch viewState {
         case .ready:
+            emptyView.isHidden = true
             tableView.isHidden = false
             purchasedButton.isHidden = true
         case .editing:
+            emptyView.isHidden = true
             tableView.isHidden = false
             purchasedButton.isHidden = false
+        case .empty:
+            emptyView.isHidden = false
+            tableView.isHidden = true
+            purchasedButton.isHidden = true
         default:
             break
         }
@@ -52,7 +60,13 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ShoppingCart.shared.cartItems.count
+        let count = ShoppingCart.shared.cartItems.count
+        if count == 0 {
+            viewState = .empty
+        } else if count != 0 && (viewState != .ready || viewState != .editing) {
+            viewState = .ready
+        }
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -94,14 +108,8 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
         let submitAction = UIAlertAction(title: "Submit", style: .default) { [weak self] _ in
             if let textField = alertController.textFields?.first {
                 let itemDescription = textField.text ?? ""
-                let _ = self?.apiClient.addFoodItem(item: itemDescription)
-                    .then { [weak self] variations -> Void in
-                        alertController.dismiss(animated: true, completion: nil)
-                        self?.handleVariations(variations, ofItem: itemDescription)
-                    }
-                    .always {
-                        self?.tableView.reloadData()
-                    }
+                self?.add(item: itemDescription)
+                alertController.dismiss(animated: true, completion: nil)
             }
         }
         
@@ -111,6 +119,16 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
         }
         
         present(alertController, animated: true, completion: nil)
+    }
+    
+    private func add(item: String) {
+        let _ = apiClient.addFoodItem(item: item)
+            .then { [weak self] variations -> Void in
+                self?.handleVariations(variations, ofItem: item)
+            }
+            .always(on: DispatchQueue.main) { [weak self] in
+                self?.tableView.reloadData()
+            }
     }
     
     private func handleVariations(_ variations: [String], ofItem item: String) {
@@ -137,6 +155,13 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
         viewState = .ready
         
         // TODO: upload purchase history to server
+        
+        tableView.reloadData()
+    }
+    
+    @IBAction func clickOnRecommendation(button: UIButton) {
+        guard let item = button.titleLabel?.text else { return }
+        add(item: item)
         
         tableView.reloadData()
     }

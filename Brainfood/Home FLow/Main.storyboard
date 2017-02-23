@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="136" y="837"/>
         </scene>
-        <!--RECIPES-->
+        <!--Recipes-->
         <scene sceneID="ifr-bi-6Nu">
             <objects>
                 <viewController id="iia-6X-zbf" customClass="HomeViewController" customModule="Brainfood" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,14 +89,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJj-jm-st7">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="Aby-0R-kuu"/>
+                                            <constraint firstAttribute="height" constant="164" id="Aby-0R-kuu"/>
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qWY-Ub-9dJ">
-                                        <rect key="frame" x="0.0" y="200" width="375" height="403"/>
+                                        <rect key="frame" x="0.0" y="164" width="375" height="439"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tye-MH-3zQ">
                                             <size key="itemSize" width="120" height="120"/>
@@ -217,7 +217,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CFe-yG-hWT" firstAttribute="leading" secondItem="g5t-kc-udP" secondAttribute="leading" id="AXE-eq-Ihf"/>
                             <constraint firstItem="nAj-it-6pv" firstAttribute="centerX" secondItem="g5t-kc-udP" secondAttribute="centerX" id="BYY-pz-j7P"/>
@@ -227,8 +226,9 @@
                             <constraint firstItem="nAj-it-6pv" firstAttribute="centerY" secondItem="g5t-kc-udP" secondAttribute="centerY" id="rql-ZB-Cvd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="RECIPES" id="9GC-aW-nkU">
-                        <barButtonItem key="rightBarButtonItem" title="Cart" id="5Lc-6T-hte">
+                    <navigationItem key="navigationItem" title="Recipes" id="9GC-aW-nkU">
+                        <barButtonItem key="backBarButtonItem" title=" " id="fo1-Sq-jTZ"/>
+                        <barButtonItem key="rightBarButtonItem" image="Shopping Cart" id="5Lc-6T-hte">
                             <connections>
                                 <segue destination="mAz-rb-Gce" kind="show" id="Z40-aM-yRg"/>
                             </connections>
@@ -257,7 +257,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CgP-by-GKd">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <rect key="frame" x="67" y="28" width="240" height="128"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aZ0-Rg-9cq">
                                         <rect key="frame" x="20" y="21.5" width="200" height="85"/>
@@ -293,11 +293,51 @@
                                     <constraint firstAttribute="height" constant="128" id="wdK-4i-gEW"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6Q-OI-lcZ">
+                                <rect key="frame" x="67" y="269.5" width="240" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fw2-CG-RMF">
+                                        <rect key="frame" x="20" y="10" width="200" height="108"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your shopping cart is empty! Here are some items to get you started:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgQ-9o-jNc">
+                                                <rect key="frame" x="7" y="0.0" width="186.5" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="EHL-tg-Qo9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebg-EM-3YO">
+                                                <rect key="frame" x="83" y="48" width="34" height="30"/>
+                                                <state key="normal" title="eggs"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtI-g4-H0R">
+                                                <rect key="frame" x="85" y="78" width="30" height="30"/>
+                                                <state key="normal" title="milk"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="v3F-RY-V5F"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="9zv-9h-AcV"/>
+                                    <constraint firstAttribute="height" constant="128" id="eoo-jw-W7R"/>
+                                    <constraint firstItem="fw2-CG-RMF" firstAttribute="centerX" secondItem="C6Q-OI-lcZ" secondAttribute="centerX" id="oes-bu-fC9"/>
+                                    <constraint firstItem="fw2-CG-RMF" firstAttribute="centerY" secondItem="C6Q-OI-lcZ" secondAttribute="centerY" id="vLW-8T-URp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="CgP-by-GKd" firstAttribute="centerX" secondItem="ncf-Go-uim" secondAttribute="centerX" id="LAb-Kn-jkE"/>
-                            <constraint firstItem="CgP-by-GKd" firstAttribute="centerY" secondItem="ncf-Go-uim" secondAttribute="centerY" id="OGc-fS-Ajc"/>
+                            <constraint firstItem="CgP-by-GKd" firstAttribute="centerY" secondItem="ncf-Go-uim" secondAttribute="centerY" constant="-241.5" id="OGc-fS-Ajc"/>
+                            <constraint firstItem="C6Q-OI-lcZ" firstAttribute="centerY" secondItem="ncf-Go-uim" secondAttribute="centerY" id="XS2-Yf-YbP"/>
+                            <constraint firstItem="C6Q-OI-lcZ" firstAttribute="centerX" secondItem="ncf-Go-uim" secondAttribute="centerX" id="azM-SS-gRG"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -305,7 +345,7 @@
             </objects>
             <point key="canvasLocation" x="1068" y="1567.4662668665669"/>
         </scene>
-        <!--SHOPPING CART-->
+        <!--Shopping Cart-->
         <scene sceneID="WMh-Gq-3g1">
             <objects>
                 <viewController id="mAz-rb-Gce" customClass="ShoppingCartViewController" customModule="Brainfood" customModuleProvider="target" sceneMemberID="viewController">
@@ -320,6 +360,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uX7-Im-LVO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Ingredient" textLabel="iMB-AD-xbM" style="IBUITableViewCellStyleDefault" id="ESH-lx-fT8">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -331,7 +372,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iMB-AD-xbM">
                                                     <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -351,18 +392,64 @@
                                     <constraint firstAttribute="height" constant="44" id="rNp-DD-Ind"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="MARK AS PURCHASED">
+                                <state key="normal" title="Mark as Purchased">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="markAsPurchasedWithButton:" destination="mAz-rb-Gce" eventType="touchUpInside" id="VIa-xk-PXp"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2nB-nz-IwF">
+                                <rect key="frame" x="67" y="237" width="240" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8dT-rZ-fun">
+                                        <rect key="frame" x="20" y="-6" width="200" height="140"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your shopping cart is empty! Here are some items to get you started:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbz-m7-GbX">
+                                                <rect key="frame" x="7" y="0.0" width="186.5" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="ZLw-0K-DaV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1G-au-Vjs">
+                                                <rect key="frame" x="83" y="80" width="34" height="30"/>
+                                                <state key="normal" title="eggs"/>
+                                                <connections>
+                                                    <action selector="clickOnRecommendationWithButton:" destination="mAz-rb-Gce" eventType="touchUpInside" id="UKj-to-1Ir"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcs-56-hhY">
+                                                <rect key="frame" x="85" y="110" width="30" height="30"/>
+                                                <state key="normal" title="milk"/>
+                                                <connections>
+                                                    <action selector="clickOnRecommendationWithButton:" destination="mAz-rb-Gce" eventType="touchUpInside" id="yjc-v9-bxJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="wQp-v8-A4F"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="8dT-rZ-fun" firstAttribute="centerX" secondItem="2nB-nz-IwF" secondAttribute="centerX" id="BIS-Ub-Ddm"/>
+                                    <constraint firstAttribute="width" constant="240" id="Mel-5J-MR2"/>
+                                    <constraint firstAttribute="height" constant="128" id="ZPd-aC-Gmv"/>
+                                    <constraint firstItem="8dT-rZ-fun" firstAttribute="centerY" secondItem="2nB-nz-IwF" secondAttribute="centerY" id="gln-Se-6fA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="uX7-Im-LVO" secondAttribute="trailing" id="1O7-2p-mlM"/>
                             <constraint firstAttribute="trailing" secondItem="bnK-Lv-DxF" secondAttribute="trailing" id="DeP-x9-TQi"/>
+                            <constraint firstItem="2nB-nz-IwF" firstAttribute="centerX" secondItem="Tnp-Xe-Uo9" secondAttribute="centerX" id="FaK-Be-PLR"/>
+                            <constraint firstItem="2nB-nz-IwF" firstAttribute="centerY" secondItem="Tnp-Xe-Uo9" secondAttribute="centerY" id="aNZ-lc-B6z"/>
                             <constraint firstItem="bnK-Lv-DxF" firstAttribute="leading" secondItem="Tnp-Xe-Uo9" secondAttribute="leading" id="czE-w5-qlI"/>
                             <constraint firstItem="uX7-Im-LVO" firstAttribute="top" secondItem="aYZ-bi-hio" secondAttribute="bottom" id="eP0-t6-q5X"/>
                             <constraint firstItem="uX7-Im-LVO" firstAttribute="leading" secondItem="Tnp-Xe-Uo9" secondAttribute="leading" id="i3d-h6-3aa"/>
@@ -370,7 +457,7 @@
                             <constraint firstItem="YzV-Kk-T7Q" firstAttribute="top" secondItem="bnK-Lv-DxF" secondAttribute="bottom" id="lSE-Uy-3vw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SHOPPING CART" id="1SE-5Q-yDe">
+                    <navigationItem key="navigationItem" title="Shopping Cart" id="1SE-5Q-yDe">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9W6-oh-fYy">
                             <connections>
                                 <action selector="add" destination="mAz-rb-Gce" id="rcU-oq-Ake"/>
@@ -378,6 +465,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emptyView" destination="2nB-nz-IwF" id="oGA-xS-YoK"/>
                         <outlet property="purchasedButton" destination="bnK-Lv-DxF" id="xGx-vo-7WW"/>
                         <outlet property="tableView" destination="uX7-Im-LVO" id="Nun-vR-rim"/>
                     </connections>
@@ -416,5 +504,6 @@
     </scenes>
     <resources>
         <image name="Complete" width="48" height="48"/>
+        <image name="Shopping Cart" width="16" height="16"/>
     </resources>
 </document>

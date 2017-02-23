@@ -42,7 +42,7 @@ struct APIClient {
                             fulfill(products)
                         case .Recipes:
                             let recipes = responseJSON.flatMap() { Recipe(from: $0)}
-//                            fulfill(recipes)
+                            fulfill(recipes)
                         case .ShoppingList:
                             fulfill([])
                     }
@@ -75,6 +75,7 @@ struct APIClient {
                     {
                         fulfill(variations)
                     } else {
+                        ShoppingCart.shared.add(item: item)
                         fulfill([])
                     }
                 }

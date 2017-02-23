@@ -20,6 +20,11 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var dataSource: [RecipeSection] = [] {
         didSet {
             guard dataSource != oldValue else { return }
+            if dataSource.count == 0 {
+                viewState = .loading
+            } else if dataSource.count != 0 && (viewState != .loading || viewState != .ready) {
+                viewState = .ready
+            }
             collectionView.reloadData()
         }
     }
@@ -59,6 +64,12 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         loadRecipes()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        loadRecipes()
+    }
+    
     func updateViewState() {
         switch viewState {
         case .ready:
@@ -77,6 +88,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func updateViewDetail() {
+        guard viewState == .ready else { return }
+        
         switch viewDetail {
         case .compact:
             recommendationsView.isHidden = true
@@ -104,13 +117,22 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     // MARK: - Initialize Data Sources
     
     func loadRecipes() {
+        var didClear = false
         ShoppingCart.shared.cartItems.forEach { item in
             let _ = apiClient.getRecipes(forItems: [Product(name: item)]).then { recipes -> Void in
                 let recipeSection = RecipeSection(title: "Recipes matching \(item).", recipes: recipes)
+                if !didClear {
+                    didClear = true
+                    self.dataSource.removeAll()
+                }
                 self.dataSource.append(recipeSection)
                 
                 self.viewState = .ready
             }
+        }
+        
+        if ShoppingCart.shared.cartItems.isEmpty {
+            self.dataSource.removeAll()
         }
     }
     

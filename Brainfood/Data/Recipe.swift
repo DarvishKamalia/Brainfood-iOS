@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 import PromiseKit
 
-class Recipe: Equatable {//: FeedItem {
+class Recipe: Equatable, FeedItem {
     
     let name: String
     let imageUrl: URL?
