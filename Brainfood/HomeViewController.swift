@@ -17,6 +17,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var recommendationsView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBAction func shoppingListButtonTapped(_ sender: Any) {
+        showShoppingList()
+    }
     var dataSource: [RecipeSection] = [] {
         didSet {
             guard dataSource != oldValue else { return }
@@ -102,6 +105,10 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
     }
     
+    func showShoppingList() {
+        self.performSegue(withIdentifier: "ShoppingListSegue", sender: self)
+    }
+    
     // MARK: - Configure Layout
     
     func configureLayout() {
@@ -136,6 +143,11 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         if ShoppingCart.shared.cartItems.isEmpty {
             self.dataSource.removeAll()
             let alert = UIAlertController(title: "Grocery List is Empty", message: "Please add some items to your list", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Okay", style: .cancel) { _ in
+                alert.dismiss(animated: true, completion: nil)
+            }
+            
+            alert.addAction(action)
             present(alert, animated: true, completion: nil)
         }
     }
