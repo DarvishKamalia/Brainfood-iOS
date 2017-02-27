@@ -51,13 +51,15 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         super.viewDidLoad()
         
         let _ = apiClient.fetchRecommendations(type: .Deals, forItems: ShoppingCart.shared.cartItems).then { items -> Void in
-            let vc = HorizontalFeedVC(items: items, title: "Deals based on your shopping cart")
-            self.addChildViewController(vc)
-            vc.view.frame = CGRect(x: 0, y: 20, width: self.recommendationsView.frame.width, height: self.recommendationsView.frame.size.height)
-            self.recommendationsView.addSubview(vc.view)
-            vc.didMove(toParentViewController: self)
-            
-            self.viewDetail = .expanded
+            if items.count > 0  {
+                let vc = HorizontalFeedVC(items: items, title: "Deals based on your shopping cart")
+                self.addChildViewController(vc)
+                vc.view.frame = CGRect(x: 0, y: 20, width: self.recommendationsView.frame.width, height: self.recommendationsView.frame.size.height)
+                self.recommendationsView.addSubview(vc.view)
+                vc.didMove(toParentViewController: self)
+                
+                self.viewDetail = .expanded
+            }
         }
         
         configureLayout()
@@ -133,6 +135,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         if ShoppingCart.shared.cartItems.isEmpty {
             self.dataSource.removeAll()
+            let alert = UIAlertController(title: "Grocery List is Empty", message: "Please add some items to your list", preferredStyle: .alert)
+            present(alert, animated: true, completion: nil)
         }
     }
     
