@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import IGListKit
 
-protocol FeedItem {
+protocol FeedItem: IGListDiffable {
     
     var imageUrl: URL? { get }
     var titleString: String { get }
     //Fix this to be slightly better pls 
     var subtitleString: NSAttributedString { get }
-    
+
 }

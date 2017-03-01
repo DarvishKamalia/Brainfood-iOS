@@ -8,8 +8,9 @@
 
 import Foundation
 import SwiftyJSON
+import IGListKit
 
-class Product : FeedItem {
+class Product: Equatable, FeedItem, IGListDiffable {
     
     let name: String
     var imageUrl: URL?
@@ -52,4 +53,22 @@ class Product : FeedItem {
         }
     }
     
+    // MARK: - IGListDiffable
+    
+    func diffIdentifier() -> NSObjectProtocol {
+        return name as NSString
+    }
+    
+    func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
+        return self == (object as? Product)
+    }
+    
 }
+
+func ==(lhs: Product, rhs: Product) -> Bool {
+    return lhs.name == rhs.name
+        && lhs.imageUrl == rhs.imageUrl
+        && lhs.msrp == rhs.msrp
+        && lhs.salePrice == rhs.salePrice
+}
+

@@ -17,13 +17,13 @@ extension APIClient {
         return "getRecipes"
     }
     
-    func getRecipes(forItems items: [Product]) -> Promise<[Recipe]> {
+    func getRecipes(forItems items: [Product], index: Int = 0) -> Promise<[Recipe]> {
         guard let url = URL(string: Constants.baseURL + recipesEndpoint) else {
             return Promise(error: InvalidURLError.invalidURL)
         }
         
         let productNames = items.map { $0.name }.joined(separator: ",")
-        let parameters = ["items": productNames]
+        let parameters = ["items": productNames, "index": "\(index)"]
         return Promise { fulfill, reject in
             Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.queryString).response { response in
                 guard let data = response.data, let json = JSON(data: data).array else {

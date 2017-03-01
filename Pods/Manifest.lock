@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.3.0)
   - FBLikeLayout (1.2)
+  - IGListKit (2.0.0)
   - Nuke (5.0.1)
   - PromiseKit (4.1.4):
     - PromiseKit/Foundation (= 4.1.4)
@@ -18,6 +19,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - FBLikeLayout
+  - IGListKit (~> 2.0.0)
   - Nuke
   - PromiseKit (~> 4.0)
   - SwiftyJSON
@@ -25,10 +27,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   FBLikeLayout: 687de95c7f29623dc4f7591c9746b99756952607
+  IGListKit: ee255e4e61865bc3e01ca96b690c5435c2887849
   Nuke: d47030a761bdd0f7589a734a90819d71eda2500d
   PromiseKit: e69aead34c817988ea688b1085aee21300d6dcb8
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 98e4d478183c318c2ad9ea09bb3918f4289f0380
+PODFILE CHECKSUM: aaf1e3db59099e01c46b3982cd370ed398db5815
 
 COCOAPODS: 1.2.0
