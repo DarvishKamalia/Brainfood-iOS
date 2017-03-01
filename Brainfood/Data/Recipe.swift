@@ -9,8 +9,9 @@
 import Foundation
 import SwiftyJSON
 import PromiseKit
+import IGListKit
 
-class Recipe: Equatable, FeedItem {
+class Recipe: Equatable, Hashable, FeedItem, IGListDiffable {
     
     let name: String
     let imageUrl: URL?
@@ -47,6 +48,22 @@ class Recipe: Equatable, FeedItem {
     
     var subtitleString : NSAttributedString {
         return NSAttributedString(string: "")
+    }
+    
+    // MARK: - Hashable
+    
+    var hashValue: Int {
+        return name.hashValue
+    }
+    
+    // MARK: - IGListDiffable
+    
+    func diffIdentifier() -> NSObjectProtocol {
+        return name as NSString
+    }
+    
+    func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
+        return self == (object as? Recipe)
     }
     
 }

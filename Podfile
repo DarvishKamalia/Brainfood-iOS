@@ -10,6 +10,8 @@ target 'Brainfood' do
   pod 'Alamofire'
   pod 'Nuke'
   pod 'FBLikeLayout'
+  pod 'IGListKit', '~> 2.0.0'
+  pod 'Heap'
 
  target 'BrainfoodTests' do
     inherit! :search_paths
