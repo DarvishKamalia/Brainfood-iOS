@@ -127,7 +127,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="fo1-Sq-jTZ"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="5Lc-6T-hte">
                             <connections>
-                                <segue destination="mAz-rb-Gce" kind="show" id="Z40-aM-yRg"/>
+                                <segue destination="mAz-rb-Gce" kind="show" identifier="showGroceryList" id="Z40-aM-yRg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -252,8 +252,8 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uX7-Im-LVO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="458"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uX7-Im-LVO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="483"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -280,20 +280,6 @@
                                     <outlet property="delegate" destination="mAz-rb-Gce" id="Omc-en-Lde"/>
                                 </connections>
                             </tableView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnK-Lv-DxF">
-                                <rect key="frame" x="0.0" y="559" width="375" height="44"/>
-                                <color key="backgroundColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="rNp-DD-Ind"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="Mark as Purchased">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="markAsPurchasedWithButton:" destination="mAz-rb-Gce" eventType="touchUpInside" id="VIa-xk-PXp"/>
-                                </connections>
-                            </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2nB-nz-IwF">
                                 <rect key="frame" x="67" y="237" width="240" height="128"/>
                                 <subviews>
@@ -338,10 +324,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qio-jP-SWi">
-                                <rect key="frame" x="20" y="408" width="355" height="150"/>
+                                <rect key="frame" x="0.0" y="480" width="375" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="z4s-Nw-HpQ"/>
+                                    <constraint firstAttribute="height" constant="120" id="z4s-Nw-HpQ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -349,17 +335,14 @@
                         <color key="tintColor" red="0.73333333329999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="uX7-Im-LVO" secondAttribute="trailing" id="1O7-2p-mlM"/>
-                            <constraint firstItem="bnK-Lv-DxF" firstAttribute="top" secondItem="qio-jP-SWi" secondAttribute="bottom" constant="1" id="6nP-Y5-m08"/>
+                            <constraint firstItem="qio-jP-SWi" firstAttribute="width" secondItem="Tnp-Xe-Uo9" secondAttribute="width" id="60u-1h-5ja"/>
                             <constraint firstItem="qio-jP-SWi" firstAttribute="top" secondItem="uX7-Im-LVO" secondAttribute="bottom" constant="-3" id="CLt-07-WSW"/>
-                            <constraint firstAttribute="trailing" secondItem="bnK-Lv-DxF" secondAttribute="trailing" id="DeP-x9-TQi"/>
                             <constraint firstItem="2nB-nz-IwF" firstAttribute="centerX" secondItem="Tnp-Xe-Uo9" secondAttribute="centerX" id="FaK-Be-PLR"/>
-                            <constraint firstItem="qio-jP-SWi" firstAttribute="leading" secondItem="bnK-Lv-DxF" secondAttribute="leading" constant="20" id="KYw-0J-Vcs"/>
-                            <constraint firstItem="qio-jP-SWi" firstAttribute="trailing" secondItem="bnK-Lv-DxF" secondAttribute="trailing" id="KaY-94-dfk"/>
+                            <constraint firstItem="qio-jP-SWi" firstAttribute="centerX" secondItem="Tnp-Xe-Uo9" secondAttribute="centerX" id="L7v-FO-ZYq"/>
                             <constraint firstItem="2nB-nz-IwF" firstAttribute="centerY" secondItem="Tnp-Xe-Uo9" secondAttribute="centerY" id="aNZ-lc-B6z"/>
-                            <constraint firstItem="bnK-Lv-DxF" firstAttribute="leading" secondItem="Tnp-Xe-Uo9" secondAttribute="leading" id="czE-w5-qlI"/>
                             <constraint firstItem="uX7-Im-LVO" firstAttribute="top" secondItem="aYZ-bi-hio" secondAttribute="bottom" id="eP0-t6-q5X"/>
                             <constraint firstItem="uX7-Im-LVO" firstAttribute="leading" secondItem="Tnp-Xe-Uo9" secondAttribute="leading" id="i3d-h6-3aa"/>
-                            <constraint firstItem="YzV-Kk-T7Q" firstAttribute="top" secondItem="bnK-Lv-DxF" secondAttribute="bottom" id="lSE-Uy-3vw"/>
+                            <constraint firstItem="YzV-Kk-T7Q" firstAttribute="top" secondItem="qio-jP-SWi" secondAttribute="bottom" constant="3" id="pDg-vT-O8V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Grocery List" id="1SE-5Q-yDe">
@@ -372,7 +355,6 @@
                     <connections>
                         <outlet property="cartPricesContainerView" destination="qio-jP-SWi" id="0qr-ac-mcI"/>
                         <outlet property="emptyView" destination="2nB-nz-IwF" id="oGA-xS-YoK"/>
-                        <outlet property="purchasedButton" destination="bnK-Lv-DxF" id="xGx-vo-7WW"/>
                         <outlet property="tableView" destination="uX7-Im-LVO" id="Nun-vR-rim"/>
                     </connections>
                 </viewController>

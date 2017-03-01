@@ -20,7 +20,7 @@ final class ProductSectionController: IGListSectionController, IGListSectionType
     
     func sizeForItem(at index: Int) -> CGSize {
         let sideLength = (collectionContext?.containerSize.width ?? 0.0) / 4.0
-        return CGSize(width: sideLength, height: 150)
+        return CGSize(width: sideLength, height: 120)
     }
     
     func cellForItem(at index: Int) -> UICollectionViewCell {
@@ -39,7 +39,10 @@ final class ProductSectionController: IGListSectionController, IGListSectionType
     }
     
     func didSelectItem(at index: Int) {
-
+        if let url = product?.link {
+            let safariViewController = SFSafariViewController(url: url)
+            UIApplication.shared.keyWindow?.rootViewController?.present(safariViewController, animated: true, completion: nil)
+        }
     }
     
 }

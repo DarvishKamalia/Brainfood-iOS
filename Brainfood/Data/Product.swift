@@ -16,6 +16,7 @@ class Product: Equatable, FeedItem, IGListDiffable {
     var imageUrl: URL?
     var msrp: Double?
     var salePrice: Double?
+    var link: URL?
     
     init (name: String, imageUrl: URL? = nil) {
         self.name = name
@@ -29,6 +30,7 @@ class Product: Equatable, FeedItem, IGListDiffable {
         imageUrl = json["imageURL"].url
         msrp = json["msrp"].double
         salePrice = json["salePrice"].double
+        link = json["link"].url
     }
     
     // MARK: - FeedItem variables

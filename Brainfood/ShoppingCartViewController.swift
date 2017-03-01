@@ -14,7 +14,6 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var emptyView: UIView!
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var purchasedButton: UIButton!
     @IBOutlet weak var cartPricesContainerView: UIView!
 
     var cartPricesCollectionViewController = HorizontalCollectionViewController()
@@ -54,17 +53,14 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
         case .ready:
             emptyView.isHidden = true
             tableView.isHidden = false
-            purchasedButton.isHidden = true
             cartPricesContainerView.isHidden = false
         case .editing:
             emptyView.isHidden = true
             tableView.isHidden = false
-            purchasedButton.isHidden = false
             cartPricesContainerView.isHidden = false
         case .empty:
             emptyView.isHidden = false
             tableView.isHidden = true
-            purchasedButton.isHidden = true
             cartPricesContainerView.isHidden = true
         default:
             break

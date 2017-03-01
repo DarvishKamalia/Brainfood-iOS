@@ -19,7 +19,7 @@ final class CartPriceSectionController: IGListSectionController, IGListSectionTy
     
     func sizeForItem(at index: Int) -> CGSize {
         let sideLength = (collectionContext?.containerSize.width ?? 0.0) / 4.0
-        return CGSize(width: sideLength, height: 150)
+        return CGSize(width: sideLength, height: 120)
     }
     
     func cellForItem(at index: Int) -> UICollectionViewCell {

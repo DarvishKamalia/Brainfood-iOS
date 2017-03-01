@@ -37,6 +37,17 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, IGListAdapterD
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        if (ShoppingCart.shared.cartItems.isEmpty) {
+            let alert = UIAlertController(title: "Welcome", message: "Add some items to your grocery list to get started", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Go to list", style: .default, handler: { _ in
+                self.performSegue(withIdentifier: "showGroceryList", sender: nil)
+            }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
+                alert.dismiss(animated: true, completion: nil)
+            }))
+            present(alert, animated: true, completion: nil)
+        }
+        
         loadRecommendations()
         loadRecipes()
     }
