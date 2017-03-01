@@ -7,177 +7,177 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03D9F2C118B2F4721833FA5E2D8701F0 /* IGListIndexPathResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E82373EF0200A13E147D65DC152CB5FD /* IGListIndexPathResult.m */; };
-		0760C36B7F91137D6013C75392ACD8DB /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = 96896F134B79335D22AAE5C7CF4A181A /* hang.m */; };
+		03D9F2C118B2F4721833FA5E2D8701F0 /* IGListIndexPathResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C78B1EBDA8D566B63CD4D159B12C3 /* IGListIndexPathResult.m */; };
+		0760C36B7F91137D6013C75392ACD8DB /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1F7E8F45FFDAFEB90AD4F3F2ACD422 /* hang.m */; };
 		08A37582C61F2071FE4F41822619499B /* Pods-Brainfood-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE11BAE928769D4888D1F392D619012 /* Pods-Brainfood-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08DD2EE862771D81F72AEED3830037F5 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182949804CB616C12EB85EC5362D0319 /* Cache.swift */; };
-		09A777C1F0DBD656CC239282B05C2AC3 /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B84E8756C940513BD2AA1D8FD1D62B9 /* DataDecoder.swift */; };
-		0C06F422FEF76E542818831A6687F8ED /* PMKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAF1A47A1687815BEC57A67E3AEE625 /* PMKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D38B03A42AD1365E9173431745F23FA /* AAA-CocoaPods-Hack.h in Headers */ = {isa = PBXBuildFile; fileRef = 56ADC38C7AB42684ED0604C10150C94A /* AAA-CocoaPods-Hack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F2F9C4A2CADD056A0ECABC67AA0C407 /* IGListWorkingRangeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7F7B6062594B45F2409224D0770394 /* IGListWorkingRangeHandler.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		10D2F33C8A69DE8FBC15765B4737CCB5 /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7869EF3A87AF07D1E11369BC1206A /* when.m */; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3C4742B913A748E8129B536F259E7 /* Timeline.swift */; };
-		127DC5535D82BBBF144BF01920727681 /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F40F3829D7C6764FA8A0C5F9E96D512F /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		134326D1672305F8CE717DB323604C8C /* IGListIndexPathResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B6E4753283F6A6EEBE9EDFCBDE192C /* IGListIndexPathResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		146A5A3963E321715014255CC6A73435 /* IGListGridCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 517B1C49B943CB6287D21FD2A7E3C94E /* IGListGridCollectionViewLayout.m */; };
+		08DD2EE862771D81F72AEED3830037F5 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B967561B643635092E829F00AEA7D /* Cache.swift */; };
+		09A777C1F0DBD656CC239282B05C2AC3 /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5C7C658E5BB561E1511144C42B5CA3 /* DataDecoder.swift */; };
+		0C06F422FEF76E542818831A6687F8ED /* PMKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E98B9F6A501466C9D6859E9D6BBDFBA1 /* PMKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D38B03A42AD1365E9173431745F23FA /* AAA-CocoaPods-Hack.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D71B4291C81DFE18F0A3D886678E231 /* AAA-CocoaPods-Hack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F2F9C4A2CADD056A0ECABC67AA0C407 /* IGListWorkingRangeHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E8CD69884F43994011F5E247837C8F /* IGListWorkingRangeHandler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		10D2F33C8A69DE8FBC15765B4737CCB5 /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = 3257305AFA1BE16539509CA4EC5393F2 /* when.m */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F944D97C2EBC76F77B7625312234DCC4 /* Timeline.swift */; };
+		127DC5535D82BBBF144BF01920727681 /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E3ADB8B32EF7F44B96F49751F0C5FB /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		134326D1672305F8CE717DB323604C8C /* IGListIndexPathResult.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC5036F6C4B7703465CEA421124E9A5 /* IGListIndexPathResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		146A5A3963E321715014255CC6A73435 /* IGListGridCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BBA526EDB2A6FE5633DA0B05A636A5 /* IGListGridCollectionViewLayout.m */; };
 		167F2DC83E499FF87F93E751D339CCB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		17C50221A0A67A2851FD27B1D1C7D29D /* IGListAdapterUpdaterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 064292AB6588690BD710410BD29BC39E /* IGListAdapterUpdaterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A4BF429109363AB21E514ACA86EE52B /* UICollectionView+IGListBatchUpdateData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EAF6CD18D633E23A467B3C9EE49A5B5 /* UICollectionView+IGListBatchUpdateData.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33276310F2F3C140DE0EF5ED6784269C /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BE6373E3E0074E15946C771CA7C1D33 /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B343F3305F5A7CB993DB35DAB114948 /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DDDE9A5156100FB6A267F6BCC632C22 /* IGListAdapterUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ED6D742FC43FA3CC378399D04CBFD7 /* IGListAdapterUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17C50221A0A67A2851FD27B1D1C7D29D /* IGListAdapterUpdaterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 82F3BE07077C718DBA294C3998E8A7B3 /* IGListAdapterUpdaterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A4BF429109363AB21E514ACA86EE52B /* UICollectionView+IGListBatchUpdateData.h in Headers */ = {isa = PBXBuildFile; fileRef = D9FAAC1157A1FC342C7A88876BA8C9C6 /* UICollectionView+IGListBatchUpdateData.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2D8F46412035C1291A706143071F6C /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BE6373E3E0074E15946C771CA7C1D33 /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C5F51B328C068119D0454FF1E9BD3D /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DDDE9A5156100FB6A267F6BCC632C22 /* IGListAdapterUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = AE55304F98EF2800321BAABE75E82B35 /* IGListAdapterUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22CE555A99EBFFA31CC795714B4F9786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		238826F69F646F9DD2BA4E982345D187 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11EC55AD3916CA9A88C63D5565D9BDF /* NSNotificationCenter+Promise.swift */; };
-		250C5284B31A0B4566A492B99F6B680A /* IGListSectionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 77474FD140B34882C87A9EE511322500 /* IGListSectionType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25858F9C0BC4CC1C10DBED1300A7CE14 /* IGListBatchUpdateData.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A22A48DE8A085EFB578B3472A675318 /* IGListBatchUpdateData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		238826F69F646F9DD2BA4E982345D187 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC42661AC04061FFB055AACFDA565F /* NSNotificationCenter+Promise.swift */; };
+		250C5284B31A0B4566A492B99F6B680A /* IGListSectionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 17C6509AB3CC415EBFE01E230443FA4C /* IGListSectionType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25858F9C0BC4CC1C10DBED1300A7CE14 /* IGListBatchUpdateData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3615CBA3E3E3F841261BFBD5C5A8615D /* IGListBatchUpdateData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25D99C280ADDBCAB4FEBF75B7648FFD8 /* Pods-Brainfood-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5FB9EA6212514321ED9E05A720B2D /* Pods-Brainfood-dummy.m */; };
-		26146896DEE5A52D0A7BFCC9B8DE17BD /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 300108B1BA4C51B8D85A95D4338ACC54 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2903FD2B630B15F6F2DD966CB303430D /* Promise+AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DADCFA2D350091172034AA400D0D65 /* Promise+AnyPromise.swift */; };
-		2E047E1A54807DE6F35EC3205BEF82F8 /* IGListMoveIndexPathInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 08DAD4E5F080B7F0B4D812450AECB21A /* IGListMoveIndexPathInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		30B15D99A1F770C9423047B947CE3A0F /* IGListKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E13B9398A437D6107C087C8C186AA /* IGListKit-dummy.m */; };
-		30F77B29DA04BD9CC5BE9C01580C8575 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2E79B80E8DEE7D066B7865419DCD9 /* Scheduler.swift */; };
-		3109138B22BB7B707A014D164C3856D0 /* IGListGridCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7AC0F5CFA883A835EB0A7644428797 /* IGListGridCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26146896DEE5A52D0A7BFCC9B8DE17BD /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B645FD83581DAC79724D24265611D77 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2903FD2B630B15F6F2DD966CB303430D /* Promise+AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5121323A5CAD4A42C54EE093775BC7 /* Promise+AnyPromise.swift */; };
+		2E047E1A54807DE6F35EC3205BEF82F8 /* IGListMoveIndexPathInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F4FDFB9844FA9E65C07F2DB1F3ECBB3B /* IGListMoveIndexPathInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		30B15D99A1F770C9423047B947CE3A0F /* IGListKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F3762A30901F45786A3B29F4B0919C /* IGListKit-dummy.m */; };
+		30F77B29DA04BD9CC5BE9C01580C8575 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD224392030E32280D7A4D791EFBDE5 /* Scheduler.swift */; };
+		3109138B22BB7B707A014D164C3856D0 /* IGListGridCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDF1964EF562FA20E11670E6828D0DC /* IGListGridCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		326FD2C779CC0BF3ACA317088B68C910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		354D194E08DBFCACB7212D68F9FED7B3 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA44C69FF917AB54E68F17630B0C492 /* race.swift */; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FAEAD3C966D4D07471FA9F7A9762DB /* TaskDelegate.swift */; };
-		37D1483A6785A27D9B1A6D89E4CA3C94 /* IGListIndexPathResultInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = CDEFA1860D1A802922B8A490EB3AD757 /* IGListIndexPathResultInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		38A78DDFD92E5B430CF910D13824DFB1 /* join.m in Sources */ = {isa = PBXBuildFile; fileRef = A427542428B650F4063190CC3B10F371 /* join.m */; };
-		3B6C2D70ECB9D76D26F923170C635C38 /* IGListMoveIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B85FBCC34059D6FA4828A89A091926 /* IGListMoveIndexPath.m */; };
-		3BFDACE0A31FA85E80E03B214AEEA34A /* FBLikeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076B94FB4BD21727CBC166E7F6C389C /* FBLikeLayout.m */; };
-		3E26F33882948F140BF79B4FCBF1C5A7 /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 2824CDE0ED9FF6248DDDF791FA640B54 /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FFF0AD117A236E70E9EEECA4F89117E /* PMKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 791D35115B42E351272135C8D02143B5 /* PMKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		407A0926539AA3F046587605107453C4 /* Deduplicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF105DC6E3426C963A30840BCD6BCD9C /* Deduplicator.swift */; };
-		4115551919DE9633F6395AF2F559DF20 /* IGListCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = A5BDB71C8FBA2CDDFEF4A6E9FB368372 /* IGListCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		442750A2D05CCE599E05FABCE2633273 /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111CD36DC8C92E053E6AAA21DDC8929D /* afterlife.swift */; };
-		4633751C48C788283EF370A47FC9EAC8 /* IGListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E5B75AFEB660F2384C9DD0CDF54AD9F /* IGListDiffable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47995A7CF19EADF3CDC1375E80AD7518 /* IGListSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F00ECA953BB7DEA9DFEDF71800FBE45 /* IGListSectionController.m */; };
-		483BA0DD9C507911686CF3F181B4F605 /* Preheater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8B20A75975D25794C5083CD1B5EA5 /* Preheater.swift */; };
-		499990494C7F0D2AE64F6BDAFBB0DF17 /* IGListExperiments.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AEA33762DD34B9D5C1984A53DC33038 /* IGListExperiments.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AE2202F38F2D7327DDF803E7B619DE4 /* IGListMoveIndexInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 79488C9A6794E454E9997B22516B7BBE /* IGListMoveIndexInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		4B173D112A82A3535655BCDF59ECF10D /* IGListSectionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = B00423B51A30221C1DE3B54F22107354 /* IGListSectionMap.m */; };
+		354D194E08DBFCACB7212D68F9FED7B3 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6419401AD5139E72747F9CC3CD148DB6 /* race.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAE0BEB09963AEC0E361E6EE690EB91 /* TaskDelegate.swift */; };
+		37D1483A6785A27D9B1A6D89E4CA3C94 /* IGListIndexPathResultInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4914D5DAD2483FAA6A14F6200743F418 /* IGListIndexPathResultInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		38A78DDFD92E5B430CF910D13824DFB1 /* join.m in Sources */ = {isa = PBXBuildFile; fileRef = A21A78AD7065AFF6CC35FE1B6FBE1BEB /* join.m */; };
+		3B6C2D70ECB9D76D26F923170C635C38 /* IGListMoveIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A100263116B491CD700B1594EE900B /* IGListMoveIndexPath.m */; };
+		3BFDACE0A31FA85E80E03B214AEEA34A /* FBLikeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB63C65B4517287CCC055434B89A40 /* FBLikeLayout.m */; };
+		3E26F33882948F140BF79B4FCBF1C5A7 /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C7DCA403A9117BAAC2737DA7F415EA /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FFF0AD117A236E70E9EEECA4F89117E /* PMKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 31379D0ED839AC497FC4B4035C91575C /* PMKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		407A0926539AA3F046587605107453C4 /* Deduplicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DFB1898C16CFB012CC179F2646FF4C /* Deduplicator.swift */; };
+		4115551919DE9633F6395AF2F559DF20 /* IGListCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 777394CDB7C8BC3CC31D8FD5BC5B3FAB /* IGListCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		442750A2D05CCE599E05FABCE2633273 /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE6B8229DBF372288DEC78306F7D64E /* afterlife.swift */; };
+		4633751C48C788283EF370A47FC9EAC8 /* IGListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = 191958787E8AE24095E8AB1E1BE9B450 /* IGListDiffable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47995A7CF19EADF3CDC1375E80AD7518 /* IGListSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A6F92DEB80EB127E3B3EC6F7B464B2 /* IGListSectionController.m */; };
+		483BA0DD9C507911686CF3F181B4F605 /* Preheater.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F24DF41658D316F42D6B5892729433 /* Preheater.swift */; };
+		499990494C7F0D2AE64F6BDAFBB0DF17 /* IGListExperiments.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A0475E59F5ABB9012E89DF005BC710 /* IGListExperiments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AE2202F38F2D7327DDF803E7B619DE4 /* IGListMoveIndexInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E09B651B302591C38C4C75D984FAE3BE /* IGListMoveIndexInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4B173D112A82A3535655BCDF59ECF10D /* IGListSectionMap.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91B41880AD00221F6CF3A4C4202D5E /* IGListSectionMap.m */; };
 		5010E3B1670E165DE8B694C139ADA29D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		517AC77264C78D8E49751A773BD7D5DD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E452CAF04D9317692576C528FB15FCD /* Error.swift */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511397B127C884B87F5E3CA6C256EC36 /* Request.swift */; };
-		55E7EA86AE00F706EA9238619F9F1F49 /* URLDataPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7883764D1B8EE25D4FE998BDADF3FBA8 /* URLDataPromise.swift */; };
+		517AC77264C78D8E49751A773BD7D5DD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87805E0C28C8E89F4F99F9F4B551D4C /* Error.swift */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF569BB26D2E8EF79C469EDE1BA1672 /* Request.swift */; };
+		55E7EA86AE00F706EA9238619F9F1F49 /* URLDataPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA796C090F0B8AD2034F180BB9356A7D /* URLDataPromise.swift */; };
 		571599B5345C9C89C3B4761ED6F533C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
-		5754A5010C866E2966027D74BA6C6A47 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A8C50DA10DD1006903D13B511E54F /* State.swift */; };
-		576DC7B0CD60398BD41CBE2D968AA406 /* Promise+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545811AA558D897DF396BAAF50BC8D2D /* Promise+Properties.swift */; };
-		579BD7728557C6603907654E003D7F11 /* IGListAdapterUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ADF76C9283214DEFF678C77C45D491 /* IGListAdapterUpdater.m */; };
-		57FB00520639383E67755B91A0B34CB2 /* IGListMoveIndexPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D2C3C6E925A06E47B183171A3341965 /* IGListMoveIndexPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59192A69477CC76116946E88CBF6A9C1 /* PMKQuartzCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D84C6F4294C8ABBFFA48CE82B6DD6397 /* PMKQuartzCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5ADBFB7B8E16FF5DC7CD8835FBCD7144 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AEF6CD60158B9F264E9442819A4034 /* Request.swift */; };
-		5CF27D82613DC819AA9890A35AD1E446 /* IGListMoveIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6349F9C91A5FF0515E726A929ED4A2FA /* IGListMoveIndex.m */; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70520C02EFBD6335AEA0E38DA30BF75C /* DispatchQueue+Alamofire.swift */; };
-		6122EC3F0DC97706933385805ECFBF54 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ADF2FBF2BA38B6B3501D0472A2398E /* NSURLSession+Promise.swift */; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F718D139554FBA49A8F02424C1038600 /* ServerTrustPolicy.swift */; };
-		65D51C5CEC2E99B3A5F7C8A797F73D87 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A59F724664C34EA0A6239CF61A70AE /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6667A6E82B4AD4DEEAF9702FC61BD489 /* Processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AC2DCBB6F848B482430ED41D7486DD /* Processor.swift */; };
-		6B411132695738A97E803B0A19F26E40 /* IGListSupplementaryViewSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 36138D2E990009BA6F1D0031385668AD /* IGListSupplementaryViewSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B7A55180C34021A501B706B019626D0 /* IGListReloadDataUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = CF59937611E19AF2E27B6610E808F0FF /* IGListReloadDataUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C4CFA0B5DACEBA7FCE5D4EF2503C61B /* IGListAdapterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD96A3F84C6C28E129DE6267BA70C5 /* IGListAdapterProxy.m */; };
-		6C4FF19CCA355061FE5BB62159D85672 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF9D95177AD1D128C586DDAF04879C5 /* DataLoader.swift */; };
-		6D310F2EBE279C4BA58AC78ED4ACF8B2 /* IGListAdapterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 45486CFD34C9695BB222962A33CED589 /* IGListAdapterProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6DC05DAED19A05B1B239D2FD588C4EF7 /* IGListStackedSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F513ABACC1B0A5EDA1424AA103013F /* IGListStackedSectionController.m */; };
-		6DF8205380DF1209208417DCB0BB933E /* IGListAdapterDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F09D7EAA500538447BF74CF0A1FA41EC /* IGListAdapterDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E613C9AECE3F7789BFD9997CB9D29E0 /* IGListSingleSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BAFF0CF41115D47A3B5B8D9D981172 /* IGListSingleSectionController.m */; };
-		6F68465FAC250F81F2F089218B2DE012 /* IGListAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4740FA2FACAE3B823608B14968798B /* IGListAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FF62F7C7199C2012A0B17A3C6A9E7A5 /* NSNumber+IGListDiffable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8AD0239637D714C8A173CAD54A9447 /* NSNumber+IGListDiffable.m */; };
-		72BE8F5161D23946780AA6BF76FBDEE4 /* CALayer+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A8E793847AB414A9D0D3EEBB41F725 /* CALayer+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		734BDA047AE790465776B5471E730C56 /* IGListDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BDE1EDB4040D407BA57268BB1392D4C /* IGListDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73CF9A8216D418EA053146F4B67D8872 /* DispatchQueue+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E98A4D531C81325BDAB9D2AA455D4 /* DispatchQueue+Promise.swift */; };
-		74940211BB437ACC3F650D3AFC316800 /* PMKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A626A55307AB9996E49E04F0562988 /* PMKAlertController.swift */; };
+		5754A5010C866E2966027D74BA6C6A47 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAFDF8743FC7038572D4DAD5F5F35AD /* State.swift */; };
+		576DC7B0CD60398BD41CBE2D968AA406 /* Promise+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773DE4399AF7AE756B55FCEDC2F3003F /* Promise+Properties.swift */; };
+		579BD7728557C6603907654E003D7F11 /* IGListAdapterUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD43CB983F1CE89C0448BADCE4EEADB /* IGListAdapterUpdater.m */; };
+		57FB00520639383E67755B91A0B34CB2 /* IGListMoveIndexPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D93C4984C95B0B13A72BAA9BEC526EF /* IGListMoveIndexPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59192A69477CC76116946E88CBF6A9C1 /* PMKQuartzCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E98A0C1615A948A3611230A9BBFAA51 /* PMKQuartzCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ADBFB7B8E16FF5DC7CD8835FBCD7144 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BCFDC4391DADE91CF71C7FB063BE7E /* Request.swift */; };
+		5CF27D82613DC819AA9890A35AD1E446 /* IGListMoveIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = BF463086A406C62A51C3C91AE939B0D4 /* IGListMoveIndex.m */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B7DA3E1C2D6DC5231EE23EA667857A /* DispatchQueue+Alamofire.swift */; };
+		6122EC3F0DC97706933385805ECFBF54 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3574F456B1A134A84B7A609917CEFF3 /* NSURLSession+Promise.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B17AF56A88EBA1EBD38E45B78E5B69 /* ServerTrustPolicy.swift */; };
+		65D51C5CEC2E99B3A5F7C8A797F73D87 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E25BB00A38C052EA0B4DC78D7FD4806 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6667A6E82B4AD4DEEAF9702FC61BD489 /* Processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F8F3F89EF76891D7956E56F77C4198 /* Processor.swift */; };
+		6B411132695738A97E803B0A19F26E40 /* IGListSupplementaryViewSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E1A0E0A9E7DC2A741662A9D6F02BC071 /* IGListSupplementaryViewSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B7A55180C34021A501B706B019626D0 /* IGListReloadDataUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E409AAA1F9FF996B85A2CBD743F7EF /* IGListReloadDataUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C4CFA0B5DACEBA7FCE5D4EF2503C61B /* IGListAdapterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 731215F8AA80463657521E0CF560B46E /* IGListAdapterProxy.m */; };
+		6C4FF19CCA355061FE5BB62159D85672 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D79076F5B844E19D9CD59A8498F531 /* DataLoader.swift */; };
+		6D310F2EBE279C4BA58AC78ED4ACF8B2 /* IGListAdapterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0485914726E36CD129AFA1C031B7BF7B /* IGListAdapterProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6DC05DAED19A05B1B239D2FD588C4EF7 /* IGListStackedSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 134CB5A41623208DA266AADB6C3F2291 /* IGListStackedSectionController.m */; };
+		6DF8205380DF1209208417DCB0BB933E /* IGListAdapterDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9390B3E2C37CB81B63400A6605983B /* IGListAdapterDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E613C9AECE3F7789BFD9997CB9D29E0 /* IGListSingleSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6FE09F3CEFD348641D0CB1FD0C0DA0 /* IGListSingleSectionController.m */; };
+		6F68465FAC250F81F2F089218B2DE012 /* IGListAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D292AC9899C29A57BDC1FF82525F259 /* IGListAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FF62F7C7199C2012A0B17A3C6A9E7A5 /* NSNumber+IGListDiffable.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D08097B175E685DB40467B92D06A9 /* NSNumber+IGListDiffable.m */; };
+		72BE8F5161D23946780AA6BF76FBDEE4 /* CALayer+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 8131F634892FE4D88629A8F08AE8E328 /* CALayer+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		734BDA047AE790465776B5471E730C56 /* IGListDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D6B323654BFD9CFC5F7993E242A7AB /* IGListDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73CF9A8216D418EA053146F4B67D8872 /* DispatchQueue+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A5CE1297A0AC831F8709FB14A98E6 /* DispatchQueue+Promise.swift */; };
+		74940211BB437ACC3F650D3AFC316800 /* PMKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BBB921351A7F32B62936EEA9EA3DDA /* PMKAlertController.swift */; };
 		78177E7123DAE80571BA9537A20810A2 /* Pods-BrainfoodTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BB4713C04215C0E8DCAAC522153D630 /* Pods-BrainfoodTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F1AC9C6686BEFD33FD6E05F084612 /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F89513A794BCC4F7080029AEE7D93B /* Result.swift */; };
-		81398D284C811060FCE52E52F778C88B /* Nuke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C09AF27A2584BB8F09622A3719A339 /* Nuke-dummy.m */; };
-		814DD2F4C73534EA34CB54322C9DE13E /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208B300B56695FA6302A8F0499A17BC /* NSObject+Promise.swift */; };
-		8341727D7362AF57EED4B4722C4AE266 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AB4FA0853E378E12F2CFE4B90555BF /* Loader.swift */; };
-		839CC9B077E5042C7EE893F0B339E6CC /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = A5581B54F5CF149EA319DC9496615C16 /* after.m */; };
-		83B6A64F2AD0FE5DF0CEE751EF8BF26D /* UICollectionView+IGListBatchUpdateData.m in Sources */ = {isa = PBXBuildFile; fileRef = 606AC3D58BA3C40BC033239DC6DF2ADD /* UICollectionView+IGListBatchUpdateData.m */; };
-		84D87AFDF73634104EAFCB03A82CCA40 /* IGListAdapterUpdaterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = CDCA6FF1B4CB00484ADBAA1C9A47B86B /* IGListAdapterUpdaterInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		887E96BDA96118C5EBAAB3EA476B2A04 /* IGListStackedSectionControllerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F010F9711D2AF06C3F3905E60644788 /* IGListStackedSectionControllerInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		889AADC3C1BE1DD2704B08D219522B17 /* IGListStackedSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D5D3BA930EDE9692D91B427CEC2C28 /* IGListStackedSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8902BC0EBC7718A380A2F9319B5C206D /* IGListReloadDataUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D55E45ADC773FA6A7A4315053C33C60 /* IGListReloadDataUpdater.m */; };
-		8B694B75CFFA9D9E7DD05BB62DF81CCA /* IGListIndexSetResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E5DF73C0A1F6142AC0FB31A207268E /* IGListIndexSetResult.m */; };
-		8C1D6B555F9936B7ADB6F70C4F297CCA /* IGListScrollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6597672248D794CADC84A98F440CE694 /* IGListScrollDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DCDC4B8995527B0212A9B37826D33A /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D70AA7C1712C648324A5E71661C9B18 /* Result.swift */; };
+		81398D284C811060FCE52E52F778C88B /* Nuke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9185F21A896750CD25A9E4BE07BA0B /* Nuke-dummy.m */; };
+		814DD2F4C73534EA34CB54322C9DE13E /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF64CD0EF9A255852E5F66339062953 /* NSObject+Promise.swift */; };
+		8341727D7362AF57EED4B4722C4AE266 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619CA312110A75C4B301E91030BE7B48 /* Loader.swift */; };
+		839CC9B077E5042C7EE893F0B339E6CC /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C66DEAFDC1AD6FC1142A08FC5B501F /* after.m */; };
+		83B6A64F2AD0FE5DF0CEE751EF8BF26D /* UICollectionView+IGListBatchUpdateData.m in Sources */ = {isa = PBXBuildFile; fileRef = 033221E70683B94C65213BBB2AE165F3 /* UICollectionView+IGListBatchUpdateData.m */; };
+		84D87AFDF73634104EAFCB03A82CCA40 /* IGListAdapterUpdaterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A8828E841410AFABEB9FEBFCFED67A5 /* IGListAdapterUpdaterInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		887E96BDA96118C5EBAAB3EA476B2A04 /* IGListStackedSectionControllerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 77DEFD8ABEE16F7AD67500F5AD5167D8 /* IGListStackedSectionControllerInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		889AADC3C1BE1DD2704B08D219522B17 /* IGListStackedSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = C065B8192945D3B4D3D0EE542B1126C2 /* IGListStackedSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8902BC0EBC7718A380A2F9319B5C206D /* IGListReloadDataUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = B72E08BFD00BA54D9454738ED7A0EF69 /* IGListReloadDataUpdater.m */; };
+		8B694B75CFFA9D9E7DD05BB62DF81CCA /* IGListIndexSetResult.m in Sources */ = {isa = PBXBuildFile; fileRef = C07565649C7AA39C0A5036791D306F75 /* IGListIndexSetResult.m */; };
+		8C1D6B555F9936B7ADB6F70C4F297CCA /* IGListScrollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C57058DF6BB7B3CE664BD6566294968 /* IGListScrollDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DECCC3914EF1FB8F1376F7F0F22AA0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
 		9BC4E30F752340B2966D405C31127F47 /* Pods-BrainfoodTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DF7336A93D1AD4FE76618B541F5176 /* Pods-BrainfoodTests-dummy.m */; };
-		9DB93BA64A25F292A99F91F1AE2174FC /* Nuke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D576D8E309BF3FC9D5A79027758A841 /* Nuke.swift */; };
-		9E0190CE92E119EE99BE24CE87B7F499 /* IGListAdapterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = AE2A01B52802DFE760BCBF689622AF82 /* IGListAdapterInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914272AA5DF9557B2A12CB2C0D5DB863 /* AFError.swift */; };
-		9F901C23CBDAD7CC1FF12B5B91A5CE7B /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525790D70C8D2AFAB1DC379B2F744E99 /* UIView+Promise.swift */; };
-		9FF382DD5126FFF3A3058E8DE3CD2B4B /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775C735426A6735A6C8D324A544BE47 /* AnyPromise.swift */; };
+		9DB93BA64A25F292A99F91F1AE2174FC /* Nuke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4340260C2FC647476F4F0869EC21ED9B /* Nuke.swift */; };
+		9E0190CE92E119EE99BE24CE87B7F499 /* IGListAdapterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 97A4A5349347647E3052B280971CD61B /* IGListAdapterInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89BC5C330168A7AF6439700EECF714 /* AFError.swift */; };
+		9F901C23CBDAD7CC1FF12B5B91A5CE7B /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B83AEEF54CBFB16625684846524637 /* UIView+Promise.swift */; };
+		9FF382DD5126FFF3A3058E8DE3CD2B4B /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296D944270C6EA165022A77B9AAEBC0D /* AnyPromise.swift */; };
 		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		A0500A595B0D7711F92508123C049EF1 /* UIViewController+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F332E8E984D4CDF89307F2DEF5AAD6 /* UIViewController+AnyPromise.m */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A404BA1D9E04CB724273BF2C7ABC007A /* NetworkReachabilityManager.swift */; };
-		A37632320946CC05DC84449C0F23D7EF /* IGListKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6754F4AA864B8E9F4B5EE57B75063516 /* IGListKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A37812C26653B18960550F92588C49DA /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 557A3A87AB3C5F3E66186FDD680B749E /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A38B7DA5CBF62C29ABA594D8F004633A /* FBLikeLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AD7A9A6A1BA086AD2F9662E3AA997E /* FBLikeLayout-dummy.m */; };
-		A3C63A19DD5D204FDF88C1C5B131DE8D /* IGListDisplayDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 81DF1F463BED7B1E172EE88E49A3583A /* IGListDisplayDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A430D44BF9642FA6C62D1B3212E3B7C9 /* IGListCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80ECE0463E3D74ACA2C919F18EF3A6C3 /* IGListCollectionView.m */; };
-		A49323CB51191C64664596B5777A174E /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 979DA9411F4E11F614359358305D6E66 /* AnyPromise.m */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CBAAB71A61F3CE4F547C41E390105A /* Alamofire-dummy.m */; };
-		AB09A5CB54F76BA01DC888E96C502BED /* IGListMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE5F5F3726B6CB429CFDCBE9A1DB466 /* IGListMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACCB500B4DCB5B52AFBA3E5D07C16A49 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3E1AE94FC10E4389E681AF17280790 /* SwiftyJSON-dummy.m */; };
-		ADC18B8A467A4390B130B91CD781004B /* IGListIndexSetResultInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D823BEB6738595ECF66C8237C3AABF0D /* IGListIndexSetResultInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E610BBFC51936E2B0783A6D83BBBD0DD /* SessionManager.swift */; };
-		B0B78274B3C92BDADB01897E0A9B5EFB /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CA1DB3933E2E0A8D168F1EC5FE083DE /* PromiseKit-dummy.m */; };
-		B0C558D8F5E70DB822D0BE9722A91631 /* IGListIndexSetResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 693AFD3178261A828025DD883DF15E5E /* IGListIndexSetResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0500A595B0D7711F92508123C049EF1 /* UIViewController+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 308BF4ACCB95E87E19C9C9B7DEEAEA42 /* UIViewController+AnyPromise.m */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF4C24D37E22BD3DB35AD8EF6260A71 /* NetworkReachabilityManager.swift */; };
+		A37632320946CC05DC84449C0F23D7EF /* IGListKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D864CD7EE6FBB0A4C2BC269EE2488421 /* IGListKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A37812C26653B18960550F92588C49DA /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 36766CF942EAA9ED5F67EC5C286DEBB1 /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A38B7DA5CBF62C29ABA594D8F004633A /* FBLikeLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FC6595921B2A29FDFEDACC5F724D56 /* FBLikeLayout-dummy.m */; };
+		A3C63A19DD5D204FDF88C1C5B131DE8D /* IGListDisplayDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9762A654B250E4BA7D3610FEAB736FD1 /* IGListDisplayDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A430D44BF9642FA6C62D1B3212E3B7C9 /* IGListCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5263B117C3FD5CEC8D5F734076C75ED /* IGListCollectionView.m */; };
+		A49323CB51191C64664596B5777A174E /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F4E077012E4B99FEB290EFD8C91AC1 /* AnyPromise.m */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71251E1F9B4E2668C015113100449881 /* Alamofire-dummy.m */; };
+		AB09A5CB54F76BA01DC888E96C502BED /* IGListMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3619E16963C11582AFBDE594092E3E79 /* IGListMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACCB500B4DCB5B52AFBA3E5D07C16A49 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A38DD4F807D74932D38590E87DE6B50E /* SwiftyJSON-dummy.m */; };
+		ADC18B8A467A4390B130B91CD781004B /* IGListIndexSetResultInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = FB9C343266591FE262EEFF98137CC367 /* IGListIndexSetResultInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4C5845DDC8EF3953A4C71E3E11C1F9 /* SessionManager.swift */; };
+		B0B78274B3C92BDADB01897E0A9B5EFB /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAA7FD87114CCF70535847FCE1D813F /* PromiseKit-dummy.m */; };
+		B0C558D8F5E70DB822D0BE9722A91631 /* IGListIndexSetResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F40CADFE355FB9342953999BBED2D6 /* IGListIndexSetResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B20BF95AD2C7A6588DD3F031B8DC37C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
-		B4B5CDCC153B420B48121E03C95CC644 /* dispatch_promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 291FA4D0CA3C2BB3068490FB74CE2F5F /* dispatch_promise.m */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D526D813DDB692A385681C23A52E4E43 /* MultipartFormData.swift */; };
-		B81B7FE5402D0697464A95D4B03DF699 /* FBLikeLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6626F931A72B6E57DE20178ECA13D6 /* FBLikeLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B85090D1B555D35C97EFC0192C741954 /* IGListKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E4D6510846424859150492F3D03F9B67 /* IGListKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA87AE69221351D1DFBD2DA042CA7BA4 /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = B32730D52D7A3E91C186532202FBD941 /* NSURLSession+AnyPromise.m */; };
-		BB2D3FD9525FFCE2B59E769A35234736 /* IGListSingleSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = C771DC3739C6509FC67F5E4224FCA417 /* IGListSingleSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9894E9FBE1DA5D07879B803BFFDA1A /* Validation.swift */; };
-		BE1EC29245521FAE05DB9EE2DC97E117 /* IGListSectionMap.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1B5EF8224C00F86992C24EF81C309D /* IGListSectionMap.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6538419A7F75F9568E9047C6D464A2 /* ParameterEncoding.swift */; };
-		C07BA9537D41D1EDDF54D2322DE869DD /* IGListWorkingRangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E404EB8434F0400E4C04768D8B19DA5D /* IGListWorkingRangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6DFA4FDE4DD5BEC8B2E16B488FEA51B /* CancellationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6136878507494181B0D96DDCDF5C93FA /* CancellationToken.swift */; };
-		C746E6A7A60B7FD3E1A683CC7DD6553A /* NSTask+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D100E27B6DE8A401FAAACA760BC08D /* NSTask+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4B5CDCC153B420B48121E03C95CC644 /* dispatch_promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 52882D753259DD2785A23176671032BC /* dispatch_promise.m */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AAB1413F6892309DD0F6E8B9AB9C13 /* MultipartFormData.swift */; };
+		B81B7FE5402D0697464A95D4B03DF699 /* FBLikeLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 398D754A07391241C44B0923E7A35812 /* FBLikeLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B85090D1B555D35C97EFC0192C741954 /* IGListKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C6673C2B22AC20DD86D031EC87D3C85 /* IGListKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA87AE69221351D1DFBD2DA042CA7BA4 /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BE093B6E3614137BFD3CD99963CF3A /* NSURLSession+AnyPromise.m */; };
+		BB2D3FD9525FFCE2B59E769A35234736 /* IGListSingleSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = E40B362137E2FDD239C237FE0C7E7690 /* IGListSingleSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F3E18CDAC8B9BBDF77BBC29DC86C73 /* Validation.swift */; };
+		BE1EC29245521FAE05DB9EE2DC97E117 /* IGListSectionMap.h in Headers */ = {isa = PBXBuildFile; fileRef = FF381A97348A31FB74B744DCF2BB8000 /* IGListSectionMap.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCE3B4044155645BB586ECDAE269599 /* ParameterEncoding.swift */; };
+		C07BA9537D41D1EDDF54D2322DE869DD /* IGListWorkingRangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 79F4588A9B10890228EAD88A2040A685 /* IGListWorkingRangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6DFA4FDE4DD5BEC8B2E16B488FEA51B /* CancellationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18296EF52FFA43FBBF8F9826B40B94D1 /* CancellationToken.swift */; };
+		C746E6A7A60B7FD3E1A683CC7DD6553A /* NSTask+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 161C0DDA0D55CCDE2C86D161EF6DD265 /* NSTask+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C81EE80AFB729FE2EE65047B346C82CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		C8F78179E139AD7BCF77B9FCF1EB69CA /* Zalgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD417407A03AC0BCFDEC2A29E1CEF35 /* Zalgo.swift */; };
-		C9FBC1D1A30EF97E9B2F74740C8B8E1A /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFFBAA2AE380A7481A7FAD931F8A2BF /* after.swift */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A943E78FAC0CF300B4A9E65FAE4A4FFE /* Response.swift */; };
-		CF55E9BF1332E1FD16AD14BA226932F0 /* IGListDisplayHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A2972471130F4790B7137332F72A8D71 /* IGListDisplayHandler.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C8F78179E139AD7BCF77B9FCF1EB69CA /* Zalgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A167BAECD59EBAE01109488C8F98A /* Zalgo.swift */; };
+		C9FBC1D1A30EF97E9B2F74740C8B8E1A /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F8EA3F76A084E5AF2DAE6E0FAC88 /* after.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5DF1C314FD68D1AB1CA41C89880D2 /* Response.swift */; };
+		CF55E9BF1332E1FD16AD14BA226932F0 /* IGListDisplayHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7A439493C5B7612B5914E71380EA73 /* IGListDisplayHandler.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D0B98B2218577698D56128BB7397DFF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		D0DB8154AC594D40CC1AD027D25DB4A8 /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EBE19F81CA553662004841D71208B /* NSNotificationCenter+AnyPromise.m */; };
-		D227E8DC1846462A9B401C55E0726797 /* IGListBatchUpdateData.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBE4AC413894AA431DD55E535C1509AB /* IGListBatchUpdateData.mm */; };
-		DB45328DFBC30368CA6D9820ADC17F53 /* IGListMoveIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 81BCB61A86DF9DDEE25007A0B4DC9840 /* IGListMoveIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBB8430E46A7A61D6CED2D5D61C5691C /* IGListUpdatingDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AC12812D11AFFF84D3E2A5313763A697 /* IGListUpdatingDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFE13DF5EBEAC559AE077E158C2A799F /* IGListAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD0FA95ABD1E8EF8DB9C5E7E2954C7A /* IGListAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E01B4291C685E4E71C9524AAD184EAC0 /* GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = 402841DC10A8F0EEA6E1E4ACF877D56D /* GlobalState.m */; };
-		E1FD8324F4A1F789AC6FED62E0DB4A44 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498BCE4EAE2B6AA2EBC219B4400EF72F /* Process+Promise.swift */; };
+		D0DB8154AC594D40CC1AD027D25DB4A8 /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A6453543E7CB41B8C00C06BBD0E10 /* NSNotificationCenter+AnyPromise.m */; };
+		D227E8DC1846462A9B401C55E0726797 /* IGListBatchUpdateData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 322406B62642EFB6BE3BE6EA87F92072 /* IGListBatchUpdateData.mm */; };
+		DB45328DFBC30368CA6D9820ADC17F53 /* IGListMoveIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = B4389C4B1C6F4B0750AF262213253B00 /* IGListMoveIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBB8430E46A7A61D6CED2D5D61C5691C /* IGListUpdatingDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B973002CF3FAB2B25132AE31FCA7A50A /* IGListUpdatingDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFE13DF5EBEAC559AE077E158C2A799F /* IGListAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C8AE30AD5D78A6B1BB1B7D7F13E9296 /* IGListAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E01B4291C685E4E71C9524AAD184EAC0 /* GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0B419CF801E1D2A8D15C915DA6AA38 /* GlobalState.m */; };
+		E1FD8324F4A1F789AC6FED62E0DB4A44 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BA6E78F53A3D1BC79F32A78F3A4145 /* Process+Promise.swift */; };
 		E2F9430C3442ABF28FCE68B4075AA022 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
-		E3B54773F37740D5C110BC911795DAD1 /* IGListCollectionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = FC9A99A47E04939D35A71FC4C8DDC04C /* IGListCollectionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3F1538E71AAFE06F3FF5A1F82C7E481 /* Nuke-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFEE2BD6A71E2F3B8DDD32D6F1E129D1 /* Nuke-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E46121F3DBACE7B64B78D118CCA6BD48 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C875D5156EA5F1C299F8329FE9766B /* Promise.swift */; };
-		E528C18E53090D5F22BF0424B62AC08F /* UIViewController+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72996F1DBFD651A4500D068F9E87BA6 /* UIViewController+Promise.swift */; };
-		E7485194306322D3BD8EC970D0E52211 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FB6B620D450B7613BB0237E394AA0E /* SwiftyJSON.swift */; };
-		E8421FCAB6BACB2BA1AA9025BE1CA2F3 /* IGListSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 509A174248050DA00C7BFFE36D192C9E /* IGListSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECB644F35F962A905C599DFA812700BB /* NSString+IGListDiffable.m in Sources */ = {isa = PBXBuildFile; fileRef = C5835988A646CF570F3586A93E0FC2F3 /* NSString+IGListDiffable.m */; };
-		ED10986E509116BF0EDF4F0E856BBD77 /* NSString+IGListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7B4ED3C9FACDEA3E8C0AC9D4175F42 /* NSString+IGListDiffable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB34014D9838B14291DBB39C7CBAB45 /* Notifications.swift */; };
-		F01E591A91E3EC9635177A3E2433ACC5 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE16B514DECC1567A3C36D98C7BAB02 /* Manager.swift */; };
-		F08BAA329159C9C5C75C521233B508AB /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6B9DD50988B2A236E9DC7B9744B3D9 /* UIView+AnyPromise.m */; };
-		F379E86C71333ED9A2F4F7FE8031A9AD /* IGListDiff.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38499B40813CA15DB486D0D007F5A844 /* IGListDiff.mm */; };
-		F4172F341C6306C767A7457F4B6AA2B7 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BC55290DD82DB1F64E785FEEC0F88F /* when.swift */; };
-		F429AB7A46487150BA17772E7188B0B8 /* IGListDisplayHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD5AC24F1D440D11FB4CB3C9E99DABE /* IGListDisplayHandler.m */; };
-		F4EBB24E84D9486B12F95D370E278E7D /* NSURLSession+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 84782391AA3655F3654F99E36B67D455 /* NSURLSession+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5DA8E70E1B370C3D6388459CB38618D /* CALayer+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0602C464FE63DB462F5BCDC6A0112B /* CALayer+AnyPromise.m */; };
-		F634D219C026EB34FCA9AA11893F50CA /* join.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE302491D2ACCC4BB6EC6C74F326840 /* join.swift */; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC626E7DDAB5623D2A33194EC1406AE /* ResponseSerialization.swift */; };
-		F6C62842EE2CF2E67A3851CFB357C4A0 /* wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19892A85497ADAC7D3CD3179A89D95 /* wrap.swift */; };
-		F81DAB84FE444B48DDB0A40E5AD3BA8D /* IGListWorkingRangeHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A758D32D66AB899DB62E9B0FF8F8E /* IGListWorkingRangeHandler.mm */; };
-		F828F323F8243725F3C5AB824CA14FBB /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F88F04CB4A7ECBE7BD8460DCF4881C1 /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8CBE6AE6F5751DBEC4B6D385CAC1DF /* Alamofire.swift */; };
-		F9957117341A7CB7E40D52944B35E7FF /* IGListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE911BD7E1542E255CF8F91E2337593 /* IGListAdapter.m */; };
-		FB582A36D43F2B261A98E9604577D61D /* IGListSectionControllerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = B8AB90778ECF68BA1717A93295731F5D /* IGListSectionControllerInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		FB944C7A8362A40301C222544A0742EF /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA47C14DC020A8419534FCFB198D1F5 /* NSTask+AnyPromise.m */; };
-		FE82A383E657A54615930390153D539D /* IGListAdapterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3178888C12BD8F1C034B33BB086EA9A8 /* IGListAdapterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF9C95C6B13B9EE21B4436107FCBC8B9 /* NSNumber+IGListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CEE21AD2B95C54AE90566E3662E8587 /* NSNumber+IGListDiffable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFBE13A9BB82505FC0D68AC53470D5DA /* FBLikeLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5844E4C91E88EA607877DC25BBB0EA2E /* FBLikeLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3B54773F37740D5C110BC911795DAD1 /* IGListCollectionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B425BAAA7761C1230E45C882A400896 /* IGListCollectionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3F1538E71AAFE06F3FF5A1F82C7E481 /* Nuke-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67DE2A8758F395FB50FFBE2496C0763E /* Nuke-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E46121F3DBACE7B64B78D118CCA6BD48 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194CDE2D08B76194BC62C94627EAB833 /* Promise.swift */; };
+		E528C18E53090D5F22BF0424B62AC08F /* UIViewController+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F74042895AFDFFEDBDC962D08BA3011 /* UIViewController+Promise.swift */; };
+		E7485194306322D3BD8EC970D0E52211 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53028C10AC5A29F34A09149B44263E65 /* SwiftyJSON.swift */; };
+		E8421FCAB6BACB2BA1AA9025BE1CA2F3 /* IGListSectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D7FA15E337692F25938A75E50938E47 /* IGListSectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECB644F35F962A905C599DFA812700BB /* NSString+IGListDiffable.m in Sources */ = {isa = PBXBuildFile; fileRef = C0264B848A4F6578DD10AA50744D3A09 /* NSString+IGListDiffable.m */; };
+		ED10986E509116BF0EDF4F0E856BBD77 /* NSString+IGListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = 54D52F828417C5C86307D68FF8B8E1F9 /* NSString+IGListDiffable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9D79191E5CD37A7B936FF4A33933BC /* Notifications.swift */; };
+		F01E591A91E3EC9635177A3E2433ACC5 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3F4A681611AAFBDF8A0805E71B59A /* Manager.swift */; };
+		F08BAA329159C9C5C75C521233B508AB /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 9415C0694CD0ECED6AC42B137408F9E6 /* UIView+AnyPromise.m */; };
+		F379E86C71333ED9A2F4F7FE8031A9AD /* IGListDiff.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38732E7F982A9737D424D20E2907E1B6 /* IGListDiff.mm */; };
+		F4172F341C6306C767A7457F4B6AA2B7 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D132127E3D7C9C008A828865EC66259 /* when.swift */; };
+		F429AB7A46487150BA17772E7188B0B8 /* IGListDisplayHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9FEB58AA0D5641AF9137739E63BCA /* IGListDisplayHandler.m */; };
+		F4EBB24E84D9486B12F95D370E278E7D /* NSURLSession+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9F282B297339A968F58BFA8ECA719D /* NSURLSession+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5DA8E70E1B370C3D6388459CB38618D /* CALayer+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB90F9BD6A9C00FD4FF6FD2AC9C7F4F /* CALayer+AnyPromise.m */; };
+		F634D219C026EB34FCA9AA11893F50CA /* join.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F76D2314FF91AA06316023C07B9F3 /* join.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F25569940A75E86F317209D58EF39EC /* ResponseSerialization.swift */; };
+		F6C62842EE2CF2E67A3851CFB357C4A0 /* wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D3E524D639609992ABB885A13DE470 /* wrap.swift */; };
+		F81DAB84FE444B48DDB0A40E5AD3BA8D /* IGListWorkingRangeHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0320B3E7960AFA9058D4FA6E2822D3EA /* IGListWorkingRangeHandler.mm */; };
+		F828F323F8243725F3C5AB824CA14FBB /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A6D7F18EFAA2162AD1139DFBC49F23 /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47B196CB368148708F2A9C4E1168A7 /* Alamofire.swift */; };
+		F9957117341A7CB7E40D52944B35E7FF /* IGListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D750BA31DA5E7E3352F12D721DC01500 /* IGListAdapter.m */; };
+		FB582A36D43F2B261A98E9604577D61D /* IGListSectionControllerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E6457FF7E9B27F7A7883F2ABCF24C6B /* IGListSectionControllerInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FB944C7A8362A40301C222544A0742EF /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAFCAF1D0CE8933A1EF970BEA1A2178 /* NSTask+AnyPromise.m */; };
+		FE82A383E657A54615930390153D539D /* IGListAdapterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2238B7E51682CF3D26A3C11C745804C9 /* IGListAdapterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF9C95C6B13B9EE21B4436107FCBC8B9 /* NSNumber+IGListDiffable.h in Headers */ = {isa = PBXBuildFile; fileRef = 89391A0C570155C6B090C2D3F8C82AC4 /* NSNumber+IGListDiffable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBE13A9BB82505FC0D68AC53470D5DA /* FBLikeLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19607427BC74AB4490018E5E82DE3B41 /* FBLikeLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,218 +226,219 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0208B300B56695FA6302A8F0499A17BC /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
-		04A2E79B80E8DEE7D066B7865419DCD9 /* Scheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scheduler.swift; path = Sources/Scheduler.swift; sourceTree = "<group>"; };
-		064292AB6588690BD710410BD29BC39E /* IGListAdapterUpdaterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterUpdaterDelegate.h; path = Source/IGListAdapterUpdaterDelegate.h; sourceTree = "<group>"; };
-		08A59F724664C34EA0A6239CF61A70AE /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		08DAD4E5F080B7F0B4D812450AECB21A /* IGListMoveIndexPathInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListMoveIndexPathInternal.h; path = Source/Internal/IGListMoveIndexPathInternal.h; sourceTree = "<group>"; };
-		0A9212A904FECA538788EE98F37D266F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BDE1EDB4040D407BA57268BB1392D4C /* IGListDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDiff.h; path = Source/IGListDiff.h; sourceTree = "<group>"; };
-		0C1ABFD947EC839D93839ED07E8A2559 /* Nuke.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nuke.xcconfig; sourceTree = "<group>"; };
+		0320B3E7960AFA9058D4FA6E2822D3EA /* IGListWorkingRangeHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = IGListWorkingRangeHandler.mm; path = Source/Internal/IGListWorkingRangeHandler.mm; sourceTree = "<group>"; };
+		033221E70683B94C65213BBB2AE165F3 /* UICollectionView+IGListBatchUpdateData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+IGListBatchUpdateData.m"; path = "Source/Internal/UICollectionView+IGListBatchUpdateData.m"; sourceTree = "<group>"; };
+		03FC6595921B2A29FDFEDACC5F724D56 /* FBLikeLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBLikeLayout-dummy.m"; sourceTree = "<group>"; };
+		0485914726E36CD129AFA1C031B7BF7B /* IGListAdapterProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterProxy.h; path = Source/Internal/IGListAdapterProxy.h; sourceTree = "<group>"; };
+		05BCFDC4391DADE91CF71C7FB063BE7E /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Sources/Request.swift; sourceTree = "<group>"; };
+		0BCE3B4044155645BB586ECDAE269599 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		0C57058DF6BB7B3CE664BD6566294968 /* IGListScrollDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListScrollDelegate.h; path = Source/IGListScrollDelegate.h; sourceTree = "<group>"; };
+		0D132127E3D7C9C008A828865EC66259 /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
 		0DE11BAE928769D4888D1F392D619012 /* Pods-Brainfood-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Brainfood-umbrella.h"; sourceTree = "<group>"; };
-		0E452CAF04D9317692576C528FB15FCD /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
-		0E7A758D32D66AB899DB62E9B0FF8F8E /* IGListWorkingRangeHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = IGListWorkingRangeHandler.mm; path = Source/Internal/IGListWorkingRangeHandler.mm; sourceTree = "<group>"; };
+		0E98A0C1615A948A3611230A9BBFAA51 /* PMKQuartzCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKQuartzCore.h; path = Extensions/QuartzCore/Sources/PMKQuartzCore.h; sourceTree = "<group>"; };
+		0EE6B8229DBF372288DEC78306F7D64E /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
 		0FF4A05782FF56F2E6B13179E29D92B6 /* Pods-Brainfood-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Brainfood-resources.sh"; sourceTree = "<group>"; };
-		111CD36DC8C92E053E6AAA21DDC8929D /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
-		14D100E27B6DE8A401FAAACA760BC08D /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
-		16CD06EF475B01D03528CA9E6C621213 /* IGListKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGListKit-prefix.pch"; sourceTree = "<group>"; };
-		182949804CB616C12EB85EC5362D0319 /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cache.swift; path = Sources/Cache.swift; sourceTree = "<group>"; };
-		19B6E4753283F6A6EEBE9EDFCBDE192C /* IGListIndexPathResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListIndexPathResult.h; path = Source/IGListIndexPathResult.h; sourceTree = "<group>"; };
-		1A8AD0239637D714C8A173CAD54A9447 /* NSNumber+IGListDiffable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+IGListDiffable.m"; path = "Source/NSNumber+IGListDiffable.m"; sourceTree = "<group>"; };
+		0FF569BB26D2E8EF79C469EDE1BA1672 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		104A5CE1297A0AC831F8709FB14A98E6 /* DispatchQueue+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Promise.swift"; path = "Sources/DispatchQueue+Promise.swift"; sourceTree = "<group>"; };
+		10CB800013CA32E82E3F8F3F8E9F03E1 /* IGListKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGListKit-prefix.pch"; sourceTree = "<group>"; };
+		11B83AEEF54CBFB16625684846524637 /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
+		134CB5A41623208DA266AADB6C3F2291 /* IGListStackedSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListStackedSectionController.m; path = Source/IGListStackedSectionController.m; sourceTree = "<group>"; };
+		15A6F92DEB80EB127E3B3EC6F7B464B2 /* IGListSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListSectionController.m; path = Source/IGListSectionController.m; sourceTree = "<group>"; };
+		161C0DDA0D55CCDE2C86D161EF6DD265 /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
+		16247FEBEEEF72D8586D8F9415B96C7C /* Heap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
+		17C6509AB3CC415EBFE01E230443FA4C /* IGListSectionType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSectionType.h; path = Source/IGListSectionType.h; sourceTree = "<group>"; };
+		18296EF52FFA43FBBF8F9826B40B94D1 /* CancellationToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CancellationToken.swift; path = Sources/CancellationToken.swift; sourceTree = "<group>"; };
+		191958787E8AE24095E8AB1E1BE9B450 /* IGListDiffable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDiffable.h; path = Source/IGListDiffable.h; sourceTree = "<group>"; };
+		194CDE2D08B76194BC62C94627EAB833 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
+		19607427BC74AB4490018E5E82DE3B41 /* FBLikeLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBLikeLayout-umbrella.h"; sourceTree = "<group>"; };
+		1B425BAAA7761C1230E45C882A400896 /* IGListCollectionContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListCollectionContext.h; path = Source/IGListCollectionContext.h; sourceTree = "<group>"; };
+		1B9D79191E5CD37A7B936FF4A33933BC /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		1BAA7FD87114CCF70535847FCE1D813F /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
 		1CB2D792D82966402241258D253666A3 /* Pods-BrainfoodTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BrainfoodTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1CD5AC24F1D440D11FB4CB3C9E99DABE /* IGListDisplayHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListDisplayHandler.m; path = Source/Internal/IGListDisplayHandler.m; sourceTree = "<group>"; };
+		1CF3F4A681611AAFBDF8A0805E71B59A /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Sources/Manager.swift; sourceTree = "<group>"; };
 		1F1ED9405FF537C38E02C650FF826C37 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB90F9BD6A9C00FD4FF6FD2AC9C7F4F /* CALayer+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+AnyPromise.m"; path = "Extensions/QuartzCore/Sources/CALayer+AnyPromise.m"; sourceTree = "<group>"; };
+		20BE093B6E3614137BFD3CD99963CF3A /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
 		218A72C4529A4522A782638122A2C47C /* IGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IGListKit.framework; path = IGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21ADF2FBF2BA38B6B3501D0472A2398E /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
+		2238B7E51682CF3D26A3C11C745804C9 /* IGListAdapterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterDelegate.h; path = Source/IGListAdapterDelegate.h; sourceTree = "<group>"; };
 		23FF7899E3EDFE20227DA5B619CA2DDA /* Pods-BrainfoodTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BrainfoodTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		260BE9227CEA4B5F2DF6826BF7197229 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		2824CDE0ED9FF6248DDDF791FA640B54 /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
-		291FA4D0CA3C2BB3068490FB74CE2F5F /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
+		24BBA526EDB2A6FE5633DA0B05A636A5 /* IGListGridCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListGridCollectionViewLayout.m; path = Source/IGListGridCollectionViewLayout.m; sourceTree = "<group>"; };
+		2630CBD742501F2EC6101706D24DAAA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		296D944270C6EA165022A77B9AAEBC0D /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
 		2BB4713C04215C0E8DCAAC522153D630 /* Pods-BrainfoodTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BrainfoodTests-umbrella.h"; sourceTree = "<group>"; };
-		2CA44C69FF917AB54E68F17630B0C492 /* race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = race.swift; path = Sources/race.swift; sourceTree = "<group>"; };
-		2CEE21AD2B95C54AE90566E3662E8587 /* NSNumber+IGListDiffable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+IGListDiffable.h"; path = "Source/NSNumber+IGListDiffable.h"; sourceTree = "<group>"; };
-		2EAF6CD18D633E23A467B3C9EE49A5B5 /* UICollectionView+IGListBatchUpdateData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+IGListBatchUpdateData.h"; path = "Source/Internal/UICollectionView+IGListBatchUpdateData.h"; sourceTree = "<group>"; };
-		300108B1BA4C51B8D85A95D4338ACC54 /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
-		3178888C12BD8F1C034B33BB086EA9A8 /* IGListAdapterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterDelegate.h; path = Source/IGListAdapterDelegate.h; sourceTree = "<group>"; };
-		33276310F2F3C140DE0EF5ED6784269C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		2C6673C2B22AC20DD86D031EC87D3C85 /* IGListKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListKit.h; path = Source/IGListKit.h; sourceTree = "<group>"; };
+		2F820CED653C4ABE8F59C61DEAFCA746 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		308BF4ACCB95E87E19C9C9B7DEEAEA42 /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
+		30C7DCA403A9117BAAC2737DA7F415EA /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
+		31379D0ED839AC497FC4B4035C91575C /* PMKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKFoundation.h; path = Extensions/Foundation/Sources/PMKFoundation.h; sourceTree = "<group>"; };
+		322406B62642EFB6BE3BE6EA87F92072 /* IGListBatchUpdateData.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = IGListBatchUpdateData.mm; path = Source/IGListBatchUpdateData.mm; sourceTree = "<group>"; };
+		3257305AFA1BE16539509CA4EC5393F2 /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
+		338796C562C54F8C17A0941A52C282D8 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PromiseKit.modulemap; sourceTree = "<group>"; };
 		33DF7336A93D1AD4FE76618B541F5176 /* Pods-BrainfoodTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BrainfoodTests-dummy.m"; sourceTree = "<group>"; };
-		33FAEAD3C966D4D07471FA9F7A9762DB /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		34595162D8E41D85A5EB9F77F4278CAB /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		36138D2E990009BA6F1D0031385668AD /* IGListSupplementaryViewSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSupplementaryViewSource.h; path = Source/IGListSupplementaryViewSource.h; sourceTree = "<group>"; };
-		38499B40813CA15DB486D0D007F5A844 /* IGListDiff.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = IGListDiff.mm; path = Source/IGListDiff.mm; sourceTree = "<group>"; };
-		3AD417407A03AC0BCFDEC2A29E1CEF35 /* Zalgo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zalgo.swift; path = Sources/Zalgo.swift; sourceTree = "<group>"; };
-		3AE5F5F3726B6CB429CFDCBE9A1DB466 /* IGListMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListMacros.h; path = Source/IGListMacros.h; sourceTree = "<group>"; };
-		3C2EBE19F81CA553662004841D71208B /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
-		3D2C3C6E925A06E47B183171A3341965 /* IGListMoveIndexPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListMoveIndexPath.h; path = Source/IGListMoveIndexPath.h; sourceTree = "<group>"; };
-		3EE911BD7E1542E255CF8F91E2337593 /* IGListAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListAdapter.m; path = Source/IGListAdapter.m; sourceTree = "<group>"; };
-		3F88F04CB4A7ECBE7BD8460DCF4881C1 /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
-		402841DC10A8F0EEA6E1E4ACF877D56D /* GlobalState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GlobalState.m; path = Sources/GlobalState.m; sourceTree = "<group>"; };
-		45486CFD34C9695BB222962A33CED589 /* IGListAdapterProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterProxy.h; path = Source/Internal/IGListAdapterProxy.h; sourceTree = "<group>"; };
-		45BAFF0CF41115D47A3B5B8D9D981172 /* IGListSingleSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListSingleSectionController.m; path = Source/IGListSingleSectionController.m; sourceTree = "<group>"; };
-		4849808D310628856ECAC430A52E845B /* FBLikeLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FBLikeLayout.modulemap; sourceTree = "<group>"; };
-		4893F9A65F787D1AEA7D4002E380BA86 /* Nuke-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nuke-prefix.pch"; sourceTree = "<group>"; };
-		498BCE4EAE2B6AA2EBC219B4400EF72F /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
-		4CC8B20A75975D25794C5083CD1B5EA5 /* Preheater.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Preheater.swift; path = Sources/Preheater.swift; sourceTree = "<group>"; };
-		4D3E98A4D531C81325BDAB9D2AA455D4 /* DispatchQueue+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Promise.swift"; path = "Sources/DispatchQueue+Promise.swift"; sourceTree = "<group>"; };
-		4D576D8E309BF3FC9D5A79027758A841 /* Nuke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Nuke.swift; path = Sources/Nuke.swift; sourceTree = "<group>"; };
-		4EA47C14DC020A8419534FCFB198D1F5 /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
-		4EB7869EF3A87AF07D1E11369BC1206A /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
-		4F00ECA953BB7DEA9DFEDF71800FBE45 /* IGListSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListSectionController.m; path = Source/IGListSectionController.m; sourceTree = "<group>"; };
-		5076B94FB4BD21727CBC166E7F6C389C /* FBLikeLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLikeLayout.m; path = "FBLikeLayout Sample/FBLikeLayout/FBLikeLayout.m"; sourceTree = "<group>"; };
-		509A174248050DA00C7BFFE36D192C9E /* IGListSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSectionController.h; path = Source/IGListSectionController.h; sourceTree = "<group>"; };
-		50C875D5156EA5F1C299F8329FE9766B /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
-		511397B127C884B87F5E3CA6C256EC36 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		517B1C49B943CB6287D21FD2A7E3C94E /* IGListGridCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListGridCollectionViewLayout.m; path = Source/IGListGridCollectionViewLayout.m; sourceTree = "<group>"; };
-		5240095D5E3D984CC34021500517DF4D /* FBLikeLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBLikeLayout-prefix.pch"; sourceTree = "<group>"; };
-		525790D70C8D2AFAB1DC379B2F744E99 /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
-		545811AA558D897DF396BAAF50BC8D2D /* Promise+Properties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Properties.swift"; path = "Sources/Promise+Properties.swift"; sourceTree = "<group>"; };
-		557A3A87AB3C5F3E66186FDD680B749E /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
-		55C09AF27A2584BB8F09622A3719A339 /* Nuke-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nuke-dummy.m"; sourceTree = "<group>"; };
-		56AC2DCBB6F848B482430ED41D7486DD /* Processor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Processor.swift; path = Sources/Processor.swift; sourceTree = "<group>"; };
-		56ADC38C7AB42684ED0604C10150C94A /* AAA-CocoaPods-Hack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AAA-CocoaPods-Hack.h"; path = "Sources/AAA-CocoaPods-Hack.h"; sourceTree = "<group>"; };
-		56D5D3BA930EDE9692D91B427CEC2C28 /* IGListStackedSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListStackedSectionController.h; path = Source/IGListStackedSectionController.h; sourceTree = "<group>"; };
-		57F332E8E984D4CDF89307F2DEF5AAD6 /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
-		5844E4C91E88EA607877DC25BBB0EA2E /* FBLikeLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBLikeLayout-umbrella.h"; sourceTree = "<group>"; };
+		3615CBA3E3E3F841261BFBD5C5A8615D /* IGListBatchUpdateData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListBatchUpdateData.h; path = Source/IGListBatchUpdateData.h; sourceTree = "<group>"; };
+		3619E16963C11582AFBDE594092E3E79 /* IGListMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListMacros.h; path = Source/IGListMacros.h; sourceTree = "<group>"; };
+		36604EC0C3D22F04545D0C86B09350ED /* Nuke.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Nuke.modulemap; sourceTree = "<group>"; };
+		36766CF942EAA9ED5F67EC5C286DEBB1 /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
+		38732E7F982A9737D424D20E2907E1B6 /* IGListDiff.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = IGListDiff.mm; path = Source/IGListDiff.mm; sourceTree = "<group>"; };
+		398D754A07391241C44B0923E7A35812 /* FBLikeLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLikeLayout.h; path = "FBLikeLayout Sample/FBLikeLayout/FBLikeLayout.h"; sourceTree = "<group>"; };
+		3CD116A2336CB41BACD010EF57BB05FE /* FBLikeLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBLikeLayout-prefix.pch"; sourceTree = "<group>"; };
+		3D292AC9899C29A57BDC1FF82525F259 /* IGListAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAssert.h; path = Source/IGListAssert.h; sourceTree = "<group>"; };
+		3D30408731A3E8A3D1202F32FBB7F1F5 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		3D70AA7C1712C648324A5E71661C9B18 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		3D71B4291C81DFE18F0A3D886678E231 /* AAA-CocoaPods-Hack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AAA-CocoaPods-Hack.h"; path = "Sources/AAA-CocoaPods-Hack.h"; sourceTree = "<group>"; };
+		3D9185F21A896750CD25A9E4BE07BA0B /* Nuke-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nuke-dummy.m"; sourceTree = "<group>"; };
+		3D9F282B297339A968F58BFA8ECA719D /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
+		3E25BB00A38C052EA0B4DC78D7FD4806 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		3F9390B3E2C37CB81B63400A6605983B /* IGListAdapterDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterDataSource.h; path = Source/IGListAdapterDataSource.h; sourceTree = "<group>"; };
+		3FF64CD0EF9A255852E5F66339062953 /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
+		41F3E18CDAC8B9BBDF77BBC29DC86C73 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		4340260C2FC647476F4F0869EC21ED9B /* Nuke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Nuke.swift; path = Sources/Nuke.swift; sourceTree = "<group>"; };
+		43A0475E59F5ABB9012E89DF005BC710 /* IGListExperiments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListExperiments.h; path = Source/IGListExperiments.h; sourceTree = "<group>"; };
+		443A6453543E7CB41B8C00C06BBD0E10 /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
+		47DFEA1224C4658EAEB24CF6DA0B2CF1 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		4914D5DAD2483FAA6A14F6200743F418 /* IGListIndexPathResultInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListIndexPathResultInternal.h; path = Source/Internal/IGListIndexPathResultInternal.h; sourceTree = "<group>"; };
+		4B645FD83581DAC79724D24265611D77 /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
+		4F74042895AFDFFEDBDC962D08BA3011 /* UIViewController+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewController+Promise.swift"; sourceTree = "<group>"; };
+		4F9B967561B643635092E829F00AEA7D /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cache.swift; path = Sources/Cache.swift; sourceTree = "<group>"; };
+		4FD43CB983F1CE89C0448BADCE4EEADB /* IGListAdapterUpdater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListAdapterUpdater.m; path = Source/IGListAdapterUpdater.m; sourceTree = "<group>"; };
+		4FDB63C65B4517287CCC055434B89A40 /* FBLikeLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLikeLayout.m; path = "FBLikeLayout Sample/FBLikeLayout/FBLikeLayout.m"; sourceTree = "<group>"; };
+		52222FE6939D786D1F4F509ED23E2CA8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52882D753259DD2785A23176671032BC /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
+		53028C10AC5A29F34A09149B44263E65 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		54D52F828417C5C86307D68FF8B8E1F9 /* NSString+IGListDiffable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+IGListDiffable.h"; path = "Source/NSString+IGListDiffable.h"; sourceTree = "<group>"; };
+		552D08097B175E685DB40467B92D06A9 /* NSNumber+IGListDiffable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+IGListDiffable.m"; path = "Source/NSNumber+IGListDiffable.m"; sourceTree = "<group>"; };
+		55D6B323654BFD9CFC5F7993E242A7AB /* IGListDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDiff.h; path = Source/IGListDiff.h; sourceTree = "<group>"; };
+		58E8CD69884F43994011F5E247837C8F /* IGListWorkingRangeHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListWorkingRangeHandler.h; path = Source/Internal/IGListWorkingRangeHandler.h; sourceTree = "<group>"; };
 		5A2E4F39BE1C158B3D5049BC7C88D995 /* Pods-BrainfoodTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BrainfoodTests-resources.sh"; sourceTree = "<group>"; };
-		5B6538419A7F75F9568E9047C6D464A2 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		5A8828E841410AFABEB9FEBFCFED67A5 /* IGListAdapterUpdaterInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterUpdaterInternal.h; path = Source/Internal/IGListAdapterUpdaterInternal.h; sourceTree = "<group>"; };
 		5BF675A168132FD52AED630F977FE906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5CA1DB3933E2E0A8D168F1EC5FE083DE /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
+		5CF4C24D37E22BD3DB35AD8EF6260A71 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		5D19C7EDD4A6F839D56E1E00EB3F4AC4 /* Pods-Brainfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brainfood.release.xcconfig"; sourceTree = "<group>"; };
-		606AC3D58BA3C40BC033239DC6DF2ADD /* UICollectionView+IGListBatchUpdateData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+IGListBatchUpdateData.m"; path = "Source/Internal/UICollectionView+IGListBatchUpdateData.m"; sourceTree = "<group>"; };
-		6136878507494181B0D96DDCDF5C93FA /* CancellationToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CancellationToken.swift; path = Sources/CancellationToken.swift; sourceTree = "<group>"; };
-		6349F9C91A5FF0515E726A929ED4A2FA /* IGListMoveIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListMoveIndex.m; path = Source/IGListMoveIndex.m; sourceTree = "<group>"; };
-		6467BEF06D1102BDC8708E18543012DC /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		6597672248D794CADC84A98F440CE694 /* IGListScrollDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListScrollDelegate.h; path = Source/IGListScrollDelegate.h; sourceTree = "<group>"; };
-		661D4311CBDA794D88DBAA29B64EE1E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6754F4AA864B8E9F4B5EE57B75063516 /* IGListKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGListKit-umbrella.h"; sourceTree = "<group>"; };
-		693AFD3178261A828025DD883DF15E5E /* IGListIndexSetResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListIndexSetResult.h; path = Source/IGListIndexSetResult.h; sourceTree = "<group>"; };
-		6B84E8756C940513BD2AA1D8FD1D62B9 /* DataDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataDecoder.swift; path = Sources/DataDecoder.swift; sourceTree = "<group>"; };
-		6DE302491D2ACCC4BB6EC6C74F326840 /* join.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = join.swift; path = Sources/join.swift; sourceTree = "<group>"; };
-		6EE16B514DECC1567A3C36D98C7BAB02 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Sources/Manager.swift; sourceTree = "<group>"; };
-		6FD0FA95ABD1E8EF8DB9C5E7E2954C7A /* IGListAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapter.h; path = Source/IGListAdapter.h; sourceTree = "<group>"; };
-		70520C02EFBD6335AEA0E38DA30BF75C /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		71ADF76C9283214DEFF678C77C45D491 /* IGListAdapterUpdater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListAdapterUpdater.m; path = Source/IGListAdapterUpdater.m; sourceTree = "<group>"; };
-		71CBAAB71A61F3CE4F547C41E390105A /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		5E2A9AADC3E90E2EA6655855212B4EB5 /* Nuke-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nuke-prefix.pch"; sourceTree = "<group>"; };
+		619CA312110A75C4B301E91030BE7B48 /* Loader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loader.swift; path = Sources/Loader.swift; sourceTree = "<group>"; };
+		6419401AD5139E72747F9CC3CD148DB6 /* race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = race.swift; path = Sources/race.swift; sourceTree = "<group>"; };
+		64F4E077012E4B99FEB290EFD8C91AC1 /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
+		65DC42661AC04061FFB055AACFDA565F /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
+		67DE2A8758F395FB50FFBE2496C0763E /* Nuke-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nuke-umbrella.h"; sourceTree = "<group>"; };
+		681BE4FA93622D2E5FFC877400296344 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		6B0C78B1EBDA8D566B63CD4D159B12C3 /* IGListIndexPathResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListIndexPathResult.m; path = Source/IGListIndexPathResult.m; sourceTree = "<group>"; };
+		6C6496319F6A53B7A9D87A512B4D8F72 /* FBLikeLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FBLikeLayout.modulemap; sourceTree = "<group>"; };
+		6D6FE09F3CEFD348641D0CB1FD0C0DA0 /* IGListSingleSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListSingleSectionController.m; path = Source/IGListSingleSectionController.m; sourceTree = "<group>"; };
+		6D7FA15E337692F25938A75E50938E47 /* IGListSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSectionController.h; path = Source/IGListSectionController.h; sourceTree = "<group>"; };
+		6D93C4984C95B0B13A72BAA9BEC526EF /* IGListMoveIndexPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListMoveIndexPath.h; path = Source/IGListMoveIndexPath.h; sourceTree = "<group>"; };
+		6F2D8F46412035C1291A706143071F6C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		71251E1F9B4E2668C015113100449881 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		71C66DEAFDC1AD6FC1142A08FC5B501F /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
 		71FBB0298A0712FF69DEB318DBB6F9DF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7377EA1B0A8C7FD423A793AE2D25F02B /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		724670B7940D17E099032BCB21B415C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731215F8AA80463657521E0CF560B46E /* IGListAdapterProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListAdapterProxy.m; path = Source/Internal/IGListAdapterProxy.m; sourceTree = "<group>"; };
 		754C61BADD155B3C18DF3E0BA6731F1B /* Pods-BrainfoodTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BrainfoodTests-frameworks.sh"; sourceTree = "<group>"; };
-		75AEF6CD60158B9F264E9442819A4034 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Sources/Request.swift; sourceTree = "<group>"; };
-		76DD96A3F84C6C28E129DE6267BA70C5 /* IGListAdapterProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListAdapterProxy.m; path = Source/Internal/IGListAdapterProxy.m; sourceTree = "<group>"; };
-		77474FD140B34882C87A9EE511322500 /* IGListSectionType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSectionType.h; path = Source/IGListSectionType.h; sourceTree = "<group>"; };
-		7883764D1B8EE25D4FE998BDADF3FBA8 /* URLDataPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLDataPromise.swift; path = Extensions/Foundation/Sources/URLDataPromise.swift; sourceTree = "<group>"; };
-		791D35115B42E351272135C8D02143B5 /* PMKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKFoundation.h; path = Extensions/Foundation/Sources/PMKFoundation.h; sourceTree = "<group>"; };
-		79488C9A6794E454E9997B22516B7BBE /* IGListMoveIndexInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListMoveIndexInternal.h; path = Source/Internal/IGListMoveIndexInternal.h; sourceTree = "<group>"; };
-		7A22A48DE8A085EFB578B3472A675318 /* IGListBatchUpdateData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListBatchUpdateData.h; path = Source/IGListBatchUpdateData.h; sourceTree = "<group>"; };
-		7A77338F08B5E908D2EB34182D0B2D01 /* IGListKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IGListKit.xcconfig; sourceTree = "<group>"; };
-		7B343F3305F5A7CB993DB35DAB114948 /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
-		7D55E45ADC773FA6A7A4315053C33C60 /* IGListReloadDataUpdater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListReloadDataUpdater.m; path = Source/IGListReloadDataUpdater.m; sourceTree = "<group>"; };
-		7D91F6518300EA98CC2F656B2F232CFD /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
-		7DF9D95177AD1D128C586DDAF04879C5 /* DataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Sources/DataLoader.swift; sourceTree = "<group>"; };
-		7E7AC0F5CFA883A835EB0A7644428797 /* IGListGridCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListGridCollectionViewLayout.h; path = Source/IGListGridCollectionViewLayout.h; sourceTree = "<group>"; };
-		7E7F7B6062594B45F2409224D0770394 /* IGListWorkingRangeHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListWorkingRangeHandler.h; path = Source/Internal/IGListWorkingRangeHandler.h; sourceTree = "<group>"; };
-		7F0602C464FE63DB462F5BCDC6A0112B /* CALayer+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+AnyPromise.m"; path = "Extensions/QuartzCore/Sources/CALayer+AnyPromise.m"; sourceTree = "<group>"; };
-		80ECE0463E3D74ACA2C919F18EF3A6C3 /* IGListCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListCollectionView.m; path = Source/IGListCollectionView.m; sourceTree = "<group>"; };
-		81BCB61A86DF9DDEE25007A0B4DC9840 /* IGListMoveIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListMoveIndex.h; path = Source/IGListMoveIndex.h; sourceTree = "<group>"; };
-		81DF1F463BED7B1E172EE88E49A3583A /* IGListDisplayDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDisplayDelegate.h; path = Source/IGListDisplayDelegate.h; sourceTree = "<group>"; };
-		84782391AA3655F3654F99E36B67D455 /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
+		773DE4399AF7AE756B55FCEDC2F3003F /* Promise+Properties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Properties.swift"; path = "Sources/Promise+Properties.swift"; sourceTree = "<group>"; };
+		777394CDB7C8BC3CC31D8FD5BC5B3FAB /* IGListCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListCollectionView.h; path = Source/IGListCollectionView.h; sourceTree = "<group>"; };
+		77DEFD8ABEE16F7AD67500F5AD5167D8 /* IGListStackedSectionControllerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListStackedSectionControllerInternal.h; path = Source/Internal/IGListStackedSectionControllerInternal.h; sourceTree = "<group>"; };
+		79B7DA3E1C2D6DC5231EE23EA667857A /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		79F4588A9B10890228EAD88A2040A685 /* IGListWorkingRangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListWorkingRangeDelegate.h; path = Source/IGListWorkingRangeDelegate.h; sourceTree = "<group>"; };
+		7AF9FEB58AA0D5641AF9137739E63BCA /* IGListDisplayHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListDisplayHandler.m; path = Source/Internal/IGListDisplayHandler.m; sourceTree = "<group>"; };
+		7D4C5845DDC8EF3953A4C71E3E11C1F9 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		7EAFDF8743FC7038572D4DAD5F5F35AD /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/State.swift; sourceTree = "<group>"; };
+		7FC1F2DD189DC8C0B5007AC1116D4D68 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		8131F634892FE4D88629A8F08AE8E328 /* CALayer+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+AnyPromise.h"; path = "Extensions/QuartzCore/Sources/CALayer+AnyPromise.h"; sourceTree = "<group>"; };
+		82F3BE07077C718DBA294C3998E8A7B3 /* IGListAdapterUpdaterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterUpdaterDelegate.h; path = Source/IGListAdapterUpdaterDelegate.h; sourceTree = "<group>"; };
 		8493726A1117CC8CB107E2DBAFDDE871 /* Pods-Brainfood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Brainfood.debug.xcconfig"; sourceTree = "<group>"; };
-		84ED6D742FC43FA3CC378399D04CBFD7 /* IGListAdapterUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterUpdater.h; path = Source/IGListAdapterUpdater.h; sourceTree = "<group>"; };
-		8775C735426A6735A6C8D324A544BE47 /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
+		85E3ADB8B32EF7F44B96F49751F0C5FB /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
+		86B6BE84A31B6123E36D75AEF991C53B /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
 		88CBE371308A0E46FBC33218D623867B /* Pods-Brainfood-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Brainfood-acknowledgements.plist"; sourceTree = "<group>"; };
-		8AEA33762DD34B9D5C1984A53DC33038 /* IGListExperiments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListExperiments.h; path = Source/IGListExperiments.h; sourceTree = "<group>"; };
-		8BFFBAA2AE380A7481A7FAD931F8A2BF /* after.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = after.swift; path = Sources/after.swift; sourceTree = "<group>"; };
+		88F40CADFE355FB9342953999BBED2D6 /* IGListIndexSetResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListIndexSetResult.h; path = Source/IGListIndexSetResult.h; sourceTree = "<group>"; };
+		89391A0C570155C6B090C2D3F8C82AC4 /* NSNumber+IGListDiffable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+IGListDiffable.h"; path = "Source/NSNumber+IGListDiffable.h"; sourceTree = "<group>"; };
 		8E1B733C758107683DB1524A447B4A81 /* Nuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nuke.framework; path = Nuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EB74D3407641ACCEEF69F6420483E3F /* FBLikeLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBLikeLayout.xcconfig; sourceTree = "<group>"; };
-		8F3F1AC9C6686BEFD33FD6E05F084612 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		8F8CBE6AE6F5751DBEC4B6D385CAC1DF /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		914272AA5DF9557B2A12CB2C0D5DB863 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		8E6457FF7E9B27F7A7883F2ABCF24C6B /* IGListSectionControllerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSectionControllerInternal.h; path = Source/Internal/IGListSectionControllerInternal.h; sourceTree = "<group>"; };
+		8F25569940A75E86F317209D58EF39EC /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		8F66F8EA3F76A084E5AF2DAE6E0FAC88 /* after.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = after.swift; path = Sources/after.swift; sourceTree = "<group>"; };
+		93A100263116B491CD700B1594EE900B /* IGListMoveIndexPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListMoveIndexPath.m; path = Source/IGListMoveIndexPath.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96896F134B79335D22AAE5C7CF4A181A /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
-		979DA9411F4E11F614359358305D6E66 /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
-		9E5B75AFEB660F2384C9DD0CDF54AD9F /* IGListDiffable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDiffable.h; path = Source/IGListDiffable.h; sourceTree = "<group>"; };
-		9F010F9711D2AF06C3F3905E60644788 /* IGListStackedSectionControllerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListStackedSectionControllerInternal.h; path = Source/Internal/IGListStackedSectionControllerInternal.h; sourceTree = "<group>"; };
+		93BA6E78F53A3D1BC79F32A78F3A4145 /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
+		9415C0694CD0ECED6AC42B137408F9E6 /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
+		95B17AF56A88EBA1EBD38E45B78E5B69 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		9762A654B250E4BA7D3610FEAB736FD1 /* IGListDisplayDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDisplayDelegate.h; path = Source/IGListDisplayDelegate.h; sourceTree = "<group>"; };
+		97A4A5349347647E3052B280971CD61B /* IGListAdapterInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterInternal.h; path = Source/Internal/IGListAdapterInternal.h; sourceTree = "<group>"; };
+		97BBB921351A7F32B62936EEA9EA3DDA /* PMKAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PMKAlertController.swift; path = Extensions/UIKit/Sources/PMKAlertController.swift; sourceTree = "<group>"; };
+		9AAE0BEB09963AEC0E361E6EE690EB91 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		9C8AE30AD5D78A6B1BB1B7D7F13E9296 /* IGListAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapter.h; path = Source/IGListAdapter.h; sourceTree = "<group>"; };
+		9D7A439493C5B7612B5914E71380EA73 /* IGListDisplayHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDisplayHandler.h; path = Source/Internal/IGListDisplayHandler.h; sourceTree = "<group>"; };
 		A0E5FB9EA6212514321ED9E05A720B2D /* Pods-Brainfood-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Brainfood-dummy.m"; sourceTree = "<group>"; };
-		A0F89513A794BCC4F7080029AEE7D93B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		A11EC55AD3916CA9A88C63D5565D9BDF /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
-		A2972471130F4790B7137332F72A8D71 /* IGListDisplayHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListDisplayHandler.h; path = Source/Internal/IGListDisplayHandler.h; sourceTree = "<group>"; };
+		A21A78AD7065AFF6CC35FE1B6FBE1BEB /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
 		A2DFB37E7132EB4258D44DA26FAE945A /* Pods-BrainfoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BrainfoodTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A3F3C4742B913A748E8129B536F259E7 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		A404BA1D9E04CB724273BF2C7ABC007A /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		A427542428B650F4063190CC3B10F371 /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
+		A38DD4F807D74932D38590E87DE6B50E /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		A3D79076F5B844E19D9CD59A8498F531 /* DataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Sources/DataLoader.swift; sourceTree = "<group>"; };
+		A4C5F51B328C068119D0454FF1E9BD3D /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
 		A4F162C9989A2343DB02D975F67506A1 /* FBLikeLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBLikeLayout.framework; path = FBLikeLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5581B54F5CF149EA319DC9496615C16 /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
-		A5BDB71C8FBA2CDDFEF4A6E9FB368372 /* IGListCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListCollectionView.h; path = Source/IGListCollectionView.h; sourceTree = "<group>"; };
 		A7C070D9CD8496F92C2F4BC87E98EC96 /* Pods_Brainfood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Brainfood.framework; path = "Pods-Brainfood.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F5F4B8FC9002EAFDF6D704215E4D4E /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8744C6A20777C5EF2A7EED1F904AE6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A943E78FAC0CF300B4A9E65FAE4A4FFE /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		AB1B5EF8224C00F86992C24EF81C309D /* IGListSectionMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSectionMap.h; path = Source/Internal/IGListSectionMap.h; sourceTree = "<group>"; };
-		AC12812D11AFFF84D3E2A5313763A697 /* IGListUpdatingDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListUpdatingDelegate.h; path = Source/IGListUpdatingDelegate.h; sourceTree = "<group>"; };
-		AE2A01B52802DFE760BCBF689622AF82 /* IGListAdapterInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterInternal.h; path = Source/Internal/IGListAdapterInternal.h; sourceTree = "<group>"; };
-		B00423B51A30221C1DE3B54F22107354 /* IGListSectionMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListSectionMap.m; path = Source/Internal/IGListSectionMap.m; sourceTree = "<group>"; };
-		B274A7797FBA6906E52B5EC68234B2CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B32730D52D7A3E91C186532202FBD941 /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
-		B34DB21DE81B142E8DC55532BEA5CA81 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PromiseKit.modulemap; sourceTree = "<group>"; };
-		B6AD7A9A6A1BA086AD2F9662E3AA997E /* FBLikeLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBLikeLayout-dummy.m"; sourceTree = "<group>"; };
-		B8AB90778ECF68BA1717A93295731F5D /* IGListSectionControllerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSectionControllerInternal.h; path = Source/Internal/IGListSectionControllerInternal.h; sourceTree = "<group>"; };
-		B8E814E8E8F7FE5330690EE8061A423A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9A8E793847AB414A9D0D3EEBB41F725 /* CALayer+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+AnyPromise.h"; path = "Extensions/QuartzCore/Sources/CALayer+AnyPromise.h"; sourceTree = "<group>"; };
-		BB19892A85497ADAC7D3CD3179A89D95 /* wrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wrap.swift; path = Sources/wrap.swift; sourceTree = "<group>"; };
-		BB6626F931A72B6E57DE20178ECA13D6 /* FBLikeLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLikeLayout.h; path = "FBLikeLayout Sample/FBLikeLayout/FBLikeLayout.h"; sourceTree = "<group>"; };
-		BFAF1A47A1687815BEC57A67E3AEE625 /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
+		A8DFB1898C16CFB012CC179F2646FF4C /* Deduplicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deduplicator.swift; path = Sources/Deduplicator.swift; sourceTree = "<group>"; };
+		A9E409AAA1F9FF996B85A2CBD743F7EF /* IGListReloadDataUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListReloadDataUpdater.h; path = Source/IGListReloadDataUpdater.h; sourceTree = "<group>"; };
+		AC1F7E8F45FFDAFEB90AD4F3F2ACD422 /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
+		AE483988461374F85499036F8C3320BB /* PromiseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-prefix.pch"; sourceTree = "<group>"; };
+		AE55304F98EF2800321BAABE75E82B35 /* IGListAdapterUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterUpdater.h; path = Source/IGListAdapterUpdater.h; sourceTree = "<group>"; };
+		B2B0663C2214F0F79E5E7336C499EAC1 /* IGListKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IGListKit.xcconfig; sourceTree = "<group>"; };
+		B4389C4B1C6F4B0750AF262213253B00 /* IGListMoveIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListMoveIndex.h; path = Source/IGListMoveIndex.h; sourceTree = "<group>"; };
+		B5263B117C3FD5CEC8D5F734076C75ED /* IGListCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListCollectionView.m; path = Source/IGListCollectionView.m; sourceTree = "<group>"; };
+		B5DCDC4B8995527B0212A9B37826D33A /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		B64B9093142B8B1C817556098AF6E1A0 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		B72E08BFD00BA54D9454738ED7A0EF69 /* IGListReloadDataUpdater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListReloadDataUpdater.m; path = Source/IGListReloadDataUpdater.m; sourceTree = "<group>"; };
+		B8F8F3F89EF76891D7956E56F77C4198 /* Processor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Processor.swift; path = Sources/Processor.swift; sourceTree = "<group>"; };
+		B973002CF3FAB2B25132AE31FCA7A50A /* IGListUpdatingDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListUpdatingDelegate.h; path = Source/IGListUpdatingDelegate.h; sourceTree = "<group>"; };
+		BA796C090F0B8AD2034F180BB9356A7D /* URLDataPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLDataPromise.swift; path = Extensions/Foundation/Sources/URLDataPromise.swift; sourceTree = "<group>"; };
+		BCDF1964EF562FA20E11670E6828D0DC /* IGListGridCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListGridCollectionViewLayout.h; path = Source/IGListGridCollectionViewLayout.h; sourceTree = "<group>"; };
+		BF463086A406C62A51C3C91AE939B0D4 /* IGListMoveIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListMoveIndex.m; path = Source/IGListMoveIndex.m; sourceTree = "<group>"; };
+		BFD224392030E32280D7A4D791EFBDE5 /* Scheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scheduler.swift; path = Sources/Scheduler.swift; sourceTree = "<group>"; };
+		C0264B848A4F6578DD10AA50744D3A09 /* NSString+IGListDiffable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+IGListDiffable.m"; path = "Source/NSString+IGListDiffable.m"; sourceTree = "<group>"; };
+		C065B8192945D3B4D3D0EE542B1126C2 /* IGListStackedSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListStackedSectionController.h; path = Source/IGListStackedSectionController.h; sourceTree = "<group>"; };
+		C06874EC5746282347A123C109EFFE3E /* Nuke.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nuke.xcconfig; sourceTree = "<group>"; };
+		C07565649C7AA39C0A5036791D306F75 /* IGListIndexSetResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListIndexSetResult.m; path = Source/IGListIndexSetResult.m; sourceTree = "<group>"; };
 		C09D2AE439584C33692ABB111EB686A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5835988A646CF570F3586A93E0FC2F3 /* NSString+IGListDiffable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+IGListDiffable.m"; path = "Source/NSString+IGListDiffable.m"; sourceTree = "<group>"; };
-		C72996F1DBFD651A4500D068F9E87BA6 /* UIViewController+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewController+Promise.swift"; sourceTree = "<group>"; };
+		C0C9755432AA316E64B9DB509A0B9C61 /* IGListKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IGListKit.modulemap; sourceTree = "<group>"; };
+		C4A6D7F18EFAA2162AD1139DFBC49F23 /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
+		C4D5DF1C314FD68D1AB1CA41C89880D2 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		C76202D14A1F6A340106E48AF25C62D7 /* Pods_BrainfoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BrainfoodTests.framework; path = "Pods-BrainfoodTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C771DC3739C6509FC67F5E4224FCA417 /* IGListSingleSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSingleSectionController.h; path = Source/IGListSingleSectionController.h; sourceTree = "<group>"; };
 		C8C808010AE14BCE97153423902ECC66 /* Pods-BrainfoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BrainfoodTests.release.xcconfig"; sourceTree = "<group>"; };
-		CDB34014D9838B14291DBB39C7CBAB45 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		CDCA6FF1B4CB00484ADBAA1C9A47B86B /* IGListAdapterUpdaterInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterUpdaterInternal.h; path = Source/Internal/IGListAdapterUpdaterInternal.h; sourceTree = "<group>"; };
-		CDEFA1860D1A802922B8A490EB3AD757 /* IGListIndexPathResultInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListIndexPathResultInternal.h; path = Source/Internal/IGListIndexPathResultInternal.h; sourceTree = "<group>"; };
-		CE4740FA2FACAE3B823608B14968798B /* IGListAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAssert.h; path = Source/IGListAssert.h; sourceTree = "<group>"; };
-		CF59937611E19AF2E27B6610E808F0FF /* IGListReloadDataUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListReloadDataUpdater.h; path = Source/IGListReloadDataUpdater.h; sourceTree = "<group>"; };
-		D414D3E9A05005BA370C0C6CCEB88365 /* PromiseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-prefix.pch"; sourceTree = "<group>"; };
-		D4DADCFA2D350091172034AA400D0D65 /* Promise+AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+AnyPromise.swift"; path = "Sources/Promise+AnyPromise.swift"; sourceTree = "<group>"; };
-		D526D813DDB692A385681C23A52E4E43 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		D823BEB6738595ECF66C8237C3AABF0D /* IGListIndexSetResultInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListIndexSetResultInternal.h; path = Source/Internal/IGListIndexSetResultInternal.h; sourceTree = "<group>"; };
-		D84C6F4294C8ABBFFA48CE82B6DD6397 /* PMKQuartzCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKQuartzCore.h; path = Extensions/QuartzCore/Sources/PMKQuartzCore.h; sourceTree = "<group>"; };
-		D96983F18769C79B9BE79E5C93D3B421 /* Nuke.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Nuke.modulemap; sourceTree = "<group>"; };
-		D96A8C50DA10DD1006903D13B511E54F /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/State.swift; sourceTree = "<group>"; };
+		C9F24DF41658D316F42D6B5892729433 /* Preheater.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Preheater.swift; path = Sources/Preheater.swift; sourceTree = "<group>"; };
+		CB5C7C658E5BB561E1511144C42B5CA3 /* DataDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataDecoder.swift; path = Sources/DataDecoder.swift; sourceTree = "<group>"; };
+		CB8A79F482A0505C11265A6D9F1A433E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD47B196CB368148708F2A9C4E1168A7 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		CE7A167BAECD59EBAE01109488C8F98A /* Zalgo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zalgo.swift; path = Sources/Zalgo.swift; sourceTree = "<group>"; };
+		CE91B41880AD00221F6CF3A4C4202D5E /* IGListSectionMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListSectionMap.m; path = Source/Internal/IGListSectionMap.m; sourceTree = "<group>"; };
+		D06F76D2314FF91AA06316023C07B9F3 /* join.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = join.swift; path = Sources/join.swift; sourceTree = "<group>"; };
+		D1F3762A30901F45786A3B29F4B0919C /* IGListKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGListKit-dummy.m"; sourceTree = "<group>"; };
+		D750BA31DA5E7E3352F12D721DC01500 /* IGListAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListAdapter.m; path = Source/IGListAdapter.m; sourceTree = "<group>"; };
+		D7B1AC71FC6DD00E6398337329F10FAA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D864CD7EE6FBB0A4C2BC269EE2488421 /* IGListKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGListKit-umbrella.h"; sourceTree = "<group>"; };
+		D9FAAC1157A1FC342C7A88876BA8C9C6 /* UICollectionView+IGListBatchUpdateData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+IGListBatchUpdateData.h"; path = "Source/Internal/UICollectionView+IGListBatchUpdateData.h"; sourceTree = "<group>"; };
 		DA14EA97012D614ABC25854E36B523EC /* Pods-BrainfoodTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BrainfoodTests.modulemap"; sourceTree = "<group>"; };
-		DA3E1AE94FC10E4389E681AF17280790 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		DD6B9DD50988B2A236E9DC7B9744B3D9 /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
-		DF9894E9FBE1DA5D07879B803BFFDA1A /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		DFEE2BD6A71E2F3B8DDD32D6F1E129D1 /* Nuke-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nuke-umbrella.h"; sourceTree = "<group>"; };
 		E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		E13E13B9398A437D6107C087C8C186AA /* IGListKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGListKit-dummy.m"; sourceTree = "<group>"; };
-		E1B85FBCC34059D6FA4828A89A091926 /* IGListMoveIndexPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListMoveIndexPath.m; path = Source/IGListMoveIndexPath.m; sourceTree = "<group>"; };
+		E09B651B302591C38C4C75D984FAE3BE /* IGListMoveIndexInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListMoveIndexInternal.h; path = Source/Internal/IGListMoveIndexInternal.h; sourceTree = "<group>"; };
+		E1A0E0A9E7DC2A741662A9D6F02BC071 /* IGListSupplementaryViewSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSupplementaryViewSource.h; path = Source/IGListSupplementaryViewSource.h; sourceTree = "<group>"; };
 		E28698355F05F4283A35B66DFA6646D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3574F456B1A134A84B7A609917CEFF3 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
 		E36998A220D61D8B494DA871E40B965A /* Pods-Brainfood.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Brainfood.modulemap"; sourceTree = "<group>"; };
-		E404EB8434F0400E4C04768D8B19DA5D /* IGListWorkingRangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListWorkingRangeDelegate.h; path = Source/IGListWorkingRangeDelegate.h; sourceTree = "<group>"; };
-		E4D6510846424859150492F3D03F9B67 /* IGListKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListKit.h; path = Source/IGListKit.h; sourceTree = "<group>"; };
-		E5A626A55307AB9996E49E04F0562988 /* PMKAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PMKAlertController.swift; path = Extensions/UIKit/Sources/PMKAlertController.swift; sourceTree = "<group>"; };
-		E610BBFC51936E2B0783A6D83BBBD0DD /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		E40B362137E2FDD239C237FE0C7E7690 /* IGListSingleSectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSingleSectionController.h; path = Source/IGListSingleSectionController.h; sourceTree = "<group>"; };
+		E482973399934334E1EAC9C96A263647 /* FBLikeLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBLikeLayout.xcconfig; sourceTree = "<group>"; };
 		E7264C83077158377781869B671F0484 /* Pods-Brainfood-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Brainfood-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E82373EF0200A13E147D65DC152CB5FD /* IGListIndexPathResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListIndexPathResult.m; path = Source/IGListIndexPathResult.m; sourceTree = "<group>"; };
-		E9BC55290DD82DB1F64E785FEEC0F88F /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
-		E9F513ABACC1B0A5EDA1424AA103013F /* IGListStackedSectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListStackedSectionController.m; path = Source/IGListStackedSectionController.m; sourceTree = "<group>"; };
-		E9FB6B620D450B7613BB0237E394AA0E /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		EA3F3D601969F22E901DC90233844B07 /* IGListKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IGListKit.modulemap; sourceTree = "<group>"; };
-		EB7B4ED3C9FACDEA3E8C0AC9D4175F42 /* NSString+IGListDiffable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+IGListDiffable.h"; path = "Source/NSString+IGListDiffable.h"; sourceTree = "<group>"; };
+		E87805E0C28C8E89F4F99F9F4B551D4C /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
+		E98B9F6A501466C9D6859E9D6BBDFBA1 /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
 		EC32878090C4B2B93381956161EC0930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EC7A50DC7350E4BDD459D801E2DDCC0C /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		EEC626E7DDAB5623D2A33194EC1406AE /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		EF105DC6E3426C963A30840BCD6BCD9C /* Deduplicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deduplicator.swift; path = Sources/Deduplicator.swift; sourceTree = "<group>"; };
-		EFE2B934CFA2CA3EB9999006B050433C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F09D7EAA500538447BF74CF0A1FA41EC /* IGListAdapterDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListAdapterDataSource.h; path = Source/IGListAdapterDataSource.h; sourceTree = "<group>"; };
-		F40F3829D7C6764FA8A0C5F9E96D512F /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
-		F718D139554FBA49A8F02424C1038600 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		EE89BC5C330168A7AF6439700EECF714 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		EF52936D8DC29D7C8453DD329B9F2A88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAFCAF1D0CE8933A1EF970BEA1A2178 /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
+		F3D3E524D639609992ABB885A13DE470 /* wrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wrap.swift; path = Sources/wrap.swift; sourceTree = "<group>"; };
+		F4FDFB9844FA9E65C07F2DB1F3ECBB3B /* IGListMoveIndexPathInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListMoveIndexPathInternal.h; path = Source/Internal/IGListMoveIndexPathInternal.h; sourceTree = "<group>"; };
 		F76110EF706F57DF4A1AF89532CDB2CE /* Pods-Brainfood-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Brainfood-frameworks.sh"; sourceTree = "<group>"; };
-		F8AB4FA0853E378E12F2CFE4B90555BF /* Loader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loader.swift; path = Sources/Loader.swift; sourceTree = "<group>"; };
-		F9E5DF73C0A1F6142AC0FB31A207268E /* IGListIndexSetResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGListIndexSetResult.m; path = Source/IGListIndexSetResult.m; sourceTree = "<group>"; };
-		FBE4AC413894AA431DD55E535C1509AB /* IGListBatchUpdateData.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = IGListBatchUpdateData.mm; path = Source/IGListBatchUpdateData.mm; sourceTree = "<group>"; };
-		FC9A99A47E04939D35A71FC4C8DDC04C /* IGListCollectionContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListCollectionContext.h; path = Source/IGListCollectionContext.h; sourceTree = "<group>"; };
-		FF3D9CED8AABF622CC28A4A9012CD573 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		F7AAB1413F6892309DD0F6E8B9AB9C13 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		F944D97C2EBC76F77B7625312234DCC4 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		FB9C343266591FE262EEFF98137CC367 /* IGListIndexSetResultInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListIndexSetResultInternal.h; path = Source/Internal/IGListIndexSetResultInternal.h; sourceTree = "<group>"; };
+		FBC5036F6C4B7703465CEA421124E9A5 /* IGListIndexPathResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListIndexPathResult.h; path = Source/IGListIndexPathResult.h; sourceTree = "<group>"; };
+		FF0B419CF801E1D2A8D15C915DA6AA38 /* GlobalState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GlobalState.m; path = Sources/GlobalState.m; sourceTree = "<group>"; };
+		FF381A97348A31FB74B744DCF2BB8000 /* IGListSectionMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGListSectionMap.h; path = Source/Internal/IGListSectionMap.h; sourceTree = "<group>"; };
+		FF5121323A5CAD4A42C54EE093775BC7 /* Promise+AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+AnyPromise.swift"; path = "Sources/Promise+AnyPromise.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -511,78 +512,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E78FA5B524C2D3AD00758C62DEDCEA8 /* IGListKit */ = {
+		01F7EF7A0831EEE12445D5390B556080 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6FD0FA95ABD1E8EF8DB9C5E7E2954C7A /* IGListAdapter.h */,
-				3EE911BD7E1542E255CF8F91E2337593 /* IGListAdapter.m */,
-				F09D7EAA500538447BF74CF0A1FA41EC /* IGListAdapterDataSource.h */,
-				3178888C12BD8F1C034B33BB086EA9A8 /* IGListAdapterDelegate.h */,
-				AE2A01B52802DFE760BCBF689622AF82 /* IGListAdapterInternal.h */,
-				45486CFD34C9695BB222962A33CED589 /* IGListAdapterProxy.h */,
-				76DD96A3F84C6C28E129DE6267BA70C5 /* IGListAdapterProxy.m */,
-				84ED6D742FC43FA3CC378399D04CBFD7 /* IGListAdapterUpdater.h */,
-				71ADF76C9283214DEFF678C77C45D491 /* IGListAdapterUpdater.m */,
-				064292AB6588690BD710410BD29BC39E /* IGListAdapterUpdaterDelegate.h */,
-				CDCA6FF1B4CB00484ADBAA1C9A47B86B /* IGListAdapterUpdaterInternal.h */,
-				CE4740FA2FACAE3B823608B14968798B /* IGListAssert.h */,
-				7A22A48DE8A085EFB578B3472A675318 /* IGListBatchUpdateData.h */,
-				FBE4AC413894AA431DD55E535C1509AB /* IGListBatchUpdateData.mm */,
-				FC9A99A47E04939D35A71FC4C8DDC04C /* IGListCollectionContext.h */,
-				A5BDB71C8FBA2CDDFEF4A6E9FB368372 /* IGListCollectionView.h */,
-				80ECE0463E3D74ACA2C919F18EF3A6C3 /* IGListCollectionView.m */,
-				0BDE1EDB4040D407BA57268BB1392D4C /* IGListDiff.h */,
-				38499B40813CA15DB486D0D007F5A844 /* IGListDiff.mm */,
-				9E5B75AFEB660F2384C9DD0CDF54AD9F /* IGListDiffable.h */,
-				81DF1F463BED7B1E172EE88E49A3583A /* IGListDisplayDelegate.h */,
-				A2972471130F4790B7137332F72A8D71 /* IGListDisplayHandler.h */,
-				1CD5AC24F1D440D11FB4CB3C9E99DABE /* IGListDisplayHandler.m */,
-				8AEA33762DD34B9D5C1984A53DC33038 /* IGListExperiments.h */,
-				7E7AC0F5CFA883A835EB0A7644428797 /* IGListGridCollectionViewLayout.h */,
-				517B1C49B943CB6287D21FD2A7E3C94E /* IGListGridCollectionViewLayout.m */,
-				19B6E4753283F6A6EEBE9EDFCBDE192C /* IGListIndexPathResult.h */,
-				E82373EF0200A13E147D65DC152CB5FD /* IGListIndexPathResult.m */,
-				CDEFA1860D1A802922B8A490EB3AD757 /* IGListIndexPathResultInternal.h */,
-				693AFD3178261A828025DD883DF15E5E /* IGListIndexSetResult.h */,
-				F9E5DF73C0A1F6142AC0FB31A207268E /* IGListIndexSetResult.m */,
-				D823BEB6738595ECF66C8237C3AABF0D /* IGListIndexSetResultInternal.h */,
-				E4D6510846424859150492F3D03F9B67 /* IGListKit.h */,
-				3AE5F5F3726B6CB429CFDCBE9A1DB466 /* IGListMacros.h */,
-				81BCB61A86DF9DDEE25007A0B4DC9840 /* IGListMoveIndex.h */,
-				6349F9C91A5FF0515E726A929ED4A2FA /* IGListMoveIndex.m */,
-				79488C9A6794E454E9997B22516B7BBE /* IGListMoveIndexInternal.h */,
-				3D2C3C6E925A06E47B183171A3341965 /* IGListMoveIndexPath.h */,
-				E1B85FBCC34059D6FA4828A89A091926 /* IGListMoveIndexPath.m */,
-				08DAD4E5F080B7F0B4D812450AECB21A /* IGListMoveIndexPathInternal.h */,
-				CF59937611E19AF2E27B6610E808F0FF /* IGListReloadDataUpdater.h */,
-				7D55E45ADC773FA6A7A4315053C33C60 /* IGListReloadDataUpdater.m */,
-				6597672248D794CADC84A98F440CE694 /* IGListScrollDelegate.h */,
-				509A174248050DA00C7BFFE36D192C9E /* IGListSectionController.h */,
-				4F00ECA953BB7DEA9DFEDF71800FBE45 /* IGListSectionController.m */,
-				B8AB90778ECF68BA1717A93295731F5D /* IGListSectionControllerInternal.h */,
-				AB1B5EF8224C00F86992C24EF81C309D /* IGListSectionMap.h */,
-				B00423B51A30221C1DE3B54F22107354 /* IGListSectionMap.m */,
-				77474FD140B34882C87A9EE511322500 /* IGListSectionType.h */,
-				C771DC3739C6509FC67F5E4224FCA417 /* IGListSingleSectionController.h */,
-				45BAFF0CF41115D47A3B5B8D9D981172 /* IGListSingleSectionController.m */,
-				56D5D3BA930EDE9692D91B427CEC2C28 /* IGListStackedSectionController.h */,
-				E9F513ABACC1B0A5EDA1424AA103013F /* IGListStackedSectionController.m */,
-				9F010F9711D2AF06C3F3905E60644788 /* IGListStackedSectionControllerInternal.h */,
-				36138D2E990009BA6F1D0031385668AD /* IGListSupplementaryViewSource.h */,
-				AC12812D11AFFF84D3E2A5313763A697 /* IGListUpdatingDelegate.h */,
-				E404EB8434F0400E4C04768D8B19DA5D /* IGListWorkingRangeDelegate.h */,
-				7E7F7B6062594B45F2409224D0770394 /* IGListWorkingRangeHandler.h */,
-				0E7A758D32D66AB899DB62E9B0FF8F8E /* IGListWorkingRangeHandler.mm */,
-				2CEE21AD2B95C54AE90566E3662E8587 /* NSNumber+IGListDiffable.h */,
-				1A8AD0239637D714C8A173CAD54A9447 /* NSNumber+IGListDiffable.m */,
-				EB7B4ED3C9FACDEA3E8C0AC9D4175F42 /* NSString+IGListDiffable.h */,
-				C5835988A646CF570F3586A93E0FC2F3 /* NSString+IGListDiffable.m */,
-				2EAF6CD18D633E23A467B3C9EE49A5B5 /* UICollectionView+IGListBatchUpdateData.h */,
-				606AC3D58BA3C40BC033239DC6DF2ADD /* UICollectionView+IGListBatchUpdateData.m */,
-				CB079EBC8401CC8FE9EA3FACB104C4E0 /* Support Files */,
+				C0C9755432AA316E64B9DB509A0B9C61 /* IGListKit.modulemap */,
+				B2B0663C2214F0F79E5E7336C499EAC1 /* IGListKit.xcconfig */,
+				D1F3762A30901F45786A3B29F4B0919C /* IGListKit-dummy.m */,
+				10CB800013CA32E82E3F8F3F8E9F03E1 /* IGListKit-prefix.pch */,
+				D864CD7EE6FBB0A4C2BC269EE2488421 /* IGListKit-umbrella.h */,
+				CB8A79F482A0505C11265A6D9F1A433E /* Info.plist */,
 			);
-			name = IGListKit;
-			path = IGListKit;
+			name = "Support Files";
+			path = "../Target Support Files/IGListKit";
 			sourceTree = "<group>";
 		};
 		11A0E767A44DF94061043825E8CC51E2 /* Products */ = {
@@ -608,38 +549,130 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1AE208EDBB8341D76C32DC199F0985BE /* Pods */ = {
+		1287A438B3184F6EA9CCEED9220D870D /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				4B78739BCEE1628F452234B8354550FF /* Alamofire */,
-				C965BAD2A16D4B7AC259913E87D22000 /* FBLikeLayout */,
-				0E78FA5B524C2D3AD00758C62DEDCEA8 /* IGListKit */,
-				2E1BA8894BBDC971C87855B9C972F003 /* Nuke */,
-				89E1079ED54092553D91A32C99CE71DC /* PromiseKit */,
-				F9A55218A13368CC221E5C109675B149 /* SwiftyJSON */,
+				53028C10AC5A29F34A09149B44263E65 /* SwiftyJSON.swift */,
+				5C2C42AB878C1E05193AA73FD13B37FC /* Support Files */,
 			);
-			name = Pods;
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		2E1BA8894BBDC971C87855B9C972F003 /* Nuke */ = {
+		21E9026AC63974CC33F45623106CCF96 /* PromiseKit */ = {
 			isa = PBXGroup;
 			children = (
-				182949804CB616C12EB85EC5362D0319 /* Cache.swift */,
-				6136878507494181B0D96DDCDF5C93FA /* CancellationToken.swift */,
-				6B84E8756C940513BD2AA1D8FD1D62B9 /* DataDecoder.swift */,
-				7DF9D95177AD1D128C586DDAF04879C5 /* DataLoader.swift */,
-				EF105DC6E3426C963A30840BCD6BCD9C /* Deduplicator.swift */,
-				F8AB4FA0853E378E12F2CFE4B90555BF /* Loader.swift */,
-				6EE16B514DECC1567A3C36D98C7BAB02 /* Manager.swift */,
-				4D576D8E309BF3FC9D5A79027758A841 /* Nuke.swift */,
-				4CC8B20A75975D25794C5083CD1B5EA5 /* Preheater.swift */,
-				56AC2DCBB6F848B482430ED41D7486DD /* Processor.swift */,
-				75AEF6CD60158B9F264E9442819A4034 /* Request.swift */,
-				04A2E79B80E8DEE7D066B7865419DCD9 /* Scheduler.swift */,
-				CB453DDA839E07A55C08D03580242AFF /* Support Files */,
+				3D2DBB7D04F8651D490AA8C7C47748B8 /* CorePromise */,
+				48B1AB409BA90B097C29ED64B166F22A /* Foundation */,
+				866FA19AEA015FE8C562A11740CBBC9D /* QuartzCore */,
+				BDE1484F4DF1A4FED912CEA7597726A2 /* Support Files */,
+				2487C825676BE1619C4153A0D8A1ED82 /* UIKit */,
 			);
-			name = Nuke;
-			path = Nuke;
+			name = PromiseKit;
+			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		2487C825676BE1619C4153A0D8A1ED82 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				97BBB921351A7F32B62936EEA9EA3DDA /* PMKAlertController.swift */,
+				E98B9F6A501466C9D6859E9D6BBDFBA1 /* PMKUIKit.h */,
+				A4C5F51B328C068119D0454FF1E9BD3D /* UIView+AnyPromise.h */,
+				9415C0694CD0ECED6AC42B137408F9E6 /* UIView+AnyPromise.m */,
+				11B83AEEF54CBFB16625684846524637 /* UIView+Promise.swift */,
+				36766CF942EAA9ED5F67EC5C286DEBB1 /* UIViewController+AnyPromise.h */,
+				308BF4ACCB95E87E19C9C9B7DEEAEA42 /* UIViewController+AnyPromise.m */,
+				4F74042895AFDFFEDBDC962D08BA3011 /* UIViewController+Promise.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		273A20BAD1F3D3C98B062F1FF3F8008A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47DFEA1224C4658EAEB24CF6DA0B2CF1 /* Alamofire.modulemap */,
+				7FC1F2DD189DC8C0B5007AC1116D4D68 /* Alamofire.xcconfig */,
+				71251E1F9B4E2668C015113100449881 /* Alamofire-dummy.m */,
+				3D30408731A3E8A3D1202F32FBB7F1F5 /* Alamofire-prefix.pch */,
+				6F2D8F46412035C1291A706143071F6C /* Alamofire-umbrella.h */,
+				EF52936D8DC29D7C8453DD329B9F2A88 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		2FF6180BEEED898542A54704E72D62FF /* IGListKit */ = {
+			isa = PBXGroup;
+			children = (
+				9C8AE30AD5D78A6B1BB1B7D7F13E9296 /* IGListAdapter.h */,
+				D750BA31DA5E7E3352F12D721DC01500 /* IGListAdapter.m */,
+				3F9390B3E2C37CB81B63400A6605983B /* IGListAdapterDataSource.h */,
+				2238B7E51682CF3D26A3C11C745804C9 /* IGListAdapterDelegate.h */,
+				97A4A5349347647E3052B280971CD61B /* IGListAdapterInternal.h */,
+				0485914726E36CD129AFA1C031B7BF7B /* IGListAdapterProxy.h */,
+				731215F8AA80463657521E0CF560B46E /* IGListAdapterProxy.m */,
+				AE55304F98EF2800321BAABE75E82B35 /* IGListAdapterUpdater.h */,
+				4FD43CB983F1CE89C0448BADCE4EEADB /* IGListAdapterUpdater.m */,
+				82F3BE07077C718DBA294C3998E8A7B3 /* IGListAdapterUpdaterDelegate.h */,
+				5A8828E841410AFABEB9FEBFCFED67A5 /* IGListAdapterUpdaterInternal.h */,
+				3D292AC9899C29A57BDC1FF82525F259 /* IGListAssert.h */,
+				3615CBA3E3E3F841261BFBD5C5A8615D /* IGListBatchUpdateData.h */,
+				322406B62642EFB6BE3BE6EA87F92072 /* IGListBatchUpdateData.mm */,
+				1B425BAAA7761C1230E45C882A400896 /* IGListCollectionContext.h */,
+				777394CDB7C8BC3CC31D8FD5BC5B3FAB /* IGListCollectionView.h */,
+				B5263B117C3FD5CEC8D5F734076C75ED /* IGListCollectionView.m */,
+				55D6B323654BFD9CFC5F7993E242A7AB /* IGListDiff.h */,
+				38732E7F982A9737D424D20E2907E1B6 /* IGListDiff.mm */,
+				191958787E8AE24095E8AB1E1BE9B450 /* IGListDiffable.h */,
+				9762A654B250E4BA7D3610FEAB736FD1 /* IGListDisplayDelegate.h */,
+				9D7A439493C5B7612B5914E71380EA73 /* IGListDisplayHandler.h */,
+				7AF9FEB58AA0D5641AF9137739E63BCA /* IGListDisplayHandler.m */,
+				43A0475E59F5ABB9012E89DF005BC710 /* IGListExperiments.h */,
+				BCDF1964EF562FA20E11670E6828D0DC /* IGListGridCollectionViewLayout.h */,
+				24BBA526EDB2A6FE5633DA0B05A636A5 /* IGListGridCollectionViewLayout.m */,
+				FBC5036F6C4B7703465CEA421124E9A5 /* IGListIndexPathResult.h */,
+				6B0C78B1EBDA8D566B63CD4D159B12C3 /* IGListIndexPathResult.m */,
+				4914D5DAD2483FAA6A14F6200743F418 /* IGListIndexPathResultInternal.h */,
+				88F40CADFE355FB9342953999BBED2D6 /* IGListIndexSetResult.h */,
+				C07565649C7AA39C0A5036791D306F75 /* IGListIndexSetResult.m */,
+				FB9C343266591FE262EEFF98137CC367 /* IGListIndexSetResultInternal.h */,
+				2C6673C2B22AC20DD86D031EC87D3C85 /* IGListKit.h */,
+				3619E16963C11582AFBDE594092E3E79 /* IGListMacros.h */,
+				B4389C4B1C6F4B0750AF262213253B00 /* IGListMoveIndex.h */,
+				BF463086A406C62A51C3C91AE939B0D4 /* IGListMoveIndex.m */,
+				E09B651B302591C38C4C75D984FAE3BE /* IGListMoveIndexInternal.h */,
+				6D93C4984C95B0B13A72BAA9BEC526EF /* IGListMoveIndexPath.h */,
+				93A100263116B491CD700B1594EE900B /* IGListMoveIndexPath.m */,
+				F4FDFB9844FA9E65C07F2DB1F3ECBB3B /* IGListMoveIndexPathInternal.h */,
+				A9E409AAA1F9FF996B85A2CBD743F7EF /* IGListReloadDataUpdater.h */,
+				B72E08BFD00BA54D9454738ED7A0EF69 /* IGListReloadDataUpdater.m */,
+				0C57058DF6BB7B3CE664BD6566294968 /* IGListScrollDelegate.h */,
+				6D7FA15E337692F25938A75E50938E47 /* IGListSectionController.h */,
+				15A6F92DEB80EB127E3B3EC6F7B464B2 /* IGListSectionController.m */,
+				8E6457FF7E9B27F7A7883F2ABCF24C6B /* IGListSectionControllerInternal.h */,
+				FF381A97348A31FB74B744DCF2BB8000 /* IGListSectionMap.h */,
+				CE91B41880AD00221F6CF3A4C4202D5E /* IGListSectionMap.m */,
+				17C6509AB3CC415EBFE01E230443FA4C /* IGListSectionType.h */,
+				E40B362137E2FDD239C237FE0C7E7690 /* IGListSingleSectionController.h */,
+				6D6FE09F3CEFD348641D0CB1FD0C0DA0 /* IGListSingleSectionController.m */,
+				C065B8192945D3B4D3D0EE542B1126C2 /* IGListStackedSectionController.h */,
+				134CB5A41623208DA266AADB6C3F2291 /* IGListStackedSectionController.m */,
+				77DEFD8ABEE16F7AD67500F5AD5167D8 /* IGListStackedSectionControllerInternal.h */,
+				E1A0E0A9E7DC2A741662A9D6F02BC071 /* IGListSupplementaryViewSource.h */,
+				B973002CF3FAB2B25132AE31FCA7A50A /* IGListUpdatingDelegate.h */,
+				79F4588A9B10890228EAD88A2040A685 /* IGListWorkingRangeDelegate.h */,
+				58E8CD69884F43994011F5E247837C8F /* IGListWorkingRangeHandler.h */,
+				0320B3E7960AFA9058D4FA6E2822D3EA /* IGListWorkingRangeHandler.mm */,
+				89391A0C570155C6B090C2D3F8C82AC4 /* NSNumber+IGListDiffable.h */,
+				552D08097B175E685DB40467B92D06A9 /* NSNumber+IGListDiffable.m */,
+				54D52F828417C5C86307D68FF8B8E1F9 /* NSString+IGListDiffable.h */,
+				C0264B848A4F6578DD10AA50744D3A09 /* NSString+IGListDiffable.m */,
+				D9FAAC1157A1FC342C7A88876BA8C9C6 /* UICollectionView+IGListBatchUpdateData.h */,
+				033221E70683B94C65213BBB2AE165F3 /* UICollectionView+IGListBatchUpdateData.m */,
+				01F7EF7A0831EEE12445D5390B556080 /* Support Files */,
+			);
+			name = IGListKit;
+			path = IGListKit;
 			sourceTree = "<group>";
 		};
 		330C696C6B665C8AA2D1433572441D5D /* Pods-BrainfoodTests */ = {
@@ -660,58 +693,131 @@
 			path = "Target Support Files/Pods-BrainfoodTests";
 			sourceTree = "<group>";
 		};
-		4B78739BCEE1628F452234B8354550FF /* Alamofire */ = {
+		3D2DBB7D04F8651D490AA8C7C47748B8 /* CorePromise */ = {
 			isa = PBXGroup;
 			children = (
-				914272AA5DF9557B2A12CB2C0D5DB863 /* AFError.swift */,
-				8F8CBE6AE6F5751DBEC4B6D385CAC1DF /* Alamofire.swift */,
-				70520C02EFBD6335AEA0E38DA30BF75C /* DispatchQueue+Alamofire.swift */,
-				D526D813DDB692A385681C23A52E4E43 /* MultipartFormData.swift */,
-				A404BA1D9E04CB724273BF2C7ABC007A /* NetworkReachabilityManager.swift */,
-				CDB34014D9838B14291DBB39C7CBAB45 /* Notifications.swift */,
-				5B6538419A7F75F9568E9047C6D464A2 /* ParameterEncoding.swift */,
-				511397B127C884B87F5E3CA6C256EC36 /* Request.swift */,
-				A943E78FAC0CF300B4A9E65FAE4A4FFE /* Response.swift */,
-				EEC626E7DDAB5623D2A33194EC1406AE /* ResponseSerialization.swift */,
-				A0F89513A794BCC4F7080029AEE7D93B /* Result.swift */,
-				F718D139554FBA49A8F02424C1038600 /* ServerTrustPolicy.swift */,
-				8F3F1AC9C6686BEFD33FD6E05F084612 /* SessionDelegate.swift */,
-				E610BBFC51936E2B0783A6D83BBBD0DD /* SessionManager.swift */,
-				33FAEAD3C966D4D07471FA9F7A9762DB /* TaskDelegate.swift */,
-				A3F3C4742B913A748E8129B536F259E7 /* Timeline.swift */,
-				DF9894E9FBE1DA5D07879B803BFFDA1A /* Validation.swift */,
-				7D95A2BB5174144677C2658CEBD6D60E /* Support Files */,
+				3D71B4291C81DFE18F0A3D886678E231 /* AAA-CocoaPods-Hack.h */,
+				71C66DEAFDC1AD6FC1142A08FC5B501F /* after.m */,
+				8F66F8EA3F76A084E5AF2DAE6E0FAC88 /* after.swift */,
+				30C7DCA403A9117BAAC2737DA7F415EA /* AnyPromise.h */,
+				64F4E077012E4B99FEB290EFD8C91AC1 /* AnyPromise.m */,
+				296D944270C6EA165022A77B9AAEBC0D /* AnyPromise.swift */,
+				52882D753259DD2785A23176671032BC /* dispatch_promise.m */,
+				104A5CE1297A0AC831F8709FB14A98E6 /* DispatchQueue+Promise.swift */,
+				E87805E0C28C8E89F4F99F9F4B551D4C /* Error.swift */,
+				FF0B419CF801E1D2A8D15C915DA6AA38 /* GlobalState.m */,
+				AC1F7E8F45FFDAFEB90AD4F3F2ACD422 /* hang.m */,
+				A21A78AD7065AFF6CC35FE1B6FBE1BEB /* join.m */,
+				D06F76D2314FF91AA06316023C07B9F3 /* join.swift */,
+				194CDE2D08B76194BC62C94627EAB833 /* Promise.swift */,
+				FF5121323A5CAD4A42C54EE093775BC7 /* Promise+AnyPromise.swift */,
+				773DE4399AF7AE756B55FCEDC2F3003F /* Promise+Properties.swift */,
+				4B645FD83581DAC79724D24265611D77 /* PromiseKit.h */,
+				6419401AD5139E72747F9CC3CD148DB6 /* race.swift */,
+				7EAFDF8743FC7038572D4DAD5F5F35AD /* State.swift */,
+				3257305AFA1BE16539509CA4EC5393F2 /* when.m */,
+				0D132127E3D7C9C008A828865EC66259 /* when.swift */,
+				F3D3E524D639609992ABB885A13DE470 /* wrap.swift */,
+				CE7A167BAECD59EBAE01109488C8F98A /* Zalgo.swift */,
 			);
-			name = Alamofire;
-			path = Alamofire;
+			name = CorePromise;
 			sourceTree = "<group>";
 		};
-		6EFD772BDA68C96CC2F2D78CE482C6B3 /* Support Files */ = {
+		433181FCAC59DB38F3B563F8C9D14CFB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4849808D310628856ECAC430A52E845B /* FBLikeLayout.modulemap */,
-				8EB74D3407641ACCEEF69F6420483E3F /* FBLikeLayout.xcconfig */,
-				B6AD7A9A6A1BA086AD2F9662E3AA997E /* FBLikeLayout-dummy.m */,
-				5240095D5E3D984CC34021500517DF4D /* FBLikeLayout-prefix.pch */,
-				5844E4C91E88EA607877DC25BBB0EA2E /* FBLikeLayout-umbrella.h */,
-				A8744C6A20777C5EF2A7EED1F904AE6C /* Info.plist */,
+				6C6496319F6A53B7A9D87A512B4D8F72 /* FBLikeLayout.modulemap */,
+				E482973399934334E1EAC9C96A263647 /* FBLikeLayout.xcconfig */,
+				03FC6595921B2A29FDFEDACC5F724D56 /* FBLikeLayout-dummy.m */,
+				3CD116A2336CB41BACD010EF57BB05FE /* FBLikeLayout-prefix.pch */,
+				19607427BC74AB4490018E5E82DE3B41 /* FBLikeLayout-umbrella.h */,
+				52222FE6939D786D1F4F509ED23E2CA8 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FBLikeLayout";
 			sourceTree = "<group>";
 		};
-		7D95A2BB5174144677C2658CEBD6D60E /* Support Files */ = {
+		4391A8319C6DE7AF9FBD501FB33163EF /* Heap */ = {
 			isa = PBXGroup;
 			children = (
-				34595162D8E41D85A5EB9F77F4278CAB /* Alamofire.modulemap */,
-				FF3D9CED8AABF622CC28A4A9012CD573 /* Alamofire.xcconfig */,
-				71CBAAB71A61F3CE4F547C41E390105A /* Alamofire-dummy.m */,
-				EC7A50DC7350E4BDD459D801E2DDCC0C /* Alamofire-prefix.pch */,
-				33276310F2F3C140DE0EF5ED6784269C /* Alamofire-umbrella.h */,
-				B274A7797FBA6906E52B5EC68234B2CF /* Info.plist */,
+				16247FEBEEEF72D8586D8F9415B96C7C /* Heap.h */,
+			);
+			name = Heap;
+			path = Heap;
+			sourceTree = "<group>";
+		};
+		48B1AB409BA90B097C29ED64B166F22A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				0EE6B8229DBF372288DEC78306F7D64E /* afterlife.swift */,
+				C4A6D7F18EFAA2162AD1139DFBC49F23 /* NSNotificationCenter+AnyPromise.h */,
+				443A6453543E7CB41B8C00C06BBD0E10 /* NSNotificationCenter+AnyPromise.m */,
+				65DC42661AC04061FFB055AACFDA565F /* NSNotificationCenter+Promise.swift */,
+				3FF64CD0EF9A255852E5F66339062953 /* NSObject+Promise.swift */,
+				161C0DDA0D55CCDE2C86D161EF6DD265 /* NSTask+AnyPromise.h */,
+				EFAFCAF1D0CE8933A1EF970BEA1A2178 /* NSTask+AnyPromise.m */,
+				3D9F282B297339A968F58BFA8ECA719D /* NSURLSession+AnyPromise.h */,
+				20BE093B6E3614137BFD3CD99963CF3A /* NSURLSession+AnyPromise.m */,
+				E3574F456B1A134A84B7A609917CEFF3 /* NSURLSession+Promise.swift */,
+				31379D0ED839AC497FC4B4035C91575C /* PMKFoundation.h */,
+				93BA6E78F53A3D1BC79F32A78F3A4145 /* Process+Promise.swift */,
+				BA796C090F0B8AD2034F180BB9356A7D /* URLDataPromise.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		5C2C42AB878C1E05193AA73FD13B37FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				724670B7940D17E099032BCB21B415C3 /* Info.plist */,
+				B64B9093142B8B1C817556098AF6E1A0 /* SwiftyJSON.modulemap */,
+				2F820CED653C4ABE8F59C61DEAFCA746 /* SwiftyJSON.xcconfig */,
+				A38DD4F807D74932D38590E87DE6B50E /* SwiftyJSON-dummy.m */,
+				681BE4FA93622D2E5FFC877400296344 /* SwiftyJSON-prefix.pch */,
+				3E25BB00A38C052EA0B4DC78D7FD4806 /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		62D83D4D83F641C5279C49E5DC89EBBB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2630CBD742501F2EC6101706D24DAAA9 /* Info.plist */,
+				36604EC0C3D22F04545D0C86B09350ED /* Nuke.modulemap */,
+				C06874EC5746282347A123C109EFFE3E /* Nuke.xcconfig */,
+				3D9185F21A896750CD25A9E4BE07BA0B /* Nuke-dummy.m */,
+				5E2A9AADC3E90E2EA6655855212B4EB5 /* Nuke-prefix.pch */,
+				67DE2A8758F395FB50FFBE2496C0763E /* Nuke-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Nuke";
+			sourceTree = "<group>";
+		};
+		6E2DE9818E3C54FB825AFEBA6C25B27E /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				EE89BC5C330168A7AF6439700EECF714 /* AFError.swift */,
+				CD47B196CB368148708F2A9C4E1168A7 /* Alamofire.swift */,
+				79B7DA3E1C2D6DC5231EE23EA667857A /* DispatchQueue+Alamofire.swift */,
+				F7AAB1413F6892309DD0F6E8B9AB9C13 /* MultipartFormData.swift */,
+				5CF4C24D37E22BD3DB35AD8EF6260A71 /* NetworkReachabilityManager.swift */,
+				1B9D79191E5CD37A7B936FF4A33933BC /* Notifications.swift */,
+				0BCE3B4044155645BB586ECDAE269599 /* ParameterEncoding.swift */,
+				0FF569BB26D2E8EF79C469EDE1BA1672 /* Request.swift */,
+				C4D5DF1C314FD68D1AB1CA41C89880D2 /* Response.swift */,
+				8F25569940A75E86F317209D58EF39EC /* ResponseSerialization.swift */,
+				3D70AA7C1712C648324A5E71661C9B18 /* Result.swift */,
+				95B17AF56A88EBA1EBD38E45B78E5B69 /* ServerTrustPolicy.swift */,
+				B5DCDC4B8995527B0212A9B37826D33A /* SessionDelegate.swift */,
+				7D4C5845DDC8EF3953A4C71E3E11C1F9 /* SessionManager.swift */,
+				9AAE0BEB09963AEC0E361E6EE690EB91 /* TaskDelegate.swift */,
+				F944D97C2EBC76F77B7625312234DCC4 /* Timeline.swift */,
+				41F3E18CDAC8B9BBDF77BBC29DC86C73 /* Validation.swift */,
+				273A20BAD1F3D3C98B062F1FF3F8008A /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -719,43 +825,55 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				1AE208EDBB8341D76C32DC199F0985BE /* Pods */,
+				96FB699735A8686D3EC2605D72DEF402 /* Pods */,
 				11A0E767A44DF94061043825E8CC51E2 /* Products */,
 				FF85A5624003F2CFF3CA175F3FEDB6ED /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		89E1079ED54092553D91A32C99CE71DC /* PromiseKit */ = {
+		866FA19AEA015FE8C562A11740CBBC9D /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
-				EBA5C2176C4B83D28C2EB25BED95ABB2 /* CorePromise */,
-				9AFB7943428DEC95F68EEA3124E84940 /* Foundation */,
-				CEFEB3876A3C668A14DB57E36946AE88 /* QuartzCore */,
-				D799C1C37EAD29A24428E44E8B89F838 /* Support Files */,
-				B95501171C7C37735E567B6D6D751D05 /* UIKit */,
+				8131F634892FE4D88629A8F08AE8E328 /* CALayer+AnyPromise.h */,
+				1FB90F9BD6A9C00FD4FF6FD2AC9C7F4F /* CALayer+AnyPromise.m */,
+				0E98A0C1615A948A3611230A9BBFAA51 /* PMKQuartzCore.h */,
 			);
-			name = PromiseKit;
-			path = PromiseKit;
+			name = QuartzCore;
 			sourceTree = "<group>";
 		};
-		9AFB7943428DEC95F68EEA3124E84940 /* Foundation */ = {
+		93EC1D88AE4B8FCD2230E154D4D7D799 /* Nuke */ = {
 			isa = PBXGroup;
 			children = (
-				111CD36DC8C92E053E6AAA21DDC8929D /* afterlife.swift */,
-				3F88F04CB4A7ECBE7BD8460DCF4881C1 /* NSNotificationCenter+AnyPromise.h */,
-				3C2EBE19F81CA553662004841D71208B /* NSNotificationCenter+AnyPromise.m */,
-				A11EC55AD3916CA9A88C63D5565D9BDF /* NSNotificationCenter+Promise.swift */,
-				0208B300B56695FA6302A8F0499A17BC /* NSObject+Promise.swift */,
-				14D100E27B6DE8A401FAAACA760BC08D /* NSTask+AnyPromise.h */,
-				4EA47C14DC020A8419534FCFB198D1F5 /* NSTask+AnyPromise.m */,
-				84782391AA3655F3654F99E36B67D455 /* NSURLSession+AnyPromise.h */,
-				B32730D52D7A3E91C186532202FBD941 /* NSURLSession+AnyPromise.m */,
-				21ADF2FBF2BA38B6B3501D0472A2398E /* NSURLSession+Promise.swift */,
-				791D35115B42E351272135C8D02143B5 /* PMKFoundation.h */,
-				498BCE4EAE2B6AA2EBC219B4400EF72F /* Process+Promise.swift */,
-				7883764D1B8EE25D4FE998BDADF3FBA8 /* URLDataPromise.swift */,
+				4F9B967561B643635092E829F00AEA7D /* Cache.swift */,
+				18296EF52FFA43FBBF8F9826B40B94D1 /* CancellationToken.swift */,
+				CB5C7C658E5BB561E1511144C42B5CA3 /* DataDecoder.swift */,
+				A3D79076F5B844E19D9CD59A8498F531 /* DataLoader.swift */,
+				A8DFB1898C16CFB012CC179F2646FF4C /* Deduplicator.swift */,
+				619CA312110A75C4B301E91030BE7B48 /* Loader.swift */,
+				1CF3F4A681611AAFBDF8A0805E71B59A /* Manager.swift */,
+				4340260C2FC647476F4F0869EC21ED9B /* Nuke.swift */,
+				C9F24DF41658D316F42D6B5892729433 /* Preheater.swift */,
+				B8F8F3F89EF76891D7956E56F77C4198 /* Processor.swift */,
+				05BCFDC4391DADE91CF71C7FB063BE7E /* Request.swift */,
+				BFD224392030E32280D7A4D791EFBDE5 /* Scheduler.swift */,
+				62D83D4D83F641C5279C49E5DC89EBBB /* Support Files */,
 			);
-			name = Foundation;
+			name = Nuke;
+			path = Nuke;
+			sourceTree = "<group>";
+		};
+		96FB699735A8686D3EC2605D72DEF402 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E2DE9818E3C54FB825AFEBA6C25B27E /* Alamofire */,
+				DEF1B11F1E94C2A8CD5A9F0EE9E00BE0 /* FBLikeLayout */,
+				4391A8319C6DE7AF9FBD501FB33163EF /* Heap */,
+				2FF6180BEEED898542A54704E72D62FF /* IGListKit */,
+				93EC1D88AE4B8FCD2230E154D4D7D799 /* Nuke */,
+				21E9026AC63974CC33F45623106CCF96 /* PromiseKit */,
+				1287A438B3184F6EA9CCEED9220D870D /* SwiftyJSON */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A17CB222CCD6DBF54142CF4B65777BDB /* Pods-Brainfood */ = {
@@ -776,96 +894,29 @@
 			path = "Target Support Files/Pods-Brainfood";
 			sourceTree = "<group>";
 		};
-		B7D548F523CBF0AA56790FC554C38D85 /* Support Files */ = {
+		BDE1484F4DF1A4FED912CEA7597726A2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B8E814E8E8F7FE5330690EE8061A423A /* Info.plist */,
-				260BE9227CEA4B5F2DF6826BF7197229 /* SwiftyJSON.modulemap */,
-				6467BEF06D1102BDC8708E18543012DC /* SwiftyJSON.xcconfig */,
-				DA3E1AE94FC10E4389E681AF17280790 /* SwiftyJSON-dummy.m */,
-				7377EA1B0A8C7FD423A793AE2D25F02B /* SwiftyJSON-prefix.pch */,
-				08A59F724664C34EA0A6239CF61A70AE /* SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
-			sourceTree = "<group>";
-		};
-		B95501171C7C37735E567B6D6D751D05 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				E5A626A55307AB9996E49E04F0562988 /* PMKAlertController.swift */,
-				BFAF1A47A1687815BEC57A67E3AEE625 /* PMKUIKit.h */,
-				7B343F3305F5A7CB993DB35DAB114948 /* UIView+AnyPromise.h */,
-				DD6B9DD50988B2A236E9DC7B9744B3D9 /* UIView+AnyPromise.m */,
-				525790D70C8D2AFAB1DC379B2F744E99 /* UIView+Promise.swift */,
-				557A3A87AB3C5F3E66186FDD680B749E /* UIViewController+AnyPromise.h */,
-				57F332E8E984D4CDF89307F2DEF5AAD6 /* UIViewController+AnyPromise.m */,
-				C72996F1DBFD651A4500D068F9E87BA6 /* UIViewController+Promise.swift */,
-			);
-			name = UIKit;
-			sourceTree = "<group>";
-		};
-		C965BAD2A16D4B7AC259913E87D22000 /* FBLikeLayout */ = {
-			isa = PBXGroup;
-			children = (
-				BB6626F931A72B6E57DE20178ECA13D6 /* FBLikeLayout.h */,
-				5076B94FB4BD21727CBC166E7F6C389C /* FBLikeLayout.m */,
-				6EFD772BDA68C96CC2F2D78CE482C6B3 /* Support Files */,
-			);
-			name = FBLikeLayout;
-			path = FBLikeLayout;
-			sourceTree = "<group>";
-		};
-		CB079EBC8401CC8FE9EA3FACB104C4E0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EA3F3D601969F22E901DC90233844B07 /* IGListKit.modulemap */,
-				7A77338F08B5E908D2EB34182D0B2D01 /* IGListKit.xcconfig */,
-				E13E13B9398A437D6107C087C8C186AA /* IGListKit-dummy.m */,
-				16CD06EF475B01D03528CA9E6C621213 /* IGListKit-prefix.pch */,
-				6754F4AA864B8E9F4B5EE57B75063516 /* IGListKit-umbrella.h */,
-				661D4311CBDA794D88DBAA29B64EE1E4 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/IGListKit";
-			sourceTree = "<group>";
-		};
-		CB453DDA839E07A55C08D03580242AFF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EFE2B934CFA2CA3EB9999006B050433C /* Info.plist */,
-				D96983F18769C79B9BE79E5C93D3B421 /* Nuke.modulemap */,
-				0C1ABFD947EC839D93839ED07E8A2559 /* Nuke.xcconfig */,
-				55C09AF27A2584BB8F09622A3719A339 /* Nuke-dummy.m */,
-				4893F9A65F787D1AEA7D4002E380BA86 /* Nuke-prefix.pch */,
-				DFEE2BD6A71E2F3B8DDD32D6F1E129D1 /* Nuke-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Nuke";
-			sourceTree = "<group>";
-		};
-		CEFEB3876A3C668A14DB57E36946AE88 /* QuartzCore */ = {
-			isa = PBXGroup;
-			children = (
-				B9A8E793847AB414A9D0D3EEBB41F725 /* CALayer+AnyPromise.h */,
-				7F0602C464FE63DB462F5BCDC6A0112B /* CALayer+AnyPromise.m */,
-				D84C6F4294C8ABBFFA48CE82B6DD6397 /* PMKQuartzCore.h */,
-			);
-			name = QuartzCore;
-			sourceTree = "<group>";
-		};
-		D799C1C37EAD29A24428E44E8B89F838 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0A9212A904FECA538788EE98F37D266F /* Info.plist */,
-				B34DB21DE81B142E8DC55532BEA5CA81 /* PromiseKit.modulemap */,
-				7D91F6518300EA98CC2F656B2F232CFD /* PromiseKit.xcconfig */,
-				5CA1DB3933E2E0A8D168F1EC5FE083DE /* PromiseKit-dummy.m */,
-				D414D3E9A05005BA370C0C6CCEB88365 /* PromiseKit-prefix.pch */,
-				F40F3829D7C6764FA8A0C5F9E96D512F /* PromiseKit-umbrella.h */,
+				D7B1AC71FC6DD00E6398337329F10FAA /* Info.plist */,
+				338796C562C54F8C17A0941A52C282D8 /* PromiseKit.modulemap */,
+				86B6BE84A31B6123E36D75AEF991C53B /* PromiseKit.xcconfig */,
+				1BAA7FD87114CCF70535847FCE1D813F /* PromiseKit-dummy.m */,
+				AE483988461374F85499036F8C3320BB /* PromiseKit-prefix.pch */,
+				85E3ADB8B32EF7F44B96F49751F0C5FB /* PromiseKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PromiseKit";
+			sourceTree = "<group>";
+		};
+		DEF1B11F1E94C2A8CD5A9F0EE9E00BE0 /* FBLikeLayout */ = {
+			isa = PBXGroup;
+			children = (
+				398D754A07391241C44B0923E7A35812 /* FBLikeLayout.h */,
+				4FDB63C65B4517287CCC055434B89A40 /* FBLikeLayout.m */,
+				433181FCAC59DB38F3B563F8C9D14CFB /* Support Files */,
+			);
+			name = FBLikeLayout;
+			path = FBLikeLayout;
 			sourceTree = "<group>";
 		};
 		E5E9260013FA223D81B907D9285F6EA1 /* iOS */ = {
@@ -876,46 +927,6 @@
 				5BF675A168132FD52AED630F977FE906 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		EBA5C2176C4B83D28C2EB25BED95ABB2 /* CorePromise */ = {
-			isa = PBXGroup;
-			children = (
-				56ADC38C7AB42684ED0604C10150C94A /* AAA-CocoaPods-Hack.h */,
-				A5581B54F5CF149EA319DC9496615C16 /* after.m */,
-				8BFFBAA2AE380A7481A7FAD931F8A2BF /* after.swift */,
-				2824CDE0ED9FF6248DDDF791FA640B54 /* AnyPromise.h */,
-				979DA9411F4E11F614359358305D6E66 /* AnyPromise.m */,
-				8775C735426A6735A6C8D324A544BE47 /* AnyPromise.swift */,
-				291FA4D0CA3C2BB3068490FB74CE2F5F /* dispatch_promise.m */,
-				4D3E98A4D531C81325BDAB9D2AA455D4 /* DispatchQueue+Promise.swift */,
-				0E452CAF04D9317692576C528FB15FCD /* Error.swift */,
-				402841DC10A8F0EEA6E1E4ACF877D56D /* GlobalState.m */,
-				96896F134B79335D22AAE5C7CF4A181A /* hang.m */,
-				A427542428B650F4063190CC3B10F371 /* join.m */,
-				6DE302491D2ACCC4BB6EC6C74F326840 /* join.swift */,
-				50C875D5156EA5F1C299F8329FE9766B /* Promise.swift */,
-				D4DADCFA2D350091172034AA400D0D65 /* Promise+AnyPromise.swift */,
-				545811AA558D897DF396BAAF50BC8D2D /* Promise+Properties.swift */,
-				300108B1BA4C51B8D85A95D4338ACC54 /* PromiseKit.h */,
-				2CA44C69FF917AB54E68F17630B0C492 /* race.swift */,
-				D96A8C50DA10DD1006903D13B511E54F /* State.swift */,
-				4EB7869EF3A87AF07D1E11369BC1206A /* when.m */,
-				E9BC55290DD82DB1F64E785FEEC0F88F /* when.swift */,
-				BB19892A85497ADAC7D3CD3179A89D95 /* wrap.swift */,
-				3AD417407A03AC0BCFDEC2A29E1CEF35 /* Zalgo.swift */,
-			);
-			name = CorePromise;
-			sourceTree = "<group>";
-		};
-		F9A55218A13368CC221E5C109675B149 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				E9FB6B620D450B7613BB0237E394AA0E /* SwiftyJSON.swift */,
-				B7D548F523CBF0AA56790FC554C38D85 /* Support Files */,
-			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		FF85A5624003F2CFF3CA175F3FEDB6ED /* Targets Support Files */ = {
@@ -1425,7 +1436,7 @@
 /* Begin XCBuildConfiguration section */
 		005561057AEE0C144E6527A4211B9625 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EB74D3407641ACCEEF69F6420483E3F /* FBLikeLayout.xcconfig */;
+			baseConfigurationReference = E482973399934334E1EAC9C96A263647 /* FBLikeLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1457,7 +1468,7 @@
 		};
 		031D65E492ADD6965217E511EFF50418 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D91F6518300EA98CC2F656B2F232CFD /* PromiseKit.xcconfig */;
+			baseConfigurationReference = 86B6BE84A31B6123E36D75AEF991C53B /* PromiseKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1489,7 +1500,7 @@
 		};
 		06221250F75021D1B3616F72C4F03AC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C1ABFD947EC839D93839ED07E8A2559 /* Nuke.xcconfig */;
+			baseConfigurationReference = C06874EC5746282347A123C109EFFE3E /* Nuke.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1522,7 +1533,7 @@
 		};
 		0A29B6F510198AF64EFD762EF6FA97A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF3D9CED8AABF622CC28A4A9012CD573 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 7FC1F2DD189DC8C0B5007AC1116D4D68 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1598,7 +1609,7 @@
 		};
 		2A9EFDA2E7E4217E094C6DC642F51C42 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A77338F08B5E908D2EB34182D0B2D01 /* IGListKit.xcconfig */;
+			baseConfigurationReference = B2B0663C2214F0F79E5E7336C499EAC1 /* IGListKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1630,7 +1641,7 @@
 		};
 		3CD069924626AA66CEA12BC156349C4B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6467BEF06D1102BDC8708E18543012DC /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 2F820CED653C4ABE8F59C61DEAFCA746 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1698,7 +1709,7 @@
 		};
 		7447C2E1C4ABF4CDDB786D137C5F397B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C1ABFD947EC839D93839ED07E8A2559 /* Nuke.xcconfig */;
+			baseConfigurationReference = C06874EC5746282347A123C109EFFE3E /* Nuke.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1765,7 +1776,7 @@
 		};
 		8CE594585B35A20411E084AD6F169FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D91F6518300EA98CC2F656B2F232CFD /* PromiseKit.xcconfig */;
+			baseConfigurationReference = 86B6BE84A31B6123E36D75AEF991C53B /* PromiseKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1798,7 +1809,7 @@
 		};
 		927309BA7A6EC59A940E63EB69FE932F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A77338F08B5E908D2EB34182D0B2D01 /* IGListKit.xcconfig */;
+			baseConfigurationReference = B2B0663C2214F0F79E5E7336C499EAC1 /* IGListKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1830,7 +1841,7 @@
 		};
 		BE5118AC11CEFBB5CE49DFB6C0BD2583 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6467BEF06D1102BDC8708E18543012DC /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 2F820CED653C4ABE8F59C61DEAFCA746 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1862,7 +1873,7 @@
 		};
 		CB76FC3940A997B7B07CBF8876D07AEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EB74D3407641ACCEEF69F6420483E3F /* FBLikeLayout.xcconfig */;
+			baseConfigurationReference = E482973399934334E1EAC9C96A263647 /* FBLikeLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2005,7 +2016,7 @@
 		};
 		F383079BFBF927813EA3613CFB679FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF3D9CED8AABF622CC28A4A9012CD573 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 7FC1F2DD189DC8C0B5007AC1116D4D68 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

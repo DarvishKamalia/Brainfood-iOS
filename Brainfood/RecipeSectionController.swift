@@ -14,12 +14,17 @@ final class RecipeSectionController: IGListSectionController, IGListSectionType 
     
     var recipe: Recipe?
     
+    override init() {
+        super.init()
+        inset = UIEdgeInsets(top: 2.0, left: 0.0, bottom: 0.0, right: 0.0)
+    }
+    
     func numberOfItems() -> Int {
         return 1
     }
     
     func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: collectionContext?.containerSize.width ?? 0, height: 120.0)
+        return CGSize(width: collectionContext?.containerSize.width ?? 0, height: 140.0)
     }
     
     func cellForItem(at index: Int) -> UICollectionViewCell {

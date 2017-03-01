@@ -81,6 +81,7 @@
 		2A3F70771E6644F700E5F3D8 /* RecommendationsSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsSectionController.swift; sourceTree = "<group>"; };
 		2A3F70791E664FE000E5F3D8 /* HorizontalCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionViewController.swift; sourceTree = "<group>"; };
 		2A3F707B1E66526F00E5F3D8 /* HorizontalFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalFlowLayout.swift; sourceTree = "<group>"; };
+		2A3F707D1E66579200E5F3D8 /* Brainfood-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brainfood-Bridging-Header.h"; sourceTree = "<group>"; };
 		2A5036861E58F59E00C086F7 /* APIClient+Recipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Recipes.swift"; sourceTree = "<group>"; };
 		2A5036881E59060E00C086F7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2A50368A1E59084100C086F7 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
@@ -253,6 +254,7 @@
 				7C82AA821DC881D900085C0F /* Info.plist */,
 				7C82AA9A1DC8829900085C0F /* Classes */,
 				7C2743521DCD152E0093B994 /* Cells */,
+				2A3F707D1E66579200E5F3D8 /* Brainfood-Bridging-Header.h */,
 			);
 			path = Brainfood;
 			sourceTree = "<group>";
@@ -351,6 +353,7 @@
 					7C82AA721DC881D900085C0F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = P25BA56T67;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					7C82AA861DC881D900085C0F = {
@@ -673,13 +676,15 @@
 			baseConfigurationReference = CB0A886D3F6503C46EE6C9FE /* Pods-Brainfood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = P25BA56T67;
 				INFOPLIST_FILE = Brainfood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DK.Brainfood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brainfood/Brainfood-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -689,13 +694,14 @@
 			baseConfigurationReference = D7064C2FFCFD2C7B911DC075 /* Pods-Brainfood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = P25BA56T67;
 				INFOPLIST_FILE = Brainfood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DK.Brainfood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Brainfood/Brainfood-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

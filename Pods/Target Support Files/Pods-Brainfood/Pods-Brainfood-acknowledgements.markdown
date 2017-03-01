@@ -50,6 +50,10 @@ SOFTWARE.
 
 
 
+## Heap
+
+See https://heapanalytics.com/terms
+
 ## IGListKit
 
 BSD License
