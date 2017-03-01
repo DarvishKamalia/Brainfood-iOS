@@ -346,7 +346,7 @@
 				TargetAttributes = {
 					7C82AA721DC881D900085C0F = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = P25BA56T67;
+						DevelopmentTeam = UHN8HUBWRK;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -667,11 +667,41 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = P25BA56T67;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UHN8HUBWRK;
 				INFOPLIST_FILE = Brainfood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DK.Brainfood;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"Heap\"",
+					"-l\"icucore\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FBLikeLayout\"",
+					"-framework",
+					"\"IGListKit\"",
+					"-framework",
+					"\"Nuke\"",
+					"-framework",
+					"\"PromiseKit\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brainfood.BrainfoodBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "Brainfood/Brainfood-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -685,11 +715,41 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = P25BA56T67;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UHN8HUBWRK;
 				INFOPLIST_FILE = Brainfood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DK.Brainfood;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"Heap\"",
+					"-l\"icucore\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"FBLikeLayout\"",
+					"-framework",
+					"\"IGListKit\"",
+					"-framework",
+					"\"Nuke\"",
+					"-framework",
+					"\"PromiseKit\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brainfood.BrainfoodBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "Brainfood/Brainfood-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

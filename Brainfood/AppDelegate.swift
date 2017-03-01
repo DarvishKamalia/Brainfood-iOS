@@ -14,11 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Heap.setAppId("2999805277")
+        Heap.setAppId("2180352270");
         #if DEBUG
-            Heap.enableVisualizer()
+            Heap.enableVisualizer();
         #endif
-        
+
         return true
     }
 
