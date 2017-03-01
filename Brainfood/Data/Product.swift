@@ -49,7 +49,7 @@ class Product: Equatable, FeedItem, IGListDiffable {
             return NSAttributedString(string: "$\(price)")
         }
         else {
-            return NSAttributedString(string:"")
+            return NSAttributedString(string:"Price Unavailable")
         }
     }
     

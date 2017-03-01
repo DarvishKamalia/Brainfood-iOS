@@ -13,6 +13,7 @@ enum RecommendationType {
     case Recipes
     case PurchaseHistory
     case Deals
+    case CartPrice
     
     var fetchEndpoint: String  {
         switch (self) {
@@ -20,6 +21,7 @@ enum RecommendationType {
             case .Recipes: return  "getRecommendedRecipes"
             case .ShoppingList: return ""
             case .Deals: return "getDeals"
+            case .CartPrice: return "getCartPrices"
         }
     }
 }

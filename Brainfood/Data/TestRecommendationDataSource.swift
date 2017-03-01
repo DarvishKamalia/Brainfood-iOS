@@ -16,7 +16,7 @@ import Foundation
                     let item = Product(name: "Test Product", imageUrl: URL(string: "http://www.americanyp.com/users_content/users_images/logos/groceries.jpg"))
                     completionHandler(Array(repeating: item, count: 10))
                     
-                case .Recipes, .ShoppingList : break
+                case .Recipes, .ShoppingList, .CartPrice : break
             }
         }
     }

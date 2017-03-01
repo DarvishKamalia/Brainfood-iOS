@@ -32,12 +32,6 @@
 		7C6ADD641DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD5F1DD93520008F4836 /* DefaultHorizontalFeedCell.swift */; };
 		7C6ADD651DD93520008F4836 /* DefaultHorizontalFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */; };
 		7C6ADD661DD93520008F4836 /* DefaultHorizontalFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */; };
-		7C6ADD691DD93520008F4836 /* HorizontalFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD621DD93520008F4836 /* HorizontalFeedVC.swift */; };
-		7C6ADD6A1DD93520008F4836 /* HorizontalFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD621DD93520008F4836 /* HorizontalFeedVC.swift */; };
-		7C6ADD6F1DD93892008F4836 /* ShoppingListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ADD6D1DD93892008F4836 /* ShoppingListVC.storyboard */; };
-		7C6ADD701DD93892008F4836 /* ShoppingListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ADD6D1DD93892008F4836 /* ShoppingListVC.storyboard */; };
-		7C6ADD711DD93892008F4836 /* ShoppingListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD6E1DD93892008F4836 /* ShoppingListVC.swift */; };
-		7C6ADD721DD93892008F4836 /* ShoppingListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD6E1DD93892008F4836 /* ShoppingListVC.swift */; };
 		7C6ADD741DD938C9008F4836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ADD731DD938C9008F4836 /* Main.storyboard */; };
 		7C6ADD751DD938C9008F4836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6ADD731DD938C9008F4836 /* Main.storyboard */; };
 		7C6ADD7A1DD938E0008F4836 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD771DD938E0008F4836 /* Product.swift */; };
@@ -56,6 +50,9 @@
 		8EBDB71F433CD5413ECAA0BD /* Pods_BrainfoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7DAB2F9625CF0C5FCCB9E72 /* Pods_BrainfoodTests.framework */; };
 		A86E99731E512E09006D21DB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E99701E512E09006D21DB /* APIClient.swift */; };
 		A86E99741E512E09006D21DB /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E99711E512E09006D21DB /* Error.swift */; };
+		A8AD51ED1E6670E100610DB9 /* CartPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AD51EC1E6670E100610DB9 /* CartPrice.swift */; };
+		A8AD51EF1E667C0800610DB9 /* CartPrices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AD51EE1E667C0800610DB9 /* CartPrices.swift */; };
+		A8AD51F11E667C6C00610DB9 /* CartPriceSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AD51F01E667C6C00610DB9 /* CartPriceSectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,9 +90,6 @@
 		7C4A07601DEE15040094E44F /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = Data/Recipe.swift; sourceTree = "<group>"; };
 		7C6ADD5F1DD93520008F4836 /* DefaultHorizontalFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultHorizontalFeedCell.swift; path = "Home FLow/DefaultHorizontalFeedCell.swift"; sourceTree = "<group>"; };
 		7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefaultHorizontalFeedCell.xib; path = "Home FLow/DefaultHorizontalFeedCell.xib"; sourceTree = "<group>"; };
-		7C6ADD621DD93520008F4836 /* HorizontalFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalFeedVC.swift; path = "Home FLow/HorizontalFeedVC.swift"; sourceTree = "<group>"; };
-		7C6ADD6D1DD93892008F4836 /* ShoppingListVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ShoppingListVC.storyboard; path = "Shopping List Flow/ShoppingListVC.storyboard"; sourceTree = "<group>"; };
-		7C6ADD6E1DD93892008F4836 /* ShoppingListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListVC.swift; path = "Shopping List Flow/ShoppingListVC.swift"; sourceTree = "<group>"; };
 		7C6ADD731DD938C9008F4836 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Home FLow/Main.storyboard"; sourceTree = "<group>"; };
 		7C6ADD771DD938E0008F4836 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Data/Product.swift; sourceTree = "<group>"; };
 		7C6ADD781DD938E0008F4836 /* RecommendationsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecommendationsDataSource.swift; path = Data/RecommendationsDataSource.swift; sourceTree = "<group>"; };
@@ -113,6 +107,9 @@
 		A7DAB2F9625CF0C5FCCB9E72 /* Pods_BrainfoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainfoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86E99701E512E09006D21DB /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A86E99711E512E09006D21DB /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		A8AD51EC1E6670E100610DB9 /* CartPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartPrice.swift; sourceTree = "<group>"; };
+		A8AD51EE1E667C0800610DB9 /* CartPrices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartPrices.swift; path = "Shopping List Flow/CartPrices.swift"; sourceTree = "<group>"; };
+		A8AD51F01E667C6C00610DB9 /* CartPriceSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CartPriceSectionController.swift; path = "Shopping List Flow/CartPriceSectionController.swift"; sourceTree = "<group>"; };
 		CB0A886D3F6503C46EE6C9FE /* Pods-Brainfood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainfood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brainfood/Pods-Brainfood.debug.xcconfig"; sourceTree = "<group>"; };
 		D7064C2FFCFD2C7B911DC075 /* Pods-Brainfood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainfood.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brainfood/Pods-Brainfood.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,12 +146,9 @@
 		2A3F706C1E65113300E5F3D8 /* Recommendations */ = {
 			isa = PBXGroup;
 			children = (
-				2A3F706D1E65114600E5F3D8 /* HorizontalCollectionViewCell.swift */,
-				2A3F70791E664FE000E5F3D8 /* HorizontalCollectionViewController.swift */,
 				2A3F706F1E65147C00E5F3D8 /* ProductSectionController.swift */,
 				2A3F70771E6644F700E5F3D8 /* RecommendationsSectionController.swift */,
 				2A3F70751E6641AB00E5F3D8 /* Recommendations.swift */,
-				2A3F707B1E66526F00E5F3D8 /* HorizontalFlowLayout.swift */,
 			);
 			name = Recommendations;
 			sourceTree = "<group>";
@@ -184,7 +178,6 @@
 				2A3F70681E650E2D00E5F3D8 /* Recipe */,
 				2A3F706C1E65113300E5F3D8 /* Recommendations */,
 				2AD426631E5E4F42009F3D1B /* IngredientsViewController.swift */,
-				2AD426651E5E5834009F3D1B /* ShoppingCartViewController.swift */,
 				2A6621191E5E77460086448C /* ViewState.swift */,
 				2A3F706A1E650EEA00E5F3D8 /* LoadingView.swift */,
 			);
@@ -195,9 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				A86E99711E512E09006D21DB /* Error.swift */,
-				7C6ADD6D1DD93892008F4836 /* ShoppingListVC.storyboard */,
-				7C6ADD6E1DD93892008F4836 /* ShoppingListVC.swift */,
+				2AD426651E5E5834009F3D1B /* ShoppingCartViewController.swift */,
 				2A2934AA1E5E38100049E429 /* ShoppingCart.swift */,
+				A8AD51EE1E667C0800610DB9 /* CartPrices.swift */,
+				A8AD51F01E667C6C00610DB9 /* CartPriceSectionController.swift */,
 			);
 			name = "Shopping List Flow";
 			sourceTree = "<group>";
@@ -212,6 +206,7 @@
 				7C6ADD781DD938E0008F4836 /* RecommendationsDataSource.swift */,
 				7C6ADD791DD938E0008F4836 /* TestRecommendationDataSource.swift */,
 				7C4A07601DEE15040094E44F /* Recipe.swift */,
+				A8AD51EC1E6670E100610DB9 /* CartPrice.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -278,8 +273,10 @@
 				7CDBA1961DCA746300AE0560 /* FeedItem.swift */,
 				7C2743531DCD1B250093B994 /* FeedCell.swift */,
 				7C6ADD5F1DD93520008F4836 /* DefaultHorizontalFeedCell.swift */,
+				2A3F706D1E65114600E5F3D8 /* HorizontalCollectionViewCell.swift */,
+				2A3F70791E664FE000E5F3D8 /* HorizontalCollectionViewController.swift */,
+				2A3F707B1E66526F00E5F3D8 /* HorizontalFlowLayout.swift */,
 				7C6ADD601DD93520008F4836 /* DefaultHorizontalFeedCell.xib */,
-				7C6ADD621DD93520008F4836 /* HorizontalFeedVC.swift */,
 			);
 			name = "Horizontal Feed";
 			sourceTree = "<group>";
@@ -386,7 +383,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C82AA811DC881D900085C0F /* LaunchScreen.storyboard in Resources */,
-				7C6ADD6F1DD93892008F4836 /* ShoppingListVC.storyboard in Resources */,
 				7C6ADD651DD93520008F4836 /* DefaultHorizontalFeedCell.xib in Resources */,
 				7C6ADD741DD938C9008F4836 /* Main.storyboard in Resources */,
 				7C82AA7E1DC881D900085C0F /* Assets.xcassets in Resources */,
@@ -399,7 +395,6 @@
 			files = (
 				7C6ADD751DD938C9008F4836 /* Main.storyboard in Resources */,
 				7C6ADD661DD93520008F4836 /* DefaultHorizontalFeedCell.xib in Resources */,
-				7C6ADD701DD93892008F4836 /* ShoppingListVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,22 +500,23 @@
 			files = (
 				2A3F707A1E664FE000E5F3D8 /* HorizontalCollectionViewController.swift in Sources */,
 				2A3F70761E6641AB00E5F3D8 /* Recommendations.swift in Sources */,
+				A8AD51F11E667C6C00610DB9 /* CartPriceSectionController.swift in Sources */,
 				7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */,
+				A8AD51ED1E6670E100610DB9 /* CartPrice.swift in Sources */,
 				2A2934AB1E5E38100049E429 /* ShoppingCart.swift in Sources */,
 				2A5036871E58F59E00C086F7 /* APIClient+Recipes.swift in Sources */,
 				A86E99731E512E09006D21DB /* APIClient.swift in Sources */,
 				7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */,
+				A8AD51EF1E667C0800610DB9 /* CartPrices.swift in Sources */,
 				2A50368B1E59084100C086F7 /* RecipeCell.swift in Sources */,
 				7CDBA1971DCA746300AE0560 /* FeedItem.swift in Sources */,
 				2A3F70701E65147D00E5F3D8 /* ProductSectionController.swift in Sources */,
 				7C6ADD631DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */,
 				2A66211A1E5E77460086448C /* ViewState.swift in Sources */,
-				7C6ADD711DD93892008F4836 /* ShoppingListVC.swift in Sources */,
 				7C27A8241DD939A800FB72E0 /* Utilities.swift in Sources */,
 				7C6ADD7C1DD938E0008F4836 /* RecommendationsDataSource.swift in Sources */,
 				2A3F707C1E66526F00E5F3D8 /* HorizontalFlowLayout.swift in Sources */,
 				7C4A07611DEE15040094E44F /* Recipe.swift in Sources */,
-				7C6ADD691DD93520008F4836 /* HorizontalFeedVC.swift in Sources */,
 				2A5036891E59060E00C086F7 /* HomeViewController.swift in Sources */,
 				7C6ADD7A1DD938E0008F4836 /* Product.swift in Sources */,
 				7C6ADD7E1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */,
@@ -540,10 +536,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CDBA1981DCA746300AE0560 /* FeedItem.swift in Sources */,
-				7C6ADD6A1DD93520008F4836 /* HorizontalFeedVC.swift in Sources */,
 				7C6ADD7B1DD938E0008F4836 /* Product.swift in Sources */,
 				7C82AA8C1DC881D900085C0F /* BrainfoodTests.swift in Sources */,
-				7C6ADD721DD93892008F4836 /* ShoppingListVC.swift in Sources */,
 				7C6ADD7F1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */,
 				7C6ADD641DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */,
 				7C2743551DCD1B250093B994 /* FeedCell.swift in Sources */,

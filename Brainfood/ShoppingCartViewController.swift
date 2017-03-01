@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IGListKit
 
 class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -14,10 +15,15 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var purchasedButton: UIButton!
+    @IBOutlet weak var cartPricesContainerView: UIView!
 
+    var cartPricesCollectionViewController = HorizontalCollectionViewController()
+    
     lazy var apiClient: APIClient = {
         return APIClient()
     }()
+    
+    var items = Array(repeating: CartPrice(storeName: "Kroger", imageUrl: URL(string: "https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.martinbands.com%2Fimages%2Fkroger.svg&f=1"), totalPrice: 10.0), count: 5)
     
     var viewState: ViewState = .ready {
         didSet {
@@ -32,6 +38,15 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "ShoppingCartUpdate"), object: self, queue: OperationQueue.main) { _ in
             self.tableView.reloadData()
         }
+        
+        cartPricesContainerView.addSubview(cartPricesCollectionViewController.view)
+        addChildViewController(cartPricesCollectionViewController)
+        cartPricesCollectionViewController.didMove(toParentViewController: self)
+        cartPricesCollectionViewController.view.frame = cartPricesContainerView.bounds
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        loadPrices()
     }
     
     func updateViewState() {
@@ -40,14 +55,17 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
             emptyView.isHidden = true
             tableView.isHidden = false
             purchasedButton.isHidden = true
+            cartPricesContainerView.isHidden = false
         case .editing:
             emptyView.isHidden = true
             tableView.isHidden = false
             purchasedButton.isHidden = false
+            cartPricesContainerView.isHidden = false
         case .empty:
             emptyView.isHidden = false
             tableView.isHidden = true
             purchasedButton.isHidden = true
+            cartPricesContainerView.isHidden = true
         default:
             break
         }
@@ -128,6 +146,7 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
             }
             .always(on: DispatchQueue.main) { [weak self] in
                 self?.tableView.reloadData()
+                self?.loadPrices()
             }
     }
     
@@ -164,6 +183,21 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
         add(item: item)
         
         tableView.reloadData()
+    }
+    
+    // MARK: - API Calls
+    
+    func loadPrices() {
+        cartPricesCollectionViewController.items = []
+        apiClient
+            .fetchRecommendations(type: .CartPrice, forItems: ShoppingCart.shared.cartItems)
+            .then { items -> Void in
+                let items = items.flatMap { $0 as? CartPrice }
+                self.cartPricesCollectionViewController.items = items
+            }
+            .catch { error in
+                print(error)
+            }
     }
 
 }

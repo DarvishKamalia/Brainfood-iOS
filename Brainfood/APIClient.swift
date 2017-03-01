@@ -24,7 +24,7 @@ struct APIClient {
     func fetchRecommendations(type: RecommendationType, forItems items: [String]? = nil) -> Promise<[FeedItem]>  {
         guard let url = URL(string: Constants.baseURL + type.fetchEndpoint) else {
             return Promise(error: InvalidURLError.invalidURL)
-        }
+        }		
         
         
         var parameters = ["User": Constants.userID]
@@ -51,6 +51,8 @@ struct APIClient {
                             fulfill(recipes)
                         case .ShoppingList:
                             fulfill([])
+                        case .CartPrice:
+                            fulfill( responseJSON.flatMap() { CartPrice(fromJSON: $0) })
                     }
                 }
             }

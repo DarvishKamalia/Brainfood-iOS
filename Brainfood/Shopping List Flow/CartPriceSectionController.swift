@@ -1,18 +1,17 @@
 //
-//  ProductSectionController.swift
+//  CartPriceSectionController.swift
 //  Brainfood
 //
-//  Created by Ayush Saraswat on 2/27/17.
+//  Created by Darvish on 2/28/17.
 //  Copyright © 2017 Darvish Kamalia. All rights reserved.
 //
 
 import Foundation
 import IGListKit
-import SafariServices
 
-final class ProductSectionController: IGListSectionController, IGListSectionType {
+final class CartPriceSectionController: IGListSectionController, IGListSectionType {
     
-    var product: Product?
+    var cartPrice: CartPrice?
     
     func numberOfItems() -> Int {
         return 1
@@ -25,21 +24,21 @@ final class ProductSectionController: IGListSectionController, IGListSectionType
     
     func cellForItem(at index: Int) -> UICollectionViewCell {
         guard
-            let product = product,
+            let cartPrice = cartPrice,
             let cell = collectionContext?.dequeueReusableCell(withNibName: "DefaultHorizontalFeedCell", bundle: Bundle.main, for: self, at: index) as? FeedCell
             else { return UICollectionViewCell() }
         
-        cell.configure(withFeedItem: product)
+        cell.configure(withFeedItem: cartPrice)
         
         return cell
     }
     
     func didUpdate(to object: Any) {
-        product = object as? Product
+        cartPrice = object as? CartPrice
     }
     
     func didSelectItem(at index: Int) {
-
+        
     }
     
 }

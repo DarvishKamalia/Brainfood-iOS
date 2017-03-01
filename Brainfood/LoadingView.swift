@@ -14,11 +14,13 @@ final class LoadingView: UIView {
     private let loadingPrompt: UILabel
     
     private let stackView: UIStackView
+    private let text: String
     
-    init() {
+    init(text: String) {
         loadingIndicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
         loadingPrompt = UILabel(frame: .zero)
         stackView = UIStackView(arrangedSubviews: [loadingIndicator, loadingPrompt])
+        self.text = text
         
         super.init(frame: .zero)
         setup()
@@ -32,7 +34,7 @@ final class LoadingView: UIView {
         loadingIndicator.color = .black
         loadingIndicator.startAnimating()
         
-        loadingPrompt.text = "Hold tight, we're fetching some recipes we know you'll like."
+        loadingPrompt.text = text
         loadingPrompt.textColor = .black
         loadingPrompt.font = UIFont(name: "Futura", size: 14.0)
         loadingPrompt.numberOfLines = 0

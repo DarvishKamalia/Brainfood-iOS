@@ -20,7 +20,7 @@ final class RecommendationsSectionController: IGListSectionController, IGListSec
     }
     
     func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: collectionContext?.containerSize.width ?? 0, height: 120.0)
+        return CGSize(width: collectionContext?.containerSize.width ?? 0, height: 150)
     }
     
     func cellForItem(at index: Int) -> UICollectionViewCell {

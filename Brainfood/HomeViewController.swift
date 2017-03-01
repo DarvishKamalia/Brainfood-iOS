@@ -11,7 +11,6 @@ import IGListKit
 
 class HomeViewController: UIViewController, UIScrollViewDelegate, IGListAdapterDataSource, IGListAdapterDelegate {
         
-    @IBOutlet weak var recommendationsView: UIView!
     @IBOutlet weak var collectionView: IGListCollectionView!
     
     lazy var adapter: IGListAdapter = {
@@ -23,7 +22,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, IGListAdapterD
     }()
     
     lazy var loadingView: LoadingView = {
-        return LoadingView()
+        return LoadingView(text: "Hold tight, we're fetching some recipes we know you'll like.")
     }()
     
     var dataSource = [IGListDiffable]()

@@ -19,9 +19,7 @@ class HorizontalCollectionViewController: UIViewController, IGListAdapterDataSou
         return IGListAdapter(updater: IGListAdapterUpdater(), viewController: self, workingRangeSize: 0)
     }()
     
-    lazy var loadingView: LoadingView = {
-        return LoadingView()
-    }()
+    var loadingView: LoadingView? = nil
     
     var items: [FeedItem] = [] {
         didSet {
@@ -54,8 +52,15 @@ class HorizontalCollectionViewController: UIViewController, IGListAdapterDataSou
     }
     
     func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
-        guard object is Product else { return IGListSectionController() }
-        return ProductSectionController()
+        if object is Product {
+            loadingView = LoadingView(text: "Fetching deals from online retailers")
+            return ProductSectionController()
+        }
+        else if object is CartPrice {
+            loadingView = LoadingView(text: "Getting estimated total price from retailers")
+            return CartPriceSectionController()
+        }
+        return IGListSectionController()
     }
     
     func emptyView(for listAdapter: IGListAdapter) -> UIView? {
