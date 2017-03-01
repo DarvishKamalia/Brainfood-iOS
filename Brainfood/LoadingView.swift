@@ -16,7 +16,7 @@ final class LoadingView: UIView {
     private let stackView: UIStackView
     
     init() {
-        loadingIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        loadingIndicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
         loadingPrompt = UILabel(frame: .zero)
         stackView = UIStackView(arrangedSubviews: [loadingIndicator, loadingPrompt])
         
@@ -32,9 +32,9 @@ final class LoadingView: UIView {
         loadingIndicator.color = .black
         loadingIndicator.startAnimating()
         
-        loadingPrompt.text = "Hold tight, we're loading your recipes."
+        loadingPrompt.text = "Hold tight, we're fetching some recipes we know you'll like."
         loadingPrompt.textColor = .black
-        loadingPrompt.font = UIFont.preferredFont(forTextStyle: .body)
+        loadingPrompt.font = UIFont(name: "Futura", size: 14.0)
         loadingPrompt.numberOfLines = 0
         loadingPrompt.textAlignment = .center
         

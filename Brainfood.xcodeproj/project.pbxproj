@@ -12,7 +12,6 @@
 		2A3F706B1E650EEA00E5F3D8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F706A1E650EEA00E5F3D8 /* LoadingView.swift */; };
 		2A3F706E1E65114600E5F3D8 /* HorizontalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F706D1E65114600E5F3D8 /* HorizontalCollectionViewCell.swift */; };
 		2A3F70701E65147D00E5F3D8 /* ProductSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F706F1E65147C00E5F3D8 /* ProductSectionController.swift */; };
-		2A3F70741E6529E000E5F3D8 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3F70731E6529E000E5F3D8 /* LoadingView.xib */; };
 		2A3F70761E6641AB00E5F3D8 /* Recommendations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F70751E6641AB00E5F3D8 /* Recommendations.swift */; };
 		2A3F70781E6644F700E5F3D8 /* RecommendationsSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F70771E6644F700E5F3D8 /* RecommendationsSectionController.swift */; };
 		2A3F707A1E664FE000E5F3D8 /* HorizontalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F70791E664FE000E5F3D8 /* HorizontalCollectionViewController.swift */; };
@@ -76,7 +75,6 @@
 		2A3F706A1E650EEA00E5F3D8 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		2A3F706D1E65114600E5F3D8 /* HorizontalCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionViewCell.swift; sourceTree = "<group>"; };
 		2A3F706F1E65147C00E5F3D8 /* ProductSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSectionController.swift; sourceTree = "<group>"; };
-		2A3F70731E6529E000E5F3D8 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		2A3F70751E6641AB00E5F3D8 /* Recommendations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommendations.swift; sourceTree = "<group>"; };
 		2A3F70771E6644F700E5F3D8 /* RecommendationsSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsSectionController.swift; sourceTree = "<group>"; };
 		2A3F70791E664FE000E5F3D8 /* HorizontalCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionViewController.swift; sourceTree = "<group>"; };
@@ -189,7 +187,6 @@
 				2AD426651E5E5834009F3D1B /* ShoppingCartViewController.swift */,
 				2A6621191E5E77460086448C /* ViewState.swift */,
 				2A3F706A1E650EEA00E5F3D8 /* LoadingView.swift */,
-				2A3F70731E6529E000E5F3D8 /* LoadingView.xib */,
 			);
 			name = "Home Flow";
 			sourceTree = "<group>";
@@ -391,7 +388,6 @@
 				7C82AA811DC881D900085C0F /* LaunchScreen.storyboard in Resources */,
 				7C6ADD6F1DD93892008F4836 /* ShoppingListVC.storyboard in Resources */,
 				7C6ADD651DD93520008F4836 /* DefaultHorizontalFeedCell.xib in Resources */,
-				2A3F70741E6529E000E5F3D8 /* LoadingView.xib in Resources */,
 				7C6ADD741DD938C9008F4836 /* Main.storyboard in Resources */,
 				7C82AA7E1DC881D900085C0F /* Assets.xcassets in Resources */,
 			);
