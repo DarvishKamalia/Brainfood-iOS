@@ -24,7 +24,9 @@ final class RecipeSectionController: IGListSectionController, IGListSectionType 
     }
     
     func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: collectionContext?.containerSize.width ?? 0, height: 140.0)
+        let width = collectionContext?.containerSize.width ?? 0
+        let min = max(width - 8.0, 0.0)
+        return CGSize(width: min, height: 140.0)
     }
     
     func cellForItem(at index: Int) -> UICollectionViewCell {

@@ -65,4 +65,10 @@ class RecipeCell: UICollectionViewCell {
         delegate?.recipeCell(self, didSelectWarningLabelFor: recipe)
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        round(corners: .allCorners, with: CGSize(width: 10.0, height: 10.0))
+    }
+    
 }
