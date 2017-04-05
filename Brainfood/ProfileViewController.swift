@@ -13,10 +13,10 @@ fileprivate struct Constants {
 }
 
 class ProfileViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate {
-
     @IBOutlet weak var preferredStoreTextField: UITextField!
     var suggestionsTableView = UITableView(frame: .zero)
     var suggestedStores: [String] = []
+    var suggestionsHeightConstraint: NSLayoutConstraint? = nil
     
     let client = APIClient()
     
@@ -25,8 +25,9 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, UITableViewD
         preferredStoreTextField.delegate = self
         suggestionsTableView.isHidden = true
         view.addSubview(suggestionsTableView)
-        suggestionsTableView.widthAnchor.constraint(equalTo: preferredStoreTextField.widthAnchor, multiplier: 1.0)
-        suggestionsTableView.heightAnchor.constraint(equalToConstant: 200.0)
+        suggestionsTableView.widthAnchor.constraint(equalTo: preferredStoreTextField.widthAnchor, multiplier: 1.0).isActive = true
+        suggestionsHeightConstraint = suggestionsTableView.heightAnchor.constraint(equalToConstant: 200.0)
+        suggestionsHeightConstraint?.isActive = true
         suggestionsTableView.topAnchor.constraint(equalTo: preferredStoreTextField.bottomAnchor)
         suggestionsTableView.centerXAnchor.constraint(equalTo: preferredStoreTextField.centerXAnchor)
     }
@@ -40,16 +41,21 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, UITableViewD
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         guard let text = textField.text else { return }
-        
+        suggestionsTableView.isHidden = true
         client.fetchRecommendedStores(forText: text)
         .then { results -> Void in
             self.suggestedStores = results
             self.suggestionsTableView.isHidden = false
             self.suggestionsTableView.reloadData()
+            self.suggestionsHeightConstraint?.constant = CGFloat(min(200, 50*results.count))
         }
         .catch { error in
             print (error)
         }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        suggestionsTableView.isHidden = true
     }
     
     // MARK: - UITableView methods
