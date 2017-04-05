@@ -49,6 +49,8 @@
 		7CDBA1971DCA746300AE0560 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBA1961DCA746300AE0560 /* FeedItem.swift */; };
 		7CDBA1981DCA746300AE0560 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDBA1961DCA746300AE0560 /* FeedItem.swift */; };
 		8EBDB71F433CD5413ECAA0BD /* Pods_BrainfoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7DAB2F9625CF0C5FCCB9E72 /* Pods_BrainfoodTests.framework */; };
+		A803F6561E94AD650007FE9A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803F6551E94AD650007FE9A /* ProfileViewController.swift */; };
+		A803F6581E94B0520007FE9A /* APIClient+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A803F6571E94B0520007FE9A /* APIClient+Profile.swift */; };
 		A86E99731E512E09006D21DB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E99701E512E09006D21DB /* APIClient.swift */; };
 		A86E99741E512E09006D21DB /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86E99711E512E09006D21DB /* Error.swift */; };
 		A8AD51ED1E6670E100610DB9 /* CartPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AD51EC1E6670E100610DB9 /* CartPrice.swift */; };
@@ -107,6 +109,8 @@
 		7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecommendationTypes.swift; path = Enums/RecommendationTypes.swift; sourceTree = "<group>"; };
 		7CDBA1961DCA746300AE0560 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedItem.swift; path = Protocols/FeedItem.swift; sourceTree = "<group>"; };
 		A7DAB2F9625CF0C5FCCB9E72 /* Pods_BrainfoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainfoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A803F6551E94AD650007FE9A /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A803F6571E94B0520007FE9A /* APIClient+Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "APIClient+Profile.swift"; path = "Data/APIClient+Profile.swift"; sourceTree = "<group>"; };
 		A86E99701E512E09006D21DB /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A86E99711E512E09006D21DB /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		A8AD51EC1E6670E100610DB9 /* CartPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartPrice.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				A86E99701E512E09006D21DB /* APIClient.swift */,
+				A803F6571E94B0520007FE9A /* APIClient+Profile.swift */,
 				2A5036861E58F59E00C086F7 /* APIClient+Recipes.swift */,
 				7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */,
 				7C6ADD771DD938E0008F4836 /* Product.swift */,
@@ -236,6 +241,7 @@
 		7C82AA751DC881D900085C0F /* Brainfood */ = {
 			isa = PBXGroup;
 			children = (
+				A803F6541E94AD460007FE9A /* Profile */,
 				7C6ADD731DD938C9008F4836 /* Main.storyboard */,
 				2A45F5561E949871005D26C4 /* UIView+Rounding.swift */,
 				7C27A8231DD939A800FB72E0 /* Utilities.swift */,
@@ -268,6 +274,14 @@
 			children = (
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		A803F6541E94AD460007FE9A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A803F6551E94AD650007FE9A /* ProfileViewController.swift */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 		A83A294D1E514AA200A232EF /* Horizontal Feed */ = {
@@ -503,10 +517,12 @@
 			files = (
 				2A3F707A1E664FE000E5F3D8 /* HorizontalCollectionViewController.swift in Sources */,
 				2A3F70761E6641AB00E5F3D8 /* Recommendations.swift in Sources */,
+				A803F6581E94B0520007FE9A /* APIClient+Profile.swift in Sources */,
 				A8AD51F11E667C6C00610DB9 /* CartPriceSectionController.swift in Sources */,
 				7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */,
 				A8AD51ED1E6670E100610DB9 /* CartPrice.swift in Sources */,
 				2A2934AB1E5E38100049E429 /* ShoppingCart.swift in Sources */,
+				A803F6561E94AD650007FE9A /* ProfileViewController.swift in Sources */,
 				2A5036871E58F59E00C086F7 /* APIClient+Recipes.swift in Sources */,
 				A86E99731E512E09006D21DB /* APIClient.swift in Sources */,
 				7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */,

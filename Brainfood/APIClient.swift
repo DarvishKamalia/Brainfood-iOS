@@ -19,6 +19,7 @@ struct APIClient {
         static let baseURL = "https://pbiprrk71j.execute-api.us-west-2.amazonaws.com/prod/"
         static let purchaseFunctionEndpoint = "purchase_function"
         static let userID = UIDevice.current.identifierForVendor?.uuidString ?? ""
+        static let storeSearchEndpoint = "searchStores/"
     }
     
     func fetchRecommendations(type: RecommendationType, forItems items: [String]? = nil) -> Promise<[FeedItem]>  {

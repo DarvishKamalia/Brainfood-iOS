@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="28A-Ug-A3b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="28A-Ug-A3b">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -161,7 +161,7 @@
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="Deals - Filled"/>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="NOt-AN-CPy">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="NOt-AN-CPy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -182,7 +182,7 @@
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="Profile - Filled"/>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="ULs-hc-rH1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ULs-hc-rH1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -197,7 +197,7 @@
         <!--Profile-->
         <scene sceneID="0xq-gD-7XQ">
             <objects>
-                <viewController id="Zjh-cg-gjI" sceneMemberID="viewController">
+                <viewController id="Zjh-cg-gjI" customClass="ProfileViewController" customModule="Brainfood" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xJV-6j-J7T"/>
                         <viewControllerLayoutGuide type="bottom" id="hTy-80-Z44"/>
@@ -205,13 +205,32 @@
                     <view key="view" contentMode="scaleToFill" id="jqG-BB-Wed">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Preferred Store" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gS0-xV-DYj">
+                                <rect key="frame" x="28" y="26" width="319" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="LuE-Pw-2t0"/>
+                                    <constraint firstAttribute="height" constant="30" id="wM7-b9-hCR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gS0-xV-DYj" firstAttribute="top" secondItem="xJV-6j-J7T" secondAttribute="bottom" constant="26" id="OLJ-o7-8KY"/>
+                            <constraint firstItem="gS0-xV-DYj" firstAttribute="centerX" secondItem="jqG-BB-Wed" secondAttribute="centerX" id="RHh-l0-j4l"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="my0-Yt-pkJ"/>
+                    <connections>
+                        <outlet property="preferredStoreTextField" destination="gS0-xV-DYj" id="hrk-zA-Yrk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lnd-DK-Wim" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="3498"/>
+            <point key="canvasLocation" x="276" y="3497.0014992503752"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5e9-Wg-6oC">
@@ -446,7 +465,7 @@
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="CTM-oC-efS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="CTM-oC-efS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
