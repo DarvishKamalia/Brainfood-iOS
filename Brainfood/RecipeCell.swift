@@ -91,10 +91,7 @@ class RecipeCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-<<<<<<< HEAD
-        round(corners: .allCorners, with: CGSize(width: 10.0, height: 10.0))
-=======
-        
+
         contentView.layer.cornerRadius = 4.0
         contentView.layer.borderWidth = 1.0
         contentView.layer.borderColor = UIColor.clear.cgColor
@@ -106,7 +103,6 @@ class RecipeCell: UICollectionViewCell {
         layer.shadowOpacity = 1.0
         layer.masksToBounds = false
         layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
->>>>>>> master
     }
     
 }
