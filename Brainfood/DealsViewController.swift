@@ -18,7 +18,7 @@ class DealsViewController: UIViewController, IGListAdapterDataSource, IGListAdap
     }()
     
     lazy var loadingView: LoadingView = {
-        return LoadingView(text: "Hold tight, we're fetching some recipes we know you'll like.")
+        return LoadingView(text: "Looking for awesome deals...")
     }()
     
     var dataSource = [IGListDiffable]()
