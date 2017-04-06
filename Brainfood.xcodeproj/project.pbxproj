@@ -17,8 +17,13 @@
 		2A3F707A1E664FE000E5F3D8 /* HorizontalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F70791E664FE000E5F3D8 /* HorizontalCollectionViewController.swift */; };
 		2A3F707C1E66526F00E5F3D8 /* HorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3F707B1E66526F00E5F3D8 /* HorizontalFlowLayout.swift */; };
 		2A45F5571E949871005D26C4 /* UIView+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45F5561E949871005D26C4 /* UIView+Rounding.swift */; };
+		2A45F5591E94ADD1005D26C4 /* DealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45F5581E94ADD1005D26C4 /* DealsViewController.swift */; };
+		2A45F55B1E955EBB005D26C4 /* DealsSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45F55A1E955EBB005D26C4 /* DealsSectionController.swift */; };
+		2A45F55F1E955F33005D26C4 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45F55E1E955F33005D26C4 /* DealCell.swift */; };
+		2A45F5611E9560B9005D26C4 /* APIClient+Deals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45F5601E9560B9005D26C4 /* APIClient+Deals.swift */; };
+		2A45F5631E9565CB005D26C4 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A45F5621E9565CB005D26C4 /* UserStore.swift */; };
 		2A5036871E58F59E00C086F7 /* APIClient+Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5036861E58F59E00C086F7 /* APIClient+Recipes.swift */; };
-		2A5036891E59060E00C086F7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5036881E59060E00C086F7 /* HomeViewController.swift */; };
+		2A5036891E59060E00C086F7 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5036881E59060E00C086F7 /* DiscoverViewController.swift */; };
 		2A50368B1E59084100C086F7 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A50368A1E59084100C086F7 /* RecipeCell.swift */; };
 		2A66211A1E5E77460086448C /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6621191E5E77460086448C /* ViewState.swift */; };
 		2AD426641E5E4F42009F3D1B /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD426631E5E4F42009F3D1B /* IngredientsViewController.swift */; };
@@ -79,8 +84,13 @@
 		2A3F707B1E66526F00E5F3D8 /* HorizontalFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalFlowLayout.swift; sourceTree = "<group>"; };
 		2A3F707D1E66579200E5F3D8 /* Brainfood-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brainfood-Bridging-Header.h"; sourceTree = "<group>"; };
 		2A45F5561E949871005D26C4 /* UIView+Rounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rounding.swift"; sourceTree = "<group>"; };
+		2A45F5581E94ADD1005D26C4 /* DealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealsViewController.swift; sourceTree = "<group>"; };
+		2A45F55A1E955EBB005D26C4 /* DealsSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealsSectionController.swift; sourceTree = "<group>"; };
+		2A45F55E1E955F33005D26C4 /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
+		2A45F5601E9560B9005D26C4 /* APIClient+Deals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Deals.swift"; sourceTree = "<group>"; };
+		2A45F5621E9565CB005D26C4 /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		2A5036861E58F59E00C086F7 /* APIClient+Recipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Recipes.swift"; sourceTree = "<group>"; };
-		2A5036881E59060E00C086F7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2A5036881E59060E00C086F7 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		2A50368A1E59084100C086F7 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		2A6621191E5E77460086448C /* ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		2AD426631E5E4F42009F3D1B /* IngredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
@@ -176,7 +186,10 @@
 		7C6ADD6B1DD93525008F4836 /* Home Flow */ = {
 			isa = PBXGroup;
 			children = (
-				2A5036881E59060E00C086F7 /* HomeViewController.swift */,
+				2A5036881E59060E00C086F7 /* DiscoverViewController.swift */,
+				2A45F5581E94ADD1005D26C4 /* DealsViewController.swift */,
+				2A45F55A1E955EBB005D26C4 /* DealsSectionController.swift */,
+				2A45F55E1E955F33005D26C4 /* DealCell.swift */,
 				2A3F70681E650E2D00E5F3D8 /* Recipe */,
 				2A3F706C1E65113300E5F3D8 /* Recommendations */,
 				2AD426631E5E4F42009F3D1B /* IngredientsViewController.swift */,
@@ -202,7 +215,9 @@
 			isa = PBXGroup;
 			children = (
 				A86E99701E512E09006D21DB /* APIClient.swift */,
+				2A45F5601E9560B9005D26C4 /* APIClient+Deals.swift */,
 				2A5036861E58F59E00C086F7 /* APIClient+Recipes.swift */,
+				2A45F5621E9565CB005D26C4 /* UserStore.swift */,
 				7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */,
 				7C6ADD771DD938E0008F4836 /* Product.swift */,
 				7C6ADD781DD938E0008F4836 /* RecommendationsDataSource.swift */,
@@ -502,12 +517,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A3F707A1E664FE000E5F3D8 /* HorizontalCollectionViewController.swift in Sources */,
+				2A45F5611E9560B9005D26C4 /* APIClient+Deals.swift in Sources */,
 				2A3F70761E6641AB00E5F3D8 /* Recommendations.swift in Sources */,
 				A8AD51F11E667C6C00610DB9 /* CartPriceSectionController.swift in Sources */,
 				7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */,
 				A8AD51ED1E6670E100610DB9 /* CartPrice.swift in Sources */,
+				2A45F5631E9565CB005D26C4 /* UserStore.swift in Sources */,
 				2A2934AB1E5E38100049E429 /* ShoppingCart.swift in Sources */,
 				2A5036871E58F59E00C086F7 /* APIClient+Recipes.swift in Sources */,
+				2A45F55F1E955F33005D26C4 /* DealCell.swift in Sources */,
 				A86E99731E512E09006D21DB /* APIClient.swift in Sources */,
 				7C82AA9D1DC8836B00085C0F /* RecommendationTypes.swift in Sources */,
 				A8AD51EF1E667C0800610DB9 /* CartPrices.swift in Sources */,
@@ -518,10 +536,11 @@
 				7C6ADD631DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */,
 				2A66211A1E5E77460086448C /* ViewState.swift in Sources */,
 				7C27A8241DD939A800FB72E0 /* Utilities.swift in Sources */,
+				2A45F55B1E955EBB005D26C4 /* DealsSectionController.swift in Sources */,
 				7C6ADD7C1DD938E0008F4836 /* RecommendationsDataSource.swift in Sources */,
 				2A3F707C1E66526F00E5F3D8 /* HorizontalFlowLayout.swift in Sources */,
 				7C4A07611DEE15040094E44F /* Recipe.swift in Sources */,
-				2A5036891E59060E00C086F7 /* HomeViewController.swift in Sources */,
+				2A5036891E59060E00C086F7 /* DiscoverViewController.swift in Sources */,
 				7C6ADD7A1DD938E0008F4836 /* Product.swift in Sources */,
 				7C6ADD7E1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */,
 				2A3F70781E6644F700E5F3D8 /* RecommendationsSectionController.swift in Sources */,
@@ -529,6 +548,7 @@
 				2AD426641E5E4F42009F3D1B /* IngredientsViewController.swift in Sources */,
 				2A2934A91E5E35600049E429 /* RecipeSectionController.swift in Sources */,
 				2AD426661E5E5834009F3D1B /* ShoppingCartViewController.swift in Sources */,
+				2A45F5591E94ADD1005D26C4 /* DealsViewController.swift in Sources */,
 				7C2743541DCD1B250093B994 /* FeedCell.swift in Sources */,
 				2A3F706E1E65114600E5F3D8 /* HorizontalCollectionViewCell.swift in Sources */,
 				2A3F706B1E650EEA00E5F3D8 /* LoadingView.swift in Sources */,

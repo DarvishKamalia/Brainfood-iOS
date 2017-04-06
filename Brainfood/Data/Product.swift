@@ -18,12 +18,12 @@ class Product: Equatable, FeedItem, IGListDiffable {
     var salePrice: Double?
     var link: URL?
     
-    init (name: String, imageUrl: URL? = nil) {
+    init(name: String, imageUrl: URL? = nil) {
         self.name = name
         self.imageUrl = imageUrl
     }
     
-    init? (fromJSON json: JSON) {
+    init?(from json: JSON) {
         guard let name = json["name"].string else { return nil }
         
         self.name = name
