@@ -19,6 +19,8 @@ class RecipeCell: UICollectionViewCell {
     
     @IBOutlet weak var heroImageView: UIImageView!
     @IBOutlet weak var ingredientAvailabilityImageView: UIImageView!
+    @IBOutlet weak var ingredientAvailabilityLabel: UILabel!
+    
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var descriptionLabel: UILabel?
     
@@ -35,11 +37,14 @@ class RecipeCell: UICollectionViewCell {
     }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
+        
         recipe = nil
         delegate = nil
         
         heroImageView.image = nil
         ingredientAvailabilityImageView.image = nil
+        ingredientAvailabilityLabel.text = ""
         titleLabel?.text = nil
         descriptionLabel?.text = nil
     }
@@ -55,6 +60,7 @@ class RecipeCell: UICollectionViewCell {
         
         let acquiredIngredients = recipe.ingredients.filter { !ShoppingCart.shared.cartItems.contains($0) }.count == 0
         ingredientAvailabilityImageView.image = acquiredIngredients ? #imageLiteral(resourceName: "Complete") : #imageLiteral(resourceName: "Warning")
+        ingredientAvailabilityLabel.text = acquiredIngredients ? "" : "MISSING INGREDIENTS"
         
         titleLabel?.text = recipe.titleString
         descriptionLabel?.attributedText = recipe.subtitleString
@@ -68,7 +74,17 @@ class RecipeCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        round(corners: .allCorners, with: CGSize(width: 10.0, height: 10.0))
+        contentView.layer.cornerRadius = 4.0
+        contentView.layer.borderWidth = 1.0
+        contentView.layer.borderColor = UIColor.clear.cgColor
+        contentView.layer.masksToBounds = true
+        
+        layer.shadowColor = UIColor.lightGray.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 2.0)
+        layer.shadowRadius = 3.0
+        layer.shadowOpacity = 1.0
+        layer.masksToBounds = false
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
     }
     
 }

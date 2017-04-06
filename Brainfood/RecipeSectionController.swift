@@ -16,7 +16,8 @@ final class RecipeSectionController: IGListSectionController, IGListSectionType 
     
     override init() {
         super.init()
-        inset = UIEdgeInsets(top: 2.0, left: 0.0, bottom: 0.0, right: 0.0)
+        
+        inset = UIEdgeInsets(top: 8.0, left: 8.0, bottom: 0.0, right: 8.0)
     }
     
     func numberOfItems() -> Int {
@@ -24,9 +25,10 @@ final class RecipeSectionController: IGListSectionController, IGListSectionType 
     }
     
     func sizeForItem(at index: Int) -> CGSize {
-        let width = collectionContext?.containerSize.width ?? 0
-        let min = max(width - 8.0, 0.0)
-        return CGSize(width: min, height: 140.0)
+        var width = collectionContext?.containerSize.width ?? 0
+        width = max(width - inset.left - inset.right, 0.0)
+        
+        return CGSize(width: width, height: 140.0)
     }
     
     func cellForItem(at index: Int) -> UICollectionViewCell {
