@@ -21,6 +21,7 @@ class APIClient {
         static let baseURL = "https://pbiprrk71j.execute-api.us-west-2.amazonaws.com/prod/"
         static let purchaseFunctionEndpoint = "purchase_function"
         static let userID = UIDevice.current.identifierForVendor?.uuidString ?? ""
+        static let storeSearchEndpoint = "searchStores/"
     }
     
     func fetchRecommendations(type: RecommendationType, forItems items: [String]? = nil) -> Promise<[FeedItem]>  {
@@ -30,12 +31,15 @@ class APIClient {
         
         
         var parameters = ["User": Constants.userID]
+
+        var productNames = "\"Milk\",\"eggs\""
         
-        if let items = items {
-            let productNames = items.joined(separator: ",")
-            parameters["items"] = productNames
+        if let items = items, items.count > 0 {
+            productNames = items.joined(separator: ",")
         }
-        
+
+        parameters["items"] = productNames
+
         return Promise { fulfill, reject in
             Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.queryString).response { response in
                 if let error = response.error {

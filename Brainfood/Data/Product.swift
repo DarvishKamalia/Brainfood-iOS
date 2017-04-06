@@ -13,7 +13,7 @@ import IGListKit
 class Product: Equatable, FeedItem, IGListDiffable {
     
     let name: String
-    var imageUrl: URL?
+    var imageUrl: String
     var msrp: Double?
     var salePrice: Double?
     var link: URL?
@@ -27,7 +27,7 @@ class Product: Equatable, FeedItem, IGListDiffable {
         guard let name = json["name"].string else { return nil }
         
         self.name = name
-        imageUrl = json["imageURL"].url
+        imageUrl = json["imageURL"].string ?? "" 
         msrp = json["msrp"].double
         salePrice = json["salePrice"].double
         link = json["link"].url

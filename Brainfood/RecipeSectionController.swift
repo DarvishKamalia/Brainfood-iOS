@@ -9,6 +9,7 @@
 import Foundation
 import IGListKit
 import SafariServices
+import RealmSwift
 
 final class RecipeSectionController: IGListSectionController, IGListSectionType {
     
@@ -48,7 +49,7 @@ final class RecipeSectionController: IGListSectionController, IGListSectionType 
     }
     
     func didSelectItem(at index: Int) {
-        guard let url = recipe?.linkUrl else { return }
+        guard let urlString = recipe?.linkUrl, let url = URL(string: urlString) else { return }
         
         let safariViewController = SFSafariViewController(url: url)
         UIApplication.shared.keyWindow?.rootViewController?.present(safariViewController, animated: true, completion: nil)
@@ -71,6 +72,13 @@ extension RecipeSectionController: RecipeCellDelegate {
         alertController.addAction(doneAction)
         
         UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
+
+    func recipeCell(_ cell: RecipeCell, didSelectSaveLabelFor recipe: Recipe) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(recipe)
+        }
     }
     
 }

@@ -95,7 +95,7 @@ class DiscoverViewController: UIViewController, UIScrollViewDelegate, IGListAdap
     func listAdapter(_ listAdapter: IGListAdapter!, didEndDisplaying object: Any!, at index: Int) {
         
     }
-    
+
     // MARK: - UIScrollViewDelegate
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
