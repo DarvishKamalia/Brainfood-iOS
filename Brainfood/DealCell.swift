@@ -24,7 +24,7 @@ class DealCell: UICollectionViewCell {
     }
     
     func configure(for product: Product) {
-        if let imageUrl = product.imageUrl {
+        if let imageUrl = URL(string: product.imageUrl) {
             Nuke.loadImage(with: imageUrl, into: imageView)
         } else {
             // placeholder image

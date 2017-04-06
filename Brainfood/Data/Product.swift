@@ -18,7 +18,7 @@ class Product: Equatable, FeedItem, IGListDiffable {
     var salePrice: Double?
     var link: URL?
     
-    init(name: String, imageUrl: URL? = nil) {
+    init(name: String, imageUrl: String = "") {
         self.name = name
         self.imageUrl = imageUrl
     }
