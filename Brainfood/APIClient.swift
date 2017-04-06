@@ -13,7 +13,9 @@ import SwiftyJSON
 
 import PromiseKit
 
-struct APIClient {
+class APIClient {
+    
+    static let shared = APIClient()
     
     internal struct Constants {
         static let baseURL = "https://pbiprrk71j.execute-api.us-west-2.amazonaws.com/prod/"
@@ -48,7 +50,7 @@ struct APIClient {
                 if let responseData = response.data, let responseJSON = JSON(data: responseData).array  {
                     switch type {
                         case .PurchaseHistory, .Deals:
-                            let products = responseJSON.flatMap() { Product(fromJSON: $0) }
+                            let products = responseJSON.flatMap() { Product(from: $0) }
                             fulfill(products)
                         case .Recipes:
                             let recipes = responseJSON.flatMap() { Recipe(from: $0)}

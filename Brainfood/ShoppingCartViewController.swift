@@ -183,7 +183,7 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
     
     func loadPrices() {
         cartPricesCollectionViewController.items = []
-        apiClient
+        APIClient.shared
             .fetchRecommendations(type: .CartPrice, forItems: ShoppingCart.shared.cartItems)
             .then { items -> Void in
                 let items = items.flatMap { $0 as? CartPrice }

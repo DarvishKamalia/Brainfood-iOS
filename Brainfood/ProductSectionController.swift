@@ -12,7 +12,7 @@ import SafariServices
 
 final class ProductSectionController: IGListSectionController, IGListSectionType {
     
-    var product: Product?
+    var product: FeedItem?
     
     func numberOfItems() -> Int {
         return 1
@@ -26,8 +26,8 @@ final class ProductSectionController: IGListSectionController, IGListSectionType
     func cellForItem(at index: Int) -> UICollectionViewCell {
         guard
             let product = product,
-            let cell = collectionContext?.dequeueReusableCell(withNibName: "DefaultHorizontalFeedCell", bundle: Bundle.main, for: self, at: index) as? FeedCell
-            else { return UICollectionViewCell() }
+            let cell = collectionContext?.dequeueReusableCell(withNibName: "ProductCell", bundle: Bundle.main, for: self, at: index) as? FeedCell
+        else { return UICollectionViewCell() }
         
         cell.configure(withFeedItem: product)
         
@@ -35,14 +35,14 @@ final class ProductSectionController: IGListSectionController, IGListSectionType
     }
     
     func didUpdate(to object: Any) {
-        product = object as? Product
+        product = object as? FeedItem
     }
     
     func didSelectItem(at index: Int) {
-        if let url = product?.link {
-            let safariViewController = SFSafariViewController(url: url)
-            UIApplication.shared.keyWindow?.rootViewController?.present(safariViewController, animated: true, completion: nil)
-        }
+//        if let url = product?.link {
+//            let safariViewController = SFSafariViewController(url: url)
+//            UIApplication.shared.keyWindow?.rootViewController?.present(safariViewController, animated: true, completion: nil)
+//        }
     }
     
 }
