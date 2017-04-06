@@ -7,74 +7,97 @@
 //
 
 import UIKit
+import IGListKit
 
 fileprivate struct Constants {
     static let cellIdentifier = "profileCell"
 }
 
-class ProfileViewController: UIViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet weak var preferredStoreTextField: UITextField!
-    var suggestionsTableView = UITableView(frame: .zero)
-    var suggestedStores: [String] = []
-    var suggestionsHeightConstraint: NSLayoutConstraint? = nil
+class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAdapterDelegate {
+	let client = APIClient()
     
-    let client = APIClient()
-    
+	@IBOutlet weak var preferredStoreButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        preferredStoreTextField.delegate = self
-        suggestionsTableView.isHidden = true
-        view.addSubview(suggestionsTableView)
-        suggestionsTableView.widthAnchor.constraint(equalTo: preferredStoreTextField.widthAnchor, multiplier: 1.0).isActive = true
-        suggestionsHeightConstraint = suggestionsTableView.heightAnchor.constraint(equalToConstant: 200.0)
-        suggestionsHeightConstraint?.isActive = true
-        suggestionsTableView.topAnchor.constraint(equalTo: preferredStoreTextField.bottomAnchor)
-        suggestionsTableView.centerXAnchor.constraint(equalTo: preferredStoreTextField.centerXAnchor)
+
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-    // MARK: - UITextFieldDelegate
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        guard let text = textField.text else { return }
-        suggestionsTableView.isHidden = true
-        client.fetchRecommendedStores(forText: text)
-        .then { results -> Void in
-            self.suggestedStores = results
-            self.suggestionsTableView.isHidden = false
-            self.suggestionsTableView.reloadData()
-            self.suggestionsHeightConstraint?.constant = CGFloat(min(200, 50*results.count))
-        }
-        .catch { error in
-            print (error)
-        }
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        suggestionsTableView.isHidden = true
-    }
-    
-    // MARK: - UITableView methods
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        preferredStoreTextField.text = suggestedStores[indexPath.row]
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return suggestedStores.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier) ?? UITableViewCell(style: .default, reuseIdentifier: Constants.cellIdentifier)
-        cell.textLabel?.text = suggestedStores[indexPath.row]
-        return cell
-    }
+
+	lazy var adapter: IGListAdapter = {
+		return IGListAdapter(updater: IGListAdapterUpdater(), viewController: self, workingRangeSize: 0)
+	}()
+
+	lazy var loadingView: LoadingView = {
+		return LoadingView(text: "Fetching saved recipes")
+	}()
+
+	var dataSource = [IGListDiffable]()
+
+	// MARK: - Actions
+
+	@IBAction func preferredStoreButtonTapped(_ sender: Any) {
+		let alert = UIAlertController(title: "Enter ZIP Code", message: "Enter your zip code to search for stores", preferredStyle: .alert)
+		alert.addTextField { (textField) in
+			textField.placeholder = "ZIP Code"
+		}
+		alert.addAction(UIAlertAction(title: "Submit", style: .default, handler: { (_) in
+			guard let zip = alert.textFields?.first?.text else { return }
+			self.search(withZip: zip)
+			alert.dismiss(animated: true, completion: nil)
+		}))
+		present(alert, animated: true, completion: nil)
+	}
+
+	// MARK: - Helpers 
+
+	private func search(withZip zip: String) {
+		client.fetchRecommendedStores(forText: zip)
+			.then { results -> Void in
+				let resultList = StoresListTableViewController(style: .grouped)
+					resultList.stores = results
+					resultList.profileVC = self
+					self.show(resultList, sender: nil)
+			}
+			.catch { error in
+				print (error)
+		}
+	}
+
+	func user(didSelect store: String) {
+		preferredStoreButton.setTitle(store, for: .normal)
+		navigationController?.popViewController(animated: true)
+	}
+
+	private func setupAdapter() {
+		adapter.collectionView = collectionView
+		adapter.dataSource = self
+		adapter.delegate = self
+	}
+
+	// MARK: - IGListAdapterDataSource
+
+	func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
+		return dataSource
+	}
+
+	func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
+		return RecipeSectionController()
+	}
+
+	func emptyView(for listAdapter: IGListAdapter) -> UIView? {
+		return loadingView
+	}
+
+	func listAdapter(_ listAdapter: IGListAdapter!, willDisplay object: Any!, at index: Int) {
+
+	}
+
+	func listAdapter(_ listAdapter: IGListAdapter!, didEndDisplaying object: Any!, at index: Int) {
+
+	}
 }

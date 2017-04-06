@@ -10,7 +10,7 @@ extension APIClient {
         }
         
         return Promise { fulfill, reject in
-            Alamofire.request(url, method: .get, parameters: ["searchText" : searchText], encoding: URLEncoding.queryString).response { response in
+            Alamofire.request(url, method: .get, parameters: ["zipCode" : searchText], encoding: URLEncoding.queryString).response { response in
                 if
                     let responseData = response.data,
                     let responseJSON = JSON(data: responseData).array

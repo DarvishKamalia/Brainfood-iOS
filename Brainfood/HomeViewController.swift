@@ -113,24 +113,24 @@ class HomeViewController: UIViewController, UIScrollViewDelegate, IGListAdapterD
     }
     
     func loadRecommendations() {
-//        apiClient
-//            .fetchRecommendations(type: .Deals, forItems: ShoppingCart.shared.cartItems)
-//            .then { items -> Void in
-//                let items = items.flatMap { $0 as? Product }
-//                if let existingRecommendations = self.dataSource.first as? Recommendations {
-//                    existingRecommendations.items.append(contentsOf: items)
-//                    self.dataSource[0] = existingRecommendations
-//                } else {
-//                    self.dataSource.insert(Recommendations(items: items), at: 0)
-//                }
-//            }
-//            .catch { error in
-//                print(error)
-//            }
-//            .always(on: DispatchQueue.main) {
-//                self.loading = false
-//                self.adapter.performUpdates(animated: true, completion: nil)
-//            }
+        apiClient
+            .fetchRecommendations(type: .Deals, forItems: ShoppingCart.shared.cartItems)
+            .then { items -> Void in
+                let items = items.flatMap { $0 as? Product }
+                if let existingRecommendations = self.dataSource.first as? Recommendations {
+                    existingRecommendations.items.append(contentsOf: items)
+                    self.dataSource[0] = existingRecommendations
+                } else {
+                    self.dataSource.insert(Recommendations(items: items), at: 0)
+                }
+            }
+            .catch { error in
+                print(error)
+            }
+            .always(on: DispatchQueue.main) {
+                self.loading = false
+                self.adapter.performUpdates(animated: true, completion: nil)
+            }
     }
     
     // MARK: - UIScrollViewDelegate

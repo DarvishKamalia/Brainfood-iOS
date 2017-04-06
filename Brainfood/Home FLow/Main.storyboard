@@ -206,26 +206,23 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Preferred Store" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gS0-xV-DYj">
-                                <rect key="frame" x="28" y="26" width="319" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="319" id="LuE-Pw-2t0"/>
-                                    <constraint firstAttribute="height" constant="30" id="wM7-b9-hCR"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7d2-bB-EdY">
+                                <rect key="frame" x="16" y="46" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Tap here to choose a preferred store">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="preferredStoreButtonTapped:" destination="Zjh-cg-gjI" eventType="touchUpInside" id="g1n-Wb-5y4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="gS0-xV-DYj" firstAttribute="top" secondItem="xJV-6j-J7T" secondAttribute="bottom" constant="26" id="OLJ-o7-8KY"/>
-                            <constraint firstItem="gS0-xV-DYj" firstAttribute="centerX" secondItem="jqG-BB-Wed" secondAttribute="centerX" id="RHh-l0-j4l"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="my0-Yt-pkJ"/>
                     <connections>
-                        <outlet property="preferredStoreTextField" destination="gS0-xV-DYj" id="hrk-zA-Yrk"/>
+                        <outlet property="preferredStoreButton" destination="7d2-bB-EdY" id="FuQ-0o-BDs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lnd-DK-Wim" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -29,12 +29,15 @@ struct APIClient {
         
         
         var parameters = ["User": Constants.userID]
+
+        var productNames = "\"Milk\",\"eggs\""
         
-        if let items = items {
-            let productNames = items.joined(separator: ",")
-            parameters["items"] = productNames
+        if let items = items, items.count > 0 {
+            productNames = items.joined(separator: ",")
         }
-        
+
+        parameters["items"] = productNames
+
         return Promise { fulfill, reject in
             Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.queryString).response { response in
                 if let error = response.error {
