@@ -39,8 +39,6 @@
 		7C6ADD7B1DD938E0008F4836 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD771DD938E0008F4836 /* Product.swift */; };
 		7C6ADD7C1DD938E0008F4836 /* RecommendationsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD781DD938E0008F4836 /* RecommendationsDataSource.swift */; };
 		7C6ADD7D1DD938E0008F4836 /* RecommendationsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD781DD938E0008F4836 /* RecommendationsDataSource.swift */; };
-		7C6ADD7E1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD791DD938E0008F4836 /* TestRecommendationDataSource.swift */; };
-		7C6ADD7F1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADD791DD938E0008F4836 /* TestRecommendationDataSource.swift */; };
 		7C82AA771DC881D900085C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82AA761DC881D900085C0F /* AppDelegate.swift */; };
 		7C82AA7E1DC881D900085C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C82AA7D1DC881D900085C0F /* Assets.xcassets */; };
 		7C82AA811DC881D900085C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C82AA7F1DC881D900085C0F /* LaunchScreen.storyboard */; };
@@ -98,7 +96,6 @@
 		7C6ADD731DD938C9008F4836 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Home FLow/Main.storyboard"; sourceTree = "<group>"; };
 		7C6ADD771DD938E0008F4836 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Data/Product.swift; sourceTree = "<group>"; };
 		7C6ADD781DD938E0008F4836 /* RecommendationsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecommendationsDataSource.swift; path = Data/RecommendationsDataSource.swift; sourceTree = "<group>"; };
-		7C6ADD791DD938E0008F4836 /* TestRecommendationDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestRecommendationDataSource.swift; path = Data/TestRecommendationDataSource.swift; sourceTree = "<group>"; };
 		7C82AA731DC881D900085C0F /* Brainfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brainfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C82AA761DC881D900085C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C82AA7D1DC881D900085C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -213,7 +210,6 @@
 				7C82AA9C1DC8836B00085C0F /* RecommendationTypes.swift */,
 				7C6ADD771DD938E0008F4836 /* Product.swift */,
 				7C6ADD781DD938E0008F4836 /* RecommendationsDataSource.swift */,
-				7C6ADD791DD938E0008F4836 /* TestRecommendationDataSource.swift */,
 				7C4A07601DEE15040094E44F /* Recipe.swift */,
 				A8AD51EC1E6670E100610DB9 /* CartPrice.swift */,
 			);
@@ -543,7 +539,6 @@
 				7C4A07611DEE15040094E44F /* Recipe.swift in Sources */,
 				2A5036891E59060E00C086F7 /* HomeViewController.swift in Sources */,
 				7C6ADD7A1DD938E0008F4836 /* Product.swift in Sources */,
-				7C6ADD7E1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */,
 				2A3F70781E6644F700E5F3D8 /* RecommendationsSectionController.swift in Sources */,
 				A86E99741E512E09006D21DB /* Error.swift in Sources */,
 				2AD426641E5E4F42009F3D1B /* IngredientsViewController.swift in Sources */,
@@ -562,7 +557,6 @@
 				7CDBA1981DCA746300AE0560 /* FeedItem.swift in Sources */,
 				7C6ADD7B1DD938E0008F4836 /* Product.swift in Sources */,
 				7C82AA8C1DC881D900085C0F /* BrainfoodTests.swift in Sources */,
-				7C6ADD7F1DD938E0008F4836 /* TestRecommendationDataSource.swift in Sources */,
 				7C6ADD641DD93520008F4836 /* DefaultHorizontalFeedCell.swift in Sources */,
 				7C2743551DCD1B250093B994 /* FeedCell.swift in Sources */,
 				7C6ADD7D1DD938E0008F4836 /* RecommendationsDataSource.swift in Sources */,

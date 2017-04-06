@@ -8,6 +8,7 @@
 
 import UIKit
 import IGListKit
+import RealmSwift
 
 fileprivate struct Constants {
     static let cellIdentifier = "profileCell"
@@ -32,15 +33,17 @@ class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAd
 
 	var dataSource = [IGListDiffable]()
 
+	var notificationToken: NotificationToken?
+
 	// MARK: - ViewController lifecycle 
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
+	override func viewWillAppear(_ animated: Bool) {
 		setupSavedRecipes()
+		self.adapter.performUpdates(animated: true, completion: nil)
 	}
 
-	override func viewWillAppear(_ animated: Bool) {
-		self.adapter.performUpdates(animated: true, completion: nil)
+	override func viewWillDisappear(_ animated: Bool) {
+		notificationToken?.stop()
 	}
 
 	// MARK: - Actions
@@ -79,9 +82,12 @@ class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAd
 	}
 
 	private func setupSavedRecipes() {
-
-		
-
+		let realm = try! Realm()
+		self.dataSource = realm.objects(Recipe.self).map() { $0 }
+		notificationToken = realm.addNotificationBlock { note, realm in
+			self.dataSource = realm.objects(Recipe.self).map() { $0 }
+			self.adapter.performUpdates(animated: true, completion: nil)
+		}
 		adapter.collectionView = collectionView
 		adapter.dataSource = self
 		adapter.delegate = self

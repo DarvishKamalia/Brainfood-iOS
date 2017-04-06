@@ -23,10 +23,10 @@ import IGListKit
 class CartPrice: Equatable, FeedItem, IGListDiffable {
     
     let storeName: String
-    var imageUrl: URL?
+    var imageUrl: String
     let totalPrice: Double
     
-    init (storeName: String, imageUrl: URL? = nil, totalPrice: Double) {
+    init (storeName: String, imageUrl: String = "", totalPrice: Double) {
         self.storeName = storeName
         self.imageUrl = imageUrl
         self.totalPrice = totalPrice
@@ -42,7 +42,7 @@ class CartPrice: Equatable, FeedItem, IGListDiffable {
         
         self.storeName = name
         self.totalPrice = price
-        imageUrl = json["imageURL"].url
+        imageUrl = json["imageURL"].string ?? ""
     }
     
     // MARK: - FeedItem variables

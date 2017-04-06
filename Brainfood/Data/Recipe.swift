@@ -10,36 +10,57 @@ import Foundation
 import SwiftyJSON
 import PromiseKit
 import IGListKit
+import RealmSwift
 
-class Recipe: Equatable, Hashable, FeedItem, IGListDiffable {
+// Required to store ingredients in Realm database
+class RealmString: Object {
+    dynamic var stringValue = ""
+}
+
+final class Recipe: Object, FeedItem, IGListDiffable {
+    dynamic var name: String = ""
+    dynamic var imageUrl: String = ""
+    dynamic var linkUrl: String = ""
+    var persistentIngredients = List<RealmString>()
+
+    var ingredients: [String] {
+        get {
+            return persistentIngredients.map() { $0.stringValue }
+        }
+        set {
+            persistentIngredients.removeAll()
+            let realmStrings = newValue.map() { RealmString(value: [$0]) }
+            persistentIngredients.append(contentsOf: realmStrings)
+        }
+    }
+
+    override static func ignoredProperties() -> [String] {
+        return ["ingredients"]
+    }
     
-    let name: String
-    let imageUrl: URL?
-    let linkUrl: URL?
-    
-    let ingredients: [String]
-    
-    init (name: String, imageUrl: URL? = nil, linkUrl: URL? = nil, ingredients: [String] = []) {
+    convenience init (name: String, imageUrl: String = "", linkUrl: String = "", ingredients: [String] = []) {
+        self.init()
         self.name = name
         self.imageUrl = imageUrl
         self.linkUrl = linkUrl
         self.ingredients = ingredients
     }
     
-    init?(from json: JSON) {
+    convenience init?(from json: JSON) {
+        self.init()
         guard let name = json["title"].string else { return nil }
         
         self.name = name
         
         let id = json["id"].number?.int64Value
-        imageUrl = URL(string: "http://d27bfab0aa6b39479cb3-cb8f43ffb46322cff58594e95a13ac65.r29.cf5.rackcdn.com/\(id ?? 0).jpg")
-        linkUrl = json["url"].url
+        imageUrl = "http://d27bfab0aa6b39479cb3-cb8f43ffb46322cff58594e95a13ac65.r29.cf5.rackcdn.com/\(id ?? 0).jpg"
+        linkUrl = json["url"].string ?? ""
         
         let used = json["uses"].array?.flatMap { $0.string } ?? []
         let remaining = json["needs"].array?.flatMap { $0.string } ?? []
         ingredients = used + remaining
     }
-    
+
     // MARK: - FeedItem variables
     
     var titleString: String {
@@ -52,8 +73,19 @@ class Recipe: Equatable, Hashable, FeedItem, IGListDiffable {
     
     // MARK: - Hashable
     
-    var hashValue: Int {
+    override var hashValue: Int {
         return name.hashValue
+    }
+
+    // MARK: - Realm 
+
+    override class func primaryKey() -> String {
+        return "name" 
+    }
+
+    var isSaved: Bool {
+        let realm = try! Realm()
+        return realm.object(ofType: Recipe.self, forPrimaryKey: name) != nil 
     }
     
     // MARK: - IGListDiffable
@@ -65,7 +97,6 @@ class Recipe: Equatable, Hashable, FeedItem, IGListDiffable {
     func isEqual(toDiffableObject object: IGListDiffable?) -> Bool {
         return self == (object as? Recipe)
     }
-    
 }
 
 func ==(lhs: Recipe, rhs: Recipe) -> Bool {

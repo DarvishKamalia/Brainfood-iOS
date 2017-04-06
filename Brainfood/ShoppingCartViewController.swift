@@ -21,9 +21,7 @@ class ShoppingCartViewController: UIViewController, UITableViewDataSource, UITab
     lazy var apiClient: APIClient = {
         return APIClient()
     }()
-    
-    var items = Array(repeating: CartPrice(storeName: "Kroger", imageUrl: URL(string: "https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.martinbands.com%2Fimages%2Fkroger.svg&f=1"), totalPrice: 10.0), count: 5)
-    
+        
     var viewState: ViewState = .ready {
         didSet {
             guard viewState != oldValue else { return }
