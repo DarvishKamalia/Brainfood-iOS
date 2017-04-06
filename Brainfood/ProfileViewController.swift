@@ -14,19 +14,13 @@ fileprivate struct Constants {
 }
 
 class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAdapterDelegate {
-	let client = APIClient()
+	lazy var client: APIClient = {
+		return APIClient()
+	}()
     
 	@IBOutlet weak var preferredStoreButton: UIButton!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+	@IBOutlet weak var collectionView: IGListCollectionView!
 
 	lazy var adapter: IGListAdapter = {
 		return IGListAdapter(updater: IGListAdapterUpdater(), viewController: self, workingRangeSize: 0)
@@ -37,6 +31,17 @@ class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAd
 	}()
 
 	var dataSource = [IGListDiffable]()
+
+	// MARK: - ViewController lifecycle 
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		setupSavedRecipes()
+	}
+
+	override func viewWillAppear(_ animated: Bool) {
+		self.adapter.performUpdates(animated: true, completion: nil)
+	}
 
 	// MARK: - Actions
 
@@ -73,7 +78,10 @@ class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAd
 		navigationController?.popViewController(animated: true)
 	}
 
-	private func setupAdapter() {
+	private func setupSavedRecipes() {
+
+		
+
 		adapter.collectionView = collectionView
 		adapter.dataSource = self
 		adapter.delegate = self

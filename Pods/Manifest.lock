@@ -15,6 +15,11 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (4.1.4):
     - PromiseKit/CorePromise
+  - Realm (2.4.3):
+    - Realm/Headers (= 2.4.3)
+  - Realm/Headers (2.4.3)
+  - RealmSwift (2.4.3):
+    - Realm (= 2.4.3)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
@@ -24,6 +29,7 @@ DEPENDENCIES:
   - IGListKit (~> 2.0.0)
   - Nuke
   - PromiseKit (~> 4.0)
+  - RealmSwift
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -33,8 +39,10 @@ SPEC CHECKSUMS:
   IGListKit: ee255e4e61865bc3e01ca96b690c5435c2887849
   Nuke: d47030a761bdd0f7589a734a90819d71eda2500d
   PromiseKit: e69aead34c817988ea688b1085aee21300d6dcb8
+  Realm: e08d60b0048ccccd3949c8c28a92c4db5712d7e9
+  RealmSwift: 30d49739ccb3385d201242736ca4dda56aec9dfc
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: f290f29e6ebebb04dea5c43e69de116bbe5de976
+PODFILE CHECKSUM: bc26ada4c548abf970c2e1e729f3778eb832c48f
 
 COCOAPODS: 1.2.0
