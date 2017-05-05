@@ -9,12 +9,13 @@
 import UIKit
 import IGListKit
 import RealmSwift
+import MessageUI
 
 fileprivate struct Constants {
     static let cellIdentifier = "profileCell"
 }
 
-class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAdapterDelegate {
+class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAdapterDelegate, MFMailComposeViewControllerDelegate {
 	lazy var client: APIClient = {
 		return APIClient()
 	}()
@@ -61,6 +62,7 @@ class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAd
 		present(alert, animated: true, completion: nil)
 	}
 
+
 	// MARK: - Helpers 
 
 	private func search(withZip zip: String) {
@@ -75,8 +77,18 @@ class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAd
 				print (error)
 		}
 	}
+    @IBAction func feedbackButtonTapped(_ sender: Any) {
+		guard MFMailComposeViewController.canSendMail() else { return }
+		
+        let mailer = MFMailComposeViewController()
+        mailer.mailComposeDelegate = self
+        mailer.setToRecipients(["thegoodbrainfood@gmail.com"])
+        mailer.setSubject("Brainfood App Feedback")
 
-	func user(didSelect store: String) {
+        present(mailer, animated: true, completion: nil)
+    }
+
+    func user(didSelect store: String) {
 		preferredStoreButton.setTitle(store, for: .normal)
 		navigationController?.popViewController(animated: true)
 	}
@@ -114,4 +126,10 @@ class ProfileViewController: UIViewController, IGListAdapterDataSource, IGListAd
 	func listAdapter(_ listAdapter: IGListAdapter!, didEndDisplaying object: Any!, at index: Int) {
 
 	}
+
+    // MARK: - MFMailComposeViewController Delegate
+
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
 }

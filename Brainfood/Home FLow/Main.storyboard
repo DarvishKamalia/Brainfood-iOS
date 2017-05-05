@@ -431,7 +431,13 @@
                             <constraint firstItem="RIi-9f-nGK" firstAttribute="bottom" secondItem="hTy-80-Z44" secondAttribute="top" id="vvH-7s-Nbf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="my0-Yt-pkJ"/>
+                    <navigationItem key="navigationItem" title="Profile" id="my0-Yt-pkJ">
+                        <barButtonItem key="rightBarButtonItem" title="Feedback" id="ViY-1d-Nqf">
+                            <connections>
+                                <action selector="feedbackButtonTapped:" destination="Zjh-cg-gjI" id="20c-NK-tzI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="RIi-9f-nGK" id="R8P-Tf-lYj"/>
                         <outlet property="preferredStoreButton" destination="7d2-bB-EdY" id="FuQ-0o-BDs"/>
@@ -542,7 +548,7 @@
             </objects>
             <point key="canvasLocation" x="2007.2" y="1567.4662668665669"/>
         </scene>
-        <!--Shopping Cart-->
+        <!--Shopping List-->
         <scene sceneID="WMh-Gq-3g1">
             <objects>
                 <viewController id="mAz-rb-Gce" customClass="ShoppingCartViewController" customModule="Brainfood" customModuleProvider="target" sceneMemberID="viewController">
@@ -647,7 +653,7 @@
                             <constraint firstItem="qio-jP-SWi" firstAttribute="leading" secondItem="Tnp-Xe-Uo9" secondAttribute="leading" id="xsV-61-DVB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Shopping Cart" id="1SE-5Q-yDe">
+                    <navigationItem key="navigationItem" title="Shopping List" id="1SE-5Q-yDe">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9W6-oh-fYy">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>

@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Heap.enableVisualizer();
         #endif
 
+        (window?.rootViewController as? UITabBarController)?.selectedIndex = 2
         return true
     }
 
